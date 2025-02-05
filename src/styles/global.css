@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
   &::after,
   &::before {
     box-sizing: inherit;
@@ -17,8 +18,8 @@
   --color-link-hover: #999;
   --color-placeholder: #f8f8f8;
   --font-size-s: 0.85rem;
-  --font-size-l: clamp(1.25rem,3vw,1.75rem);
-  --font-size-xl: clamp(1.5rem,5vw,2.75rem);
+  --font-size-l: clamp(1.25rem, 3vw, 1.75rem);
+  --font-size-xl: clamp(1.5rem, 5vw, 2.75rem);
 }
 
 body {
@@ -49,7 +50,7 @@ h3 {
   margin-bottom: 2.5rem;
 }
 
-p + h3 {
+p+h3 {
   margin-top: 4rem;
 }
 
@@ -107,6 +108,7 @@ button {
   &:hover {
     color: var(--color-link-hover);
   }
+
   &:focus {
     outline: none;
     background-color: lightgrey;
@@ -117,7 +119,7 @@ button {
 
     &:focus-visible {
       background-color: transparent;
-      color: var(--color-link-hover); 
+      color: var(--color-link-hover);
     }
   }
 }
@@ -180,6 +182,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   @media screen and (min-width: 50em) {
     margin: 0 20vw;
     padding: 3rem 1rem;
@@ -234,6 +237,7 @@ dd {
 
 .title-header--initial {
   font-size: var(--font-size-l);
+
   @media screen and (min-width: 50em) {
     grid-template-columns: 20vw 1fr auto;
     gap: 1rem;
