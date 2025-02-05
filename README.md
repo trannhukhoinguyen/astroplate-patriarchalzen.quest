@@ -1,35 +1,14 @@
 # Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Player’s Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with Alex Tkachev.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/02/PlayersClub_Template_featured.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[Article on Codrops](https://tympanus.net/codrops/?p=86632)
 
-## 🚀 Project Structure
+[Demo](https://tympanus.net/Development/.../)
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -42,6 +21,17 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Credits
+
+- Images generated with [Midjourney](https://midjourney.com)
+
+## Misc
+
+Follow Codrops: [Bluesky](https://bsky.app/profile/codrops.bsky.social), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/), [X](http://www.x.com/codrops)
+
+## License
+[MIT](LICENSE)
+
+Made with :blue_heart:  by [Codrops](http://www.codrops.com)
+
