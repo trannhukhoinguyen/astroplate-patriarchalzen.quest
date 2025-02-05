@@ -1,6 +1,6 @@
-# Player’s Club: A Free Astro Template for Showcasing Music Artists
+# Players Club: A Free Astro Template for Showcasing Music Artists
 
-Player's Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with Alex Tkachev.
+Players Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with [Alex Tkachev](https://alextkachev.com/).
 
 ![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/02/PlayersClub_Template_featured.png)
 
@@ -24,6 +24,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Credits
 
+- Design based on [Alex Tkachev's](https://alextkachev.com/) [Players Club Dribbble shot](https://dribbble.com/shots/25156320-Players-Club-UI-Animation).
 - Images generated with [Midjourney](https://midjourney.com)
 
 ## Misc
