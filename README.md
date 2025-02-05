@@ -1,12 +1,12 @@
-# Astro Starter Kit: Minimal
+# Player’s Club: A Free Astro Template for Showcasing Music Artists
 
-Player’s Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with Alex Tkachev.
+Player's Club is a free Astro template for showcasing music artists—an experimental proof of concept built in collaboration with Alex Tkachev.
 
 ![Image Title](https://tympanus.net/codrops/wp-content/uploads/2025/02/PlayersClub_Template_featured.png)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=86632)
 
-[Demo](https://tympanus.net/Development/.../)
+[Demo](https://playersclub88.netlify.app/)
 
 ## Commands
 

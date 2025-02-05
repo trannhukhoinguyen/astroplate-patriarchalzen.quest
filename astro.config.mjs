@@ -9,7 +9,7 @@ export default defineConfig({
     enabled: false
   },
   prefetch: true,
-  site: 'https://playersclub24.netlify.app',
+  site: 'https://playersclub88.netlify.app/',
   integrations: [sitemap()],
   experimental: {
     svg: true,
