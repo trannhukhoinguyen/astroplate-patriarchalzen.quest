@@ -7,12 +7,12 @@ import Preloader from "../components/Preloader.astro";
 
 const allArtists = await getCollection("artists");
 const artistsTotal = allArtists.length;
-const title = "Players Club - All Artists";
+const title = "Patriarchal Zen - All Zen Patriarchs";
 ---
 
 <BaseLayout title={title}>
-  <!-- 
-    The <Preloader /> component is used to preload all images on the homepage using the images.loaded.js script. 
+  <!--
+    The <Preloader /> component is used to preload all images on the homepage using the images.loaded.js script.
     If you don’t want to use the preloader (e.g., for faster page load times or if you don’t require preloading images), you can safely remove the <Preloader /> component from this layout.
   -->
   <Preloader />

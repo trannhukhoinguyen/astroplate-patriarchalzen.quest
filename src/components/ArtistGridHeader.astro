@@ -17,8 +17,9 @@ const { artistsTotal } = Astro.props;
     <button data-sort><TextSlider content="Sort" /></button>
     <button data-shuffle><TextSlider content="Shuffle" /></button>
     <div>
-      <button data-search class="search"><TextSlider content="Search" /></button
-      >
+      <button data-search class="search">
+        <TextSlider content="Search" />
+      </button>
       <button data-clear class="clear hidden" aria-label="Clear search">
         <Cross width={14} height={14} />
       </button>
@@ -39,6 +40,7 @@ const { artistsTotal } = Astro.props;
     margin: 0;
     padding: 0;
   }
+
   div:has(> .search) {
     position: relative;
   }
@@ -57,6 +59,29 @@ const { artistsTotal } = Astro.props;
     border-radius: 2rem;
   }
   .search--active {
+    &:focus-visible {
+      color: inherit;
+    }
+  }
+
+  div:has(> .filter-detail) {
+    position: relative;
+  }
+  div:has(> .filter-detail--active) {
+    margin-left: 1rem;
+  }
+  div:has(> .filter-detail--active)::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    left: -1rem;
+    right: -1rem;
+    top: -0.5rem;
+    bottom: -0.5rem;
+    border: 1px solid;
+    border-radius: 2rem;
+  }
+  .filter-detail--active {
     &:focus-visible {
       color: inherit;
     }
