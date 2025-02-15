@@ -15,7 +15,7 @@ tracks:
   - "The Wanderer"
   - "Raw Grace"
   - "Final Flame"
-artist: "revelyn"
+artist: "yongming-yanshou"
 ---
 
 **Wild** is Revelyn’s explosive debut album, a fearless blend of anthems and introspection. With raw lyrics and passionate melodies, this record captures the essence of freedom and self-discovery.

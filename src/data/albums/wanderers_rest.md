@@ -15,7 +15,7 @@ tracks:
   - "Golden Horizons"
   - "Frosted Morning"
   - "Kindred Spirits"
-artist: "eli-haze"
+artist: "yongming-yanshou"
 ---
 
 **Wanderer’s Rest** is the second album by Eli Haze, an introspective journey through themes of home, belonging, and serenity. With warm tones and gentle melodies, it offers solace to weary hearts.

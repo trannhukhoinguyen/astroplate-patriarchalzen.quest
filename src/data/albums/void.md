@@ -15,7 +15,7 @@ tracks:
   - "Gray Horizon"
   - "Whispered Thoughts"
   - "Endless Stillness"
-artist: "z-t"
+artist: "yongming-yanshou"
 ---
 
 **Void** is Z.T.’s hauntingly minimalist sophomore album, delving into themes of emptiness and self-reflection. With stark beats and introspective lyrics, this record redefines hip-hop simplicity.

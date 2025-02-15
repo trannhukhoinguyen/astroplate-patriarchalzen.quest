@@ -15,7 +15,7 @@ tracks:
   - "Wandering Soul"
   - "Twilight Serenade"
   - "Last Light"
-artist: "eli-haze"
+artist: "yongming-yanshou"
 ---
 
 **Echoes in the Pines** is the debut album by Eli Haze, capturing the stillness and beauty of the Appalachian landscapes. This collection of acoustic ballads and heartfelt lyrics paints vivid images of love, loss, and connection to nature.

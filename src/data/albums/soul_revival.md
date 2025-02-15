@@ -15,7 +15,7 @@ tracks:
   - "Light in the Dark"
   - "Infinite Harmony"
   - "Soul's Rebirth"
-artist: "mal-hayes"
+artist: "yongming-yanshou"
 ---
 
 **Soul Revival** is the sophomore album by Mal Hayes, celebrating the timeless essence of soul music while infusing it with a sense of renewal and optimism. With uplifting melodies and heartfelt lyrics, this album solidifies Mal's place as a powerful voice in modern soul.

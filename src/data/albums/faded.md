@@ -15,7 +15,7 @@ tracks:
   - "Ethereal Nights"
   - "Fleeting Reflections"
   - "Lullaby for Tomorrow"
-artist: "wale"
+artist: "yongming-yanshou"
 ---
 
 **Faded** is Wale’s mesmerizing debut album, a dreamlike exploration of nostalgia and vulnerability. With ethereal soundscapes and poetic lyricism, this record invites listeners to immerse themselves in its serene beauty.

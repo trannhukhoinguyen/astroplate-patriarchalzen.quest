@@ -15,7 +15,7 @@ tracks:
   - "Dawn’s Voice"
   - "Resonating Love"
   - "Final Echo"
-artist: "velvet-rush"
+artist: "yongming-yanshou"
 ---
 
 **Echoed Whispers** is Velvet Rush’s evocative sophomore album, weaving themes of connection and storytelling with soulful melodies and rich harmonies. This record deepens her presence in the neo-soul genre.

@@ -15,7 +15,7 @@ tracks:
   - "Resilient Rhythms"
   - "Heart of LA"
   - "Legacy Unwritten"
-artist: "mia-sue"
+artist: "yongming-yanshou"
 ---
 
 **Street Serenade** is Mia Sue’s unapologetic debut album, blending raw energy with poetic storytelling. Packed with intricate rhymes and hard-hitting beats, this record is a celebration of resilience and identity, cementing mia-sue’s place in hip-hop.

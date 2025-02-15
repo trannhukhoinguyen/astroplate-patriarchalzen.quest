@@ -15,7 +15,7 @@ tracks:
   - "Fading Horizons"
   - "Unspoken Bonds"
   - "Dawn Serenade"
-artist: "nora-wilde"
+artist: "yongming-yanshou"
 ---
 
 **Still Waters** is Nora Wilde’s heartfelt debut album, a delicate exploration of solitude and self-discovery. With stripped-back melodies and poetic lyrics, the album invites listeners into a calm and introspective folk journey.

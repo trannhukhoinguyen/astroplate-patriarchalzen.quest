@@ -15,7 +15,7 @@ tracks:
   - "Festival of Sounds"
   - "Groove in Gold"
   - "Pulse of India"
-artist: "dj-bolly"
+artist: "yongming-yanshou"
 ---
 
 **Rhythms of India** is the sophomore album by DJ Bolly, continuing his journey into the world of Bollywood fusion. With tracks like *Dance of the Dhol* and *Neon Bhangra*, the album offers a vibrant mix of traditional Indian instruments and cutting-edge electronic beats, perfect for festivals and dancefloors worldwide.

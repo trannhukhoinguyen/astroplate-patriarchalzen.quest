@@ -15,7 +15,7 @@ tracks:
   - "Broken Glass Poetry"
   - "Tales of the Night"
   - "Final Verse"
-artist: "reevo"
+artist: "yongming-yanshou"
 ---
 
 **City Shadows** is Reevo’s introspective debut album, blending poetic lyricism with innovative beats. Exploring themes of identity and resilience, this album establishes Reevo as a profound voice in hip-hop.

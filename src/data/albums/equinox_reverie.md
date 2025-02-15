@@ -15,7 +15,7 @@ tracks:
   - "Saturn's Serenade"
   - "Nocturne's Glow"
   - "Infinite Reflections"
-artist: "eclipse-aurelian"
+artist: "yongming-yanshou"
 ---
 
 **Equinox Reverie** is the sophomore album by Eclipse Aurelian, offering a celestial blend of ambient jazz and atmospheric elegance. Its compositions, inspired by the quiet grandeur of the cosmos, invite listeners to immerse themselves in a world of harmonic beauty and cosmic wonder.

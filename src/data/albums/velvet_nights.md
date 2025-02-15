@@ -15,7 +15,7 @@ tracks:
   - "Neon Rhythm"
   - "Starry Serenade"
   - "The Last Spin"
-artist: "luna-deluxe"
+artist: "yongming-yanshou"
 ---
 
 **Velvet Nights** is luna-deluxe’s nostalgic sophomore album, capturing the glamour and charm of disco-pop’s golden era. With irresistible grooves and warm retro vibes, this album brings timeless energy to modern dancefloors.

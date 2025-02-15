@@ -15,7 +15,7 @@ tracks:
   - "Tranquil Spirit"
   - "Reflected Moon"
   - "Final Drop"
-artist: "zenji"
+artist: "yongming-yanshou"
 ---
 
 **The Well** is Zenji’s peaceful debut album, blending serene melodies with field recordings and organic textures. This record offers a meditative escape, capturing the essence of lo-fi beats.

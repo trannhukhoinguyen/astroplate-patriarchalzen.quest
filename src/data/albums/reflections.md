@@ -15,7 +15,7 @@ tracks:
   - "Moonlit Ripples"
   - "Stillness Within"
   - "Tranquil Horizon"
-artist: "zenji"
+artist: "yongming-yanshou"
 ---
 
 **Reflections** is Zenji’s introspective sophomore album, merging tranquil soundscapes with gentle, organic beats. This record deepens the meditative journey of lo-fi music, offering moments of peace and clarity.

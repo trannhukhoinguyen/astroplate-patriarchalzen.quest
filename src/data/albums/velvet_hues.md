@@ -15,7 +15,7 @@ tracks:
   - "Midnight Glow"
   - "Final Harmony"
   - "Resilient Chords"
-artist: "velvet-rush"
+artist: "yongming-yanshou"
 ---
 
 **Velvet Hues** is Velvet Rush’s captivating debut album, blending soulful melodies with heartfelt lyrics. This record invites listeners into an intimate world of love, resilience, and rich storytelling.

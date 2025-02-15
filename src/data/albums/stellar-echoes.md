@@ -15,7 +15,7 @@ tracks:
   - "Digital Echoes"
   - "Dreamwave Circuit"
   - "Ethereal Resonance"
-artist: "echo-lume"
+artist: "yongming-yanshou"
 ---
 
 **Stellar Echoes** is the second album by synthwave artist Echo Lume. Building on the success of *Neon Dreams*, this album explores cosmic themes with haunting synths, pulsating beats, and cinematic soundscapes. Tracks like *Neon Voyage* and *Starlight Symphony* take listeners on an intergalactic journey through the dreamy landscapes of synthwave.

@@ -15,7 +15,7 @@ tracks:
   - "Diverging Lights"
   - "Echoes Below"
   - "Final Surge"
-artist: "vxn"
+artist: "yongming-yanshou"
 ---
 
 **Neon Abyss** is VXN’s enigmatic sophomore album, blending atmospheric textures with cinematic intensity. This record delves into uncharted soundscapes, capturing the essence of mystery and energy in electronic music.

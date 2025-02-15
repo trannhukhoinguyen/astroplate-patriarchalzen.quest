@@ -15,7 +15,7 @@ tracks:
   - "Afternoon Glow"
   - "Urban Elegance"
   - "Final Song at Sunset"
-artist: "fountain"
+artist: "yongming-yanshou"
 ---
 
 **Golden Hour** is Fountain’s breathtaking debut album, capturing the essence of intimate moments and sultry jazz melodies. With warm instrumentation and heartfelt storytelling, this record introduces a fresh yet nostalgic take on jazz-pop.

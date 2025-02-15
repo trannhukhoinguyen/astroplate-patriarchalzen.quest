@@ -15,7 +15,7 @@ tracks:
   - "Flicker of Light"
   - "Brighter Horizons"
   - "Sunset Dreams"
-artist: "teros"
+artist: "yongming-yanshou"
 ---
 
 **Solar Reverie** is the highly anticipated follow-up to Teros’ debut album, showcasing a more expansive and radiant sound. Exploring themes of transformation, hope, and resilience, the album masterfully intertwines lush Neo-Soul melodies with vibrant, sunlit production, cementing Teros as a pioneer in the genre.

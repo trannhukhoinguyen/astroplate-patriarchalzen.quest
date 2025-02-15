@@ -15,7 +15,7 @@ tracks:
   - "Harmony Lost"
   - "Rewind Time"
   - "Forever's Echo"
-artist: "mal-hayes"
+artist: "yongming-yanshou"
 ---
 
 **Heartstrings** is the debut album by soul artist Mal Hayes. It is a deeply personal and emotional journey through love, heartbreak, and healing. The album blends warm, velvety vocals with intimate, stripped-back instrumentation that showcases Mal's authentic and timeless sound.

@@ -15,7 +15,7 @@ tracks:
   - "Vibrations of Tomorrow"
   - "Roots Reimagined"
   - "Fusion Flow"
-artist: "k-adom"
+artist: "yongming-yanshou"
 ---
 
 **Future Vibes** is K-Adom’s innovative second album, fusing Afrobeat traditions with a futuristic twist. With bold rhythms and visionary themes, this album represents the forward momentum of Afrobeat Fusion.
