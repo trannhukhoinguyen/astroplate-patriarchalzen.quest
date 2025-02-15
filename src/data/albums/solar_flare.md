@@ -3,7 +3,7 @@ name: "Solar Flare"
 image:
   src: "/images/albums/solar_flare.webp"
   alt: "Photography of a dynamic concert scene featuring a radiant stage with glowing orange and yellow lights resembling solar flares, dramatic smoke effects, and a striking androgynous figure performing with a guitar."
-publishDate: 2024-11-05
+publishDate: 2025-02-15
 tracks:
   - "Ashes to Gold"
   - "Starlight Rebellion"

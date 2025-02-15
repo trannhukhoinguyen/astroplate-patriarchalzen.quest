@@ -3,7 +3,7 @@ name: "Faded"
 image:
   src: "/images/albums/faded.webp"
   alt: "A dreamy, ethereal photography-based art design featuring a foggy meadow at sunrise with soft pastel hues of lavender and blue, and a faint glowing horizon."
-publishDate: 2024-11-01
+publishDate: 2025-02-15
 tracks:
   - "Faded"
   - "Hazy Glow"

@@ -3,7 +3,7 @@ name: "Desi Beats Reloaded"
 image:
   src: "/images/albums/desi_beats_reloaded.webp"
   alt: "Illustration featuring vibrant Indian-inspired patterns with neon lights, blending a turntable and paisley motifs, representing Bollywood fusion music"
-publishDate: 2023-11-15
+publishDate: 2025-02-15
 tracks:
   - "Mumbai Nights"
   - "Bollywood Bounce"

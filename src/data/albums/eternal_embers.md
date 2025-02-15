@@ -3,7 +3,7 @@ name: "Eternal Embers"
 image:
   src: "/images/albums/eternal_embers.webp"
   alt: "Photography of a bold theatrical stage setup with deep red and gold lighting, dramatic shadows, and a powerful androgynous performer silhouetted against glowing embers."
-publishDate: 2026-02-12
+publishDate: 2025-02-15
 tracks:
   - "Firestorm"
   - "Eternal Embers"

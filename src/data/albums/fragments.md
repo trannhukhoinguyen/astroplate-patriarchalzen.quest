@@ -3,7 +3,7 @@ name: "Fragments"
 image:
   src: "/images/albums/fragments.webp"
   alt: "An abstract album art design featuring shattered glass-like patterns in shades of midnight blue, silver, and teal, with faint glowing lines intersecting dynamically, evoking introspection and resilience."
-publishDate: 2025-04-20
+publishDate: 2025-02-15
 tracks:
   - "Shattered Light"
   - "Fragments"

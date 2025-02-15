@@ -3,7 +3,7 @@ name: "Solstice Noir"
 image:
   src: "/images/albums/solstice_noir.webp"
   alt: "A golden eclipse surrounded by ethereal textures and abstract, smoky patterns on a dark background, evoking themes of mystery and ambient jazz."
-publishDate: 2024-10-15
+publishDate: 2025-02-15
 tracks:
   - "Golden Horizon"
   - "Nocturnal Reflections"

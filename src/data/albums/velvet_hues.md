@@ -3,7 +3,7 @@ name: "Velvet Hues"
 image:
   src: "/images/albums/velvet_hues.webp"
   alt: "A minimal symbol-based design featuring a flowing ribbon-like shape forming a heart, using black and violet colors, symbolizing love and resilience."
-publishDate: 2024-09-15
+publishDate: 2025-02-15
 tracks:
   - "Velvet Hues"
   - "Ribbon of Light"

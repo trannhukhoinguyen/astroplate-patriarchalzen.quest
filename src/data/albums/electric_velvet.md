@@ -3,7 +3,7 @@ name: "Electric Velvet"
 image:
   src: "/images/albums/electric_velvet.webp"
   alt: "A vibrant abstract design with electric blue and neon pink waves blending like velvet on a dark, pulsating background, evoking energy and edginess."
-publishDate: 2024-08-10
+publishDate: 2025-02-15
 tracks:
   - "Pulse"
   - "Electric Velvet"

@@ -3,7 +3,7 @@ name: "Aurora Drift"
 image:
   src: "/images/albums/aurora_drift.webp"
   alt: "A surreal, dreamlike depiction of a glowing aurora borealis against a dark, starry sky with hints of abstract textures"
-publishDate: 2024-09-22
+publishDate: 2025-02-15
 tracks:
   - "Echoes in the Night"
   - "Crimson Reverie"

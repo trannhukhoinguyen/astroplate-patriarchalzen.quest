@@ -3,7 +3,7 @@ name: "Celestial Waves"
 image:
   src: "/images/albums/celestial_waves.webp"
   alt: "Illustration for Celestial Waves featuring soft, flowing waves of color in hues of blue, purple, and pink"
-publishDate: 2025-02-14
+publishDate: 2025-02-15
 tracks:
   - "Ethereal Glow"
   - "Ocean's Whisper"

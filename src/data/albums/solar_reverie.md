@@ -3,7 +3,7 @@ name: "Solar Reverie"
 image:
   src: "/images/albums/solar_reverie.webp"
   alt: "A vibrant, abstract depiction of solar flares and warm tones, blending shades of orange, gold, and crimson with radiant textures"
-publishDate: 2026-03-15
+publishDate: 2025-02-15
 tracks:
   - "Radiant Pulse"
   - "Golden Mirage"

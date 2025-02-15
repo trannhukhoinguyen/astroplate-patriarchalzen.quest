@@ -3,7 +3,7 @@ name: "Satin Dreams"
 image:
   src: "/images/albums/satin_dreams.webp"
   alt: "A sleek album cover featuring rich pink and purple satin textures illuminated by soft, dreamy light, evoking sensuality and sophistication."
-publishDate: 2025-02-14
+publishDate: 2025-02-15
 tracks:
   - "Midnight Reverie"
   - "Silk & Shadows"

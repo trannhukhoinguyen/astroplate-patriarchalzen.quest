@@ -3,7 +3,7 @@ name: "Lucid"
 image:
   src: "/images/albums/lucid.webp"
   alt: "An abstract album art design featuring gradients of pale yellow and silver with smooth, flowing waves and subtle shimmering textures."
-publishDate: 2025-05-15
+publishDate: 2025-02-15
 tracks:
   - "Lucid"
   - "Golden Reverie"

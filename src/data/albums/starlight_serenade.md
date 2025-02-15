@@ -3,7 +3,7 @@ name: "Starlight Serenade"
 image:
   src: "/images/albums/starlight_serenade.webp"
   alt: "A dreamy night sky with twinkling stars, cherry blossoms illuminated by fairy lights, and a soft glow from the horizon, evoking magic and peace."
-publishDate: 2026-09-15
+publishDate: 2025-02-15
 tracks:
   - "Celestial Dance"
   - "Starlight Serenade"

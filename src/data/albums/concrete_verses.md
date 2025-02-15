@@ -3,7 +3,7 @@ name: "Concrete Verses"
 image:
   src: "/images/albums/concrete_verses.webp"
   alt: "A gritty urban skyline with stylized graffiti text, a microphone embedded in the concrete, and vibrant pops of red and yellow, featuring mia-sue's 'MS' logo prominently at the top."
-publishDate: 2026-01-30
+publishDate: 2025-02-15
 tracks:
   - "Concrete Verses"
   - "Echoes of Strength"

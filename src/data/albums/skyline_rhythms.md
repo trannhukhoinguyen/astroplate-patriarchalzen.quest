@@ -3,7 +3,7 @@ name: "Skyline Rhythms"
 image:
   src: "/images/albums/skyline_rhythms.webp"
   alt: "Photography of a vibrant urban rooftop scene at sunset, featuring a silhouetted figure against a glowing skyline, graffiti art on the walls, and warm orange and purple hues in the sky."
-publishDate: 2025-06-15
+publishDate: 2025-02-15
 tracks:
   - "Skyline Rhythms"
   - "Above the Noise"

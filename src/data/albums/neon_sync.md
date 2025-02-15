@@ -3,7 +3,7 @@ name: "Neon Sync"
 image:
   src: "/images/albums/neon_sync.webp"
   alt: "Glowing intersecting neon lines forming a funky geometric pattern with vibrant colors like magenta, cyan, and lime green on a dark background."
-publishDate: 2026-02-14
+publishDate: 2025-02-15
 tracks:
   - "Syncopated Groove"
   - "Neon Sync"

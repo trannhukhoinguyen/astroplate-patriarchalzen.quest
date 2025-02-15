@@ -3,7 +3,7 @@ name: "Equinox Reverie"
 image:
   src: "/images/albums/equinox_reverie.webp"
   alt: "Celestial crescent moons with gradients of deep blue and silver, surrounded by starry textures, evoking elegance and contemplation."
-publishDate: 2026-04-12
+publishDate: 2025-02-15
 tracks:
   - "Lunar Prelude"
   - "Nebula Dreams"

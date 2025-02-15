@@ -3,7 +3,7 @@ name: "Wild"
 image:
   src: "/images/albums/wild.webp"
   alt: "An abstract album art design featuring bold, sweeping brushstrokes in crimson, deep violet, and gold with subtle guitar string patterns embedded, evoking raw energy and passion."
-publishDate: 2024-09-10
+publishDate: 2025-02-15
 tracks:
   - "Wild"
   - "Unbound"

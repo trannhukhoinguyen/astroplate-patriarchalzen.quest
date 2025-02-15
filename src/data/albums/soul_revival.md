@@ -3,7 +3,7 @@ name: "Soul Revival"
 image:
   src: "/images/albums/soul_revival.webp"
   alt: "An abstract sunburst in soft gold and orange hues emerging from a record player, symbolizing rebirth and timeless music."
-publishDate: 2025-06-20
+publishDate: 2025-02-15
 tracks:
   - "Renewed Flame"
   - "Rise Again"

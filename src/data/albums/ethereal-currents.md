@@ -3,7 +3,7 @@ name: "Ethereal Currents"
 image:
   src: "/images/albums/ethereal_currents.webp"
   alt: "Album cover of Ethereal Currents by Amarié, featuring abstract, atmospheric visuals with glowing light patterns."
-publishDate: 2024-05-21
+publishDate: 2025-02-15
 tracks:
   - "Whispers of Light"
   - "Infinite Frequencies"

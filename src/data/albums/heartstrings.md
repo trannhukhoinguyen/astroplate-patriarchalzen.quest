@@ -3,7 +3,7 @@ name: "Heartstrings"
 image:
   src: "/images/albums/heartstrings.webp"
   alt: "A glowing red heart wrapped in guitar strings, set against a textured background of earthy brown and soft gold tones, symbolizing love and music."
-publishDate: 2024-03-15
+publishDate: 2025-02-15
 tracks:
   - "Strings of Love"
   - "Falling Again"

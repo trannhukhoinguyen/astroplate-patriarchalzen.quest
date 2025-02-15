@@ -3,7 +3,7 @@ name: "Shadow Circuit"
 image:
   src: "/images/albums/shadow_circuit.webp"
   alt: "An abstract album art design featuring sharp, angular patterns resembling circuit boards with glowing yellow accents against a deep black background, evoking a futuristic and intense aesthetic."
-publishDate: 2024-12-10
+publishDate: 2025-02-15
 tracks:
   - "Shadow Circuit"
   - "Neon Pulse"

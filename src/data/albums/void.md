@@ -3,7 +3,7 @@ name: "Void"
 image:
   src: "/images/albums/void.webp"
   alt: "An abstract album art design featuring an intersecting black circle and a white triangle on a gray gradient background, reflecting minimalist aesthetics."
-publishDate: 2025-06-20
+publishDate: 2025-02-15
 tracks:
   - "Void"
   - "Echoes"

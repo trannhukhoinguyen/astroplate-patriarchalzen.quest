@@ -3,7 +3,7 @@ name: "Echoes of the Underground"
 image:
   src: "/images/albums/echoes_of_the_underground.webp"
   alt: "Photography of a dramatic city alleyway with dim ambient lighting, wet cobblestones reflecting faint neon signs, and a lone figure in a hooded silhouette walking through the shadows."
-publishDate: 2026-03-20
+publishDate: 2025-02-15
 tracks:
   - "Echoes of the Underground"
   - "Shadow Rhymes"

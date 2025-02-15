@@ -3,7 +3,7 @@ name: "Ethereal Paths"
 image:
   src: "/images/albums/ethereal_paths.webp"
   alt: "A winding golden path illuminated under a dreamy twilight sky, surrounded by minimalist landscapes with soft hues of blue and gold, evoking wonder and introspection."
-publishDate: 2026-03-20
+publishDate: 2025-02-15
 tracks:
   - "Twilight Trails"
   - "Ethereal Paths"

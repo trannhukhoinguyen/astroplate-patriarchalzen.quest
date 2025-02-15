@@ -3,7 +3,7 @@ name: "Rebellion"
 image:
   src: "/images/albums/rebellion.webp"
   alt: "An abstract album art design featuring a single bold red color with dynamic streaks and shapes resembling lightning and flames, symbolizing energy and defiance."
-publishDate: 2024-10-05
+publishDate: 2025-02-15
 tracks:
   - "Rebellion"
   - "Flames of Freedom"

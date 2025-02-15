@@ -3,7 +3,7 @@ name: "Glitter & Groove"
 image:
   src: "/images/albums/glitter_and_groove.webp"
   alt: "A dazzling album cover with golden glitter swirls and a glowing disco ball at the center, radiating light and energy."
-publishDate: 2023-11-10
+publishDate: 2025-02-15
 tracks:
   - "Neon Nights"
   - "Golden Hour"
