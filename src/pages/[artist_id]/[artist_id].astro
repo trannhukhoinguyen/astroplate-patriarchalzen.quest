@@ -1,9 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Separator from "../components/Separator.astro";
-import AlbumGrid from "../components/AlbumGrid.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Separator from "../../components/Separator.astro";
+import AlbumGrid from "../../components/AlbumGrid.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all artists from the 'artists' collection
@@ -58,7 +58,7 @@ const { Content } = await render(artist);
         <span class="faded">({artist.data.name})</span>
       </h2>
       <div>
-        <a class="back" href="/">View all</a>
+        <a class="back" href="/public">View all</a>
         <span class="faded">/</span>
         <a href={`/${nextArtist.id}`}>Next Zen Patriarch</a>
       </div>

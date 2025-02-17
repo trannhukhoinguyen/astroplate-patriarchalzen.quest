@@ -13,7 +13,7 @@ const artists = defineCollection({
     }),
   }),
 });
- 
+
 const albums = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/albums" }),
   schema: z.object({
@@ -28,5 +28,44 @@ const albums = defineCollection({
   }),
 });
 
+const temples = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/temples" }),
+  schema: z.object({
+    name: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    publishDate: z.date(), // e.g. 2024-09-17
+    country: z.string(),
+    area: z.string(),
+    address: z.string(),
+  }),
+});
+
+const areas = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/areas" }),
+  schema: z.object({
+    name: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    publishDate: z.date(), // e.g. 2024-09-17
+    country: z.string(),
+  }),
+});
+
+const countries = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/countries" }),
+  schema: z.object({
+    name: z.string(),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
+    publishDate: z.date(), // e.g. 2024-09-17
+  }),
+});
 // Export all collections
-export const collections = {artists, albums};
+export const collections = {artists, albums, temples, areas, countries};

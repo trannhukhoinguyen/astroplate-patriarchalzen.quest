@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Separator from "../../components/Separator.astro";
+import AlbumGrid from "../../components/AlbumGrid.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all countries from the 'countries' collection
+  const countries = await getCollection("countries");
+
+  // Map over the countries to generate paths for each country's page
+  const paths = countries.map((country) => {
+    return {
+      params: { country_id: country.id }, // URL parameter for the country's ID
+      props: { countries, country }, // Pass the full country and all countries as props
+    };
+  });
+
+  // Return the generated paths to Astro for static page generation
+  return paths;
+};
+
+type Props = {
+  countries: CollectionEntry<"countries">[]; // Array of all countries in the collection
+  country: CollectionEntry<"countries">; // Current country being rendered
+};
+
+const { countries, country } = Astro.props; // Extract the countries list and current country from the props
+
+// Extract the ID of the current country
+const country_id = country.id;
+
+// Find the index of the current country in the countries array
+const currentArtistIndex = countries.findIndex((a) => a.id === country_id);
+
+// Calculate the index of the "next" country in the array (wrap around if at the last country)
+const nextArtistIndex = (currentArtistIndex + 1) % countries.length;
+
+// Get the "next" country based on the calculated index
+const nextArtist = countries[nextArtistIndex];
+
+// Fetch all albums that belong to the current country
+const areas = await getCollection(
+    "areas",
+    ({ data }) => data.country.id === country_id,
+);
+
+// Render the content of the current country (e.g., markdown or MDX)
+const { Content } = await render(country);
+---
+
+<BaseLayout title={country.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {country.data.stage_name}
+        <span class="faded">({country.data.name})</span>
+      </h2>
+      <div>
+        <a class="back" href="/public">View all</a>
+        <span class="faded">/</span>
+        <a href={`/${nextArtist.id}`}>Next Zen Patriarch</a>
+      </div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+          class="image fade-in"
+          src={country.data.image.src}
+          alt={country.data.image.alt}
+      />
+      <div class="content">
+        <h3>Biography</h3>
+        <Content />
+        <dl>
+          <dt>Genre</dt><dd>{country.data.genre}</dd>
+        </dl>
+      </div>
+      {
+          areas.length > 0 && (
+              <div class="areas">
+                <h3>Releases</h3>
+                <AlbumGrid areas={areas} />
+              </div>
+          )
+      }
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .content-wrap {
+    grid-template-areas: "img" "content" "albums";
+    grid-template-columns: 100%;
+    @media screen and (min-width: 44em) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "img img" "content albums";
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: 30vw 1fr 170px;
+      grid-template-areas: "img content albums";
+    }
+  }
+  .albums {
+    grid-area: albums;
+  }
+  .content p:last-child {
+    margin-top: 2.5rem;
+    display: flex;
+  }
+</style>
