@@ -1,11 +1,12 @@
 ---
-document.addEventListener('wheel', function(event) {
-  event.preventDefault();
-
-  document.querySelector('.horizontal-window').scrollLeft += event.deltaY;
-});
-
 ---
+
+<script is:inline>
+  document.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    document.querySelector(".horizontal-window").scrollLeft += event.deltaY;
+  }, { passive: false });
+</script>
 
 <div class="horizontal-window">
   <div class="intro">
@@ -19,7 +20,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card1">
         <span class="year">1991</span>
-        <span class="code-introduction">&#x3c; /HTML &#x3e;</span>
+        <span class="code-introduction">-500</span>
       </div>
       <div class="lower">
         <p>HTML (HyperText Markup Language) was invented by Tim Berners-Lee and forms the basis of the World Wide Web.</p>
@@ -28,7 +29,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card2">
         <span class="year">1995</span>
-        <span class="code-introduction">{JavaScript}</span>
+        <span class="code-introduction">-100</span>
       </div>
       <div class="lower">
         <p>JavaScript was developed by Brendan Eich and is the most important language for interactive websites.</p>
@@ -37,7 +38,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card3">
         <span class="year">1996</span>
-        <span class="code-introduction">{CSS}</span>
+        <span class="code-introduction">0</span>
       </div>
       <div class="lower">
         <p>CSS (Cascading Style Sheets) was published to design the presentation and layout of websites.</p>
@@ -55,7 +56,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card5">
         <span class="year">2003</span>
-        <span class="code-introduction">{jQuery}</span>
+        <span class="code-introduction">100</span>
       </div>
       <div class="lower">
         <p>jQuery, a JavaScript library, was published to simplify the writing of JavaScript.</p>
@@ -73,7 +74,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card7">
         <span class="year">2010</span>
-        <span class="code-introduction">{Node.js}</span>
+        <span class="code-introduction">500</span>
       </div>
       <div class="lower">
         <p>Node.js made it possible to execute JavaScript on the server, which revolutionized web development.</p>
@@ -82,7 +83,7 @@ document.addEventListener('wheel', function(event) {
     <div class="card">
       <div class="upper card8">
         <span class="year">2013</span>
-        <span class="code-introduction">{React.js}</span>
+        <span class="code-introduction">1000</span>
       </div>
       <div class="lower">
         <p>React, a JavaScript library for building user interfaces, was released by Facebook.</p>

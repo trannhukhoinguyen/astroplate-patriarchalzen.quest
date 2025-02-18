@@ -4,6 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ArtistGrid from "../components/ArtistGrid.astro";
 import ArtistGridHeader from "../components/ArtistGridHeader.astro";
 import Preloader from "../components/Preloader.astro";
+import ScrollingHorizontalTimeline from "../components/ScrollingHorizontalTimeline.astro";
+import ScrollingVerticalTimeline from "../components/ScrollingVerticalTimeline.astro";
 
 const allArtists = await getCollection("artists");
 const artistsTotal = allArtists.length;
@@ -16,7 +18,14 @@ const title = "Patriarchal Zen - All Zen Patriarchs";
     If you don’t want to use the preloader (e.g., for faster page load times or if you don’t require preloading images), you can safely remove the <Preloader /> component from this layout.
   -->
   <!--<Preloader />-->
+
   <ArtistGridHeader artistsTotal={artistsTotal} />
-  <ArtistGrid artists={allArtists} />
+
+  <!--<ArtistGrid artists={allArtists} />-->
+
+  <!--<ScrollingHorizontalTimeline />-->
+
+  <ScrollingVerticalTimeline />
+
 </BaseLayout>
 <script src="../scripts/index.js"></script>

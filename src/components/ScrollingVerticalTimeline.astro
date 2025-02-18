@@ -1,76 +1,80 @@
 ---
-$(() => {
-  let stickyTop = 0,
-      scrollTarget = false;
-  let timeline = $(".timeline__nav"),
-      items = $("li", timeline),
-      milestones = $(".timeline__section .milestone"),
-      offsetTop = parseInt(timeline.css("top"));
-  const TIMELINE_VALUES = {
-    start: 190,
-    step: 30
-  };
-  $(window)
-      .resize(function () {
-        timeline.removeClass("fixed");
-        stickyTop = timeline.offset().top - offsetTop;
-        $(window).trigger("scroll");
-      })
-      .trigger("resize");
-  $(window)
-      .scroll(function () {
-        if ($(window).scrollTop() > stickyTop) {
-          timeline.addClass("fixed");
-        } else {
-          timeline.removeClass("fixed");
-        }
-      })
-      .trigger("scroll");
-  items.find("span").click(function () {
-    let li = $(this).parent(),
-        index = li.index(),
-        milestone = milestones.eq(index);
-    if (!li.hasClass("active") && milestone.length) {
-      scrollTarget = index;
-      let scrollTargetTop = milestone.offset().top - 80;
-      $("html, body").animate(
-          {
-            scrollTop: scrollTargetTop
-          },
-          {
-            duration: 400,
-            complete: function complete() {
-              scrollTarget = false;
-            }
-          }
-      );
-    }
-  });
-  $(window)
-      .scroll(function () {
-        let viewLine = $(window).scrollTop() + $(window).height() / 3,
-            active = -1;
-        if (scrollTarget === false) {
-          milestones.each(function () {
-            if ($(this).offset().top - viewLine > 0) {
-              return false;
-            }
-            active++;
-          });
-        } else {
-          active = scrollTarget;
-        }
-        timeline.css(
-            "top",
-            -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + "px"
-        );
-        items.filter(".active").removeClass("active");
-        items.eq(active != -1 ? active : 0).addClass("active");
-      })
-      .trigger("scroll");
-});
-
+import { useEffect } from "astro/client";
 ---
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    let stickyTop = 0,
+        scrollTarget = false;
+
+    const timeline = document.querySelector(".timeline__nav"),
+        items = timeline.querySelectorAll("li"),
+        milestones = document.querySelectorAll(".timeline__section .milestone"),
+        offsetTop = parseInt(getComputedStyle(timeline).top, 10);
+
+    const TIMELINE_VALUES = {
+      start: 190,
+      step: 30
+    };
+
+    const updateStickyTop = () => {
+      timeline.classList.remove("fixed");
+      stickyTop = timeline.getBoundingClientRect().top + window.scrollY - offsetTop;
+      handleScroll();
+    };
+
+    const handleScroll = () => {
+      if (window.scrollY > stickyTop) {
+        timeline.classList.add("fixed");
+      } else {
+        timeline.classList.remove("fixed");
+      }
+
+      let viewLine = window.scrollY + window.innerHeight / 3;
+      let active = -1;
+
+      if (scrollTarget === false) {
+        milestones.forEach((milestone, index) => {
+          if (milestone.getBoundingClientRect().top + window.scrollY - viewLine > 0) {
+            return;
+          }
+          active = index;
+        });
+      } else {
+        active = scrollTarget;
+      }
+
+      timeline.style.top = `${-1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start}px`;
+
+      items.forEach((item, index) => {
+        item.classList.toggle("active", index === (active !== -1 ? active : 0));
+      });
+    };
+
+    const handleItemClick = (event) => {
+      const li = event.currentTarget.parentElement;
+      const index = Array.from(items).indexOf(li);
+      const milestone = milestones[index];
+
+      if (!li.classList.contains("active") && milestone) {
+        scrollTarget = index;
+        const scrollTargetTop = milestone.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top: scrollTargetTop, behavior: "smooth" });
+
+        setTimeout(() => {
+          scrollTarget = false;
+        }, 400);
+      }
+    };
+
+    window.addEventListener("resize", updateStickyTop);
+    window.addEventListener("scroll", handleScroll);
+    items.forEach(item => item.querySelector("span").addEventListener("click", handleItemClick));
+
+    updateStickyTop();
+    handleScroll();
+  });
+</script>
 
 <article class="timeline">
   <nav class="timeline__nav">
