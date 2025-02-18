@@ -2,24 +2,21 @@
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  artist?: CollectionEntry<"artists">;
-  nation?: CollectionEntry<"nations">;
+  artist: CollectionEntry<"artists">;
 };
 
-const { artist, nation } = Astro.props;
-const object = artist ? artist : nation ? nation : "";
-const href = artist ? `/${artist?.id}` : nation ? `/${nation?.id}` : "";
+const { artist } = Astro.props;
 ---
 
 <a
-  href={href}
+  href={`/${artist?.id}`}
   class="artist"
-  style={`--image: url('${object?.data?.image.src}');`}
-  data-stagename={object?.data?.stage_name}
-  data-name={object?.data?.name}
-  data-genre={object?.data?.genre || ""}
+  style={`--image: url('${artist?.data?.image.src}');`}
+  data-stagename={artist?.data?.stage_name}
+  data-name={artist?.data?.name}
+  data-genre={artist?.data?.genre || ""}
   data-astro-prefetch
-  aria-label={object?.data?.name}></a>
+  aria-label={artist?.data?.name}></a>
 
 <style>
   a {

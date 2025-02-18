@@ -51,6 +51,7 @@ const areas = defineCollection({
       src: z.string(),
       alt: z.string(),
     }),
+    temples: z.array(z.string()),
     publishDate: z.date(), // e.g. 2024-09-17
     nation: z.string(),
   }),
@@ -65,6 +66,7 @@ const nations = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
+    areas: z.array(z.string()),
     capital: z.string(),
     continent: z.string(),
   }),

@@ -2,27 +2,27 @@
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  album: CollectionEntry<"albums">;
+  temple: CollectionEntry<"temples">;
 };
 
-const { album } = Astro.props;
+const { temple } = Astro.props;
 ---
 
-<a class=`album-card` href={`/${album?.data?.artist?.id}/albums/${album?.id}`}>
+<a class=`temple-card` href={`/${temple?.data?.area}/temples/${temple?.id}`}>
   <div>
     <img
       class="fade-in"
       loading="lazy"
-      src={album?.data?.image.src}
-      alt={album?.data?.image.alt}
+      src={temple?.data?.image.src}
+      alt={temple?.data?.image.alt}
     />
   </div>
-  <h3>{album?.data?.name}</h3>
-  <p>{new Date(album?.data?.publishDate).getFullYear()}</p>
+  <h3>{temple?.data?.name}</h3>
+  <p>{new Date(temple?.data?.publishDate).getFullYear()}</p>
 </a>
 
 <style>
-  .album-card {
+  .temple-card {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;

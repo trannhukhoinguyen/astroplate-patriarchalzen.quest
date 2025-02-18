@@ -27,10 +27,10 @@ export const getStaticPaths = async () => {
 
   const paths = await Promise.all(
     temples.map(async (temple) => {
-      const area = await getEntry("areas", temple.data.area.id); // Fetch area by ID
+      const area = await getEntry("areas", temple.data.area); // Fetch area by ID
       return {
         params: {
-          area_id: temple.data.area.id, // Include area ID in route parameters
+          area_id: temple.data.area, // Include area ID in route parameters
           temple_id: temple.id, // Include temple ID in route parameters
         },
         props: {
@@ -61,7 +61,6 @@ const { Content } = await render(temple);
     <header class="title-header">
       <h2>
         {temple.data.name}
-        <!--<span class="faded">by {area.data.stage_name}</span>-->
       </h2>
       <div><a class="back" href={`/${area.id}`}>Back to {area.data.name}</a></div>
     </header>
@@ -73,10 +72,6 @@ const { Content } = await render(temple);
         alt={temple.data.image.alt}
       />
       <div class="content">
-        <!--<h3>Track List</h3>-->
-        <ol>
-          <!--{temple.data.tracks.map((track) => <li>{track}</li>)}-->
-        </ol>
         <Content />
       </div>
     </div>

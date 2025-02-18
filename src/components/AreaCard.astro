@@ -2,27 +2,27 @@
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  album: CollectionEntry<"albums">;
+  area: CollectionEntry<"areas">;
 };
 
-const { album } = Astro.props;
+const { area } = Astro.props;
 ---
 
-<a class=`album-card` href={`/${album?.data?.artist?.id}/albums/${album?.id}`}>
+<a class=`area-card` href={`/${area?.data?.nation}/${area?.id}`}>
   <div>
     <img
       class="fade-in"
       loading="lazy"
-      src={album?.data?.image.src}
-      alt={album?.data?.image.alt}
+      src={area?.data?.image.src}
+      alt={area?.data?.image.alt}
     />
   </div>
-  <h3>{album?.data?.name}</h3>
-  <p>{new Date(album?.data?.publishDate).getFullYear()}</p>
+  <h3>{area?.data?.name}</h3>
+  <p>{new Date(area?.data?.publishDate).getFullYear()}</p>
 </a>
 
 <style>
-  .album-card {
+  .area-card {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;

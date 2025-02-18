@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render, getEntry } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import Separator from "../../../components/Separator.astro";
+import TempleGrid from "../../../components/TempleGrid.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all areas from the 'areas' collection
@@ -27,10 +28,10 @@ export const getStaticPaths = async () => {
 
   const paths = await Promise.all(
     areas.map(async (area) => {
-      const nation = await getEntry("nations", area.data.nation.id); // Fetch nation by ID
+      const nation = await getEntry("nations", area.data.nation); // Fetch nation by ID
       return {
         params: {
-          nation_id: area.data.nation.id, // Include nation ID in route parameters
+          nation_id: area.data.nation, // Include nation ID in route parameters
           area_id: area.id, // Include area ID in route parameters
         },
         props: {
@@ -52,6 +53,15 @@ type Props = {
 
 const { nation, area } = Astro.props; // Extract nation and area data from props
 
+// Extract the ID of the current nation
+const area_id = area.id;
+
+// Fetch all areas that belong to the current nation
+const temples = await getCollection(
+    "temples",
+    ({ data }) => data.area === area_id,
+);
+
 // Render the content of the area (e.g., markdown or MDX content)
 const { Content } = await render(area);
 ---
@@ -61,7 +71,6 @@ const { Content } = await render(area);
     <header class="title-header">
       <h2>
         {area.data.name}
-        <!--<span class="faded">by {nation.data.stage_name}</span>-->
       </h2>
       <div><a class="back" href={`/${nation.id}`}>Back to {nation.data.name}</a></div>
     </header>
@@ -73,12 +82,21 @@ const { Content } = await render(area);
         alt={area.data.image.alt}
       />
       <div class="content">
-        <!--<h3>Track List</h3>-->
+        <h3>Temple List</h3>
         <ol>
-          <!--{area.data.tracks.map((track) => <li>{track}</li>)}-->
+          {area.data.temples.map((temple) => <li>{temple}</li>)}
         </ol>
         <Content />
       </div>
+
+      {
+          temples.length > 0 && (
+              <div class="areas">
+                <h3>Temples</h3>
+                <TempleGrid temples={temples} />
+              </div>
+          )
+      }
     </div>
   </section>
 </BaseLayout>

@@ -1,18 +1,18 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import ArtistCard from "./ArtistCard.astro";
+import NationCard from "./NationCard.astro";
 import Tooltip from "./Tooltip.astro";
 
 type Props = {
-  artists?: CollectionEntry<"artists">[];
+  nations: CollectionEntry<"nations">[];
 };
 
-const { artists } = Astro.props;
-const grid = "artists";
+const { nations } = Astro.props;
+const grid = "nations";
 ---
 
 <section class="artist-grid" id="grid" data-grid={grid}>
-  { artists?.map(artist => <ArtistCard artist={artist} />) }
+  { nations?.map(nation => <NationCard nation={nation} />) }
 </section>
 
 <Tooltip grid={grid} />

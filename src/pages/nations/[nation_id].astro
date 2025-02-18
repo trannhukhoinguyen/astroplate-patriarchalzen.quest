@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Separator from "../../components/Separator.astro";
-import AlbumGrid from "../../components/AlbumGrid.astro";
+import AreaGrid from "../../components/AreaGrid.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all nations from the 'nations' collection
@@ -43,24 +43,24 @@ const nextNation = nations[nextNationIndex];
 // Fetch all areas that belong to the current nation
 const areas = await getCollection(
     "areas",
-    ({ data }) => data?.nation?.id === nation_id,
+    ({ data }) => data.nation === nation_id,
 );
 
 // Render the content of the current nation (e.g., markdown or MDX)
 const { Content } = await render(nation);
 ---
 
+
 <BaseLayout title={nation.data.name}>
   <section>
     <header class="title-header">
       <h2>
-        <!--{nation.data.stage_name}-->
         <span class="faded">({nation.data.name})</span>
       </h2>
       <div>
-        <a class="back" href="/public">View all</a>
+        <a class="back" href="/nations">View all</a>
         <span class="faded">/</span>
-        <a href={`/${nextNation.id}`}>Next Country</a>
+        <a href={`/nations/${nextNation.id}`}>Next Nation</a>
       </div>
     </header>
     <Separator />
@@ -71,17 +71,14 @@ const { Content } = await render(nation);
           alt={nation.data.image.alt}
       />
       <div class="content">
-        <!--<h3>Biography</h3>-->
         <Content />
-        <dl>
-          <!--<dt>Genre</dt><dd>{nation.data.genre}</dd>-->
-        </dl>
       </div>
+      {areas}
       {
           areas.length > 0 && (
               <div class="areas">
                 <h3>Areas</h3>
-                <AlbumGrid areas={areas} />
+                <AreaGrid areas={areas} />
               </div>
           )
       }

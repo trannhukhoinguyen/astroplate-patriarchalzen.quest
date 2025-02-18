@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  nation: CollectionEntry<"nations">;
+};
+
+const { nation } = Astro.props;
+---
+
+<a
+  href={`/nations/${nation?.id}`}
+  class="artist"
+  style={`--image: url('${nation?.data?.image.src}');`}
+  data-name={nation?.data?.name}
+  data-astro-prefetch
+  aria-label={nation?.data?.name}></a>
+
+<style>
+  a {
+    background-image: var(--image);
+    background-size: cover;
+    background-position: 50% 0%;
+    aspect-ratio: 0.8;
+  }
+</style>
