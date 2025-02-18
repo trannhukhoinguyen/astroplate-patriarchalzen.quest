@@ -15,7 +15,7 @@ tracks:
   - "Twilight Echoes"
   - "Voices in the Wind"
   - "Final Verse Reprise"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Skyline Rhythms** is Reevo’s reflective sophomore album, capturing the dynamic energy of the city and its contrasts. With poetic storytelling and vibrant beats, this album highlights Reevo’s growth as an artist.

@@ -15,7 +15,7 @@ tracks:
   - "Laser Bounce"
   - "Ultraviolet Swing"
   - "Harmonic Circuit"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Neon Sync** is Frostbyte’s highly anticipated second album, a futuristic blend of electro-funk with vibrant, high-energy beats. Packed with bold rhythms and innovative soundscapes, this album cements Frostbyte as a leading force in the genre.

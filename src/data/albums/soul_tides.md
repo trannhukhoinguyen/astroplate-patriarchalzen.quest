@@ -15,7 +15,7 @@ tracks:
   - "Serenade of the Sea"
   - "Teal Horizons"
   - "Golden Shores"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Soul Tides** is Zariah Bloom’s evocative third album, weaving themes of rhythm and introspection. With flowing melodies and soulful harmonies, this record deepens her impact in the neo-soul genre.

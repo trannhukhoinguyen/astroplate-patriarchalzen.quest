@@ -15,7 +15,7 @@ tracks:
   - "Echoes of the Sun"
   - "Dusk and Decay"
   - "Final Spark"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Solar Flare** is Phoenix Halo’s incendiary debut album, fusing bold guitar riffs with explosive synths and fearless lyrics. This record captures the energy and attitude of neo-glam rock, solidifying Phoenix Halo as a revolutionary voice in modern music.

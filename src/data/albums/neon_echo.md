@@ -15,7 +15,7 @@ tracks:
   - "Pulsewave"
   - "Chromatic Nights"
   - "Infinite Reflection"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Neon Echo** is HARLXN’s dynamic second album, combining futuristic beats with deeply personal themes. Packed with glowing synths and bold lyrics, this album captures the movement and energy of a vibrant electro-pop universe.

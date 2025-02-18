@@ -11,7 +11,7 @@ const { nations } = Astro.props;
 const grid = "nations";
 ---
 
-<section class="artist-grid" id="grid" data-grid={grid}>
+<section class="nation-grid" id="grid" data-grid={grid}>
   { nations?.map(nation => <NationCard nation={nation} />) }
 </section>
 

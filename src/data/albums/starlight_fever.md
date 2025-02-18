@@ -15,7 +15,7 @@ tracks:
   - "Liberation Anthem"
   - "Midnight Glow"
   - "Final Sparkle"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Starlight Fever** is Luna Deluxe’s radiant debut album, blending retro disco vibes with modern pop sensibilities. Bursting with infectious grooves and empowering lyrics, this album lights up dancefloors with its shimmering energy and glamour.

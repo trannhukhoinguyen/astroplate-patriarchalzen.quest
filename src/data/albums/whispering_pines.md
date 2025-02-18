@@ -15,7 +15,7 @@ tracks:
   - "Serene Moments"
   - "Pine Needle Path"
   - "Forever in the Forest"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Whispering Pines** is Nora Wilde’s evocative second album, blending tranquil melodies with introspective lyrics. This album paints vivid scenes of nature and nostalgia, continuing her exploration of alternative folk storytelling.

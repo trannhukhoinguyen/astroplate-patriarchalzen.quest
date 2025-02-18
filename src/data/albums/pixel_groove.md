@@ -15,7 +15,7 @@ tracks:
   - "Midnight Shuffle"
   - "Glitchwave Funk"
   - "City Rhythm"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Pixel Groove** is Frostbyte’s debut album, an electrifying mix of funky rhythms and glitchy electronic beats. Combining the nostalgia of classic funk with cutting-edge production, this album sets the stage for Frostbyte as a pioneer of the electro-funk genre.

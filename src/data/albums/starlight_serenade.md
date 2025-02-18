@@ -15,7 +15,7 @@ tracks:
   - "Midnight Glow"
   - "Shooting Stars"
   - "Echoes of the Moon"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Starlight Serenade** is Hoilin’s magical third album, featuring uplifting J-Pop melodies and dreamy visuals. This album encapsulates the wonder of a starlit sky and the joy of endless possibilities.

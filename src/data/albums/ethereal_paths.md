@@ -15,7 +15,7 @@ tracks:
   - "Breath of Dawn"
   - "Echoes of Serenity"
   - "Final Pathways"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Ethereal Paths** is Gold’s enchanting sophomore album, exploring themes of wonder, serenity, and self-reflection. With its minimalist production and poetic lyrics, the album invites listeners to journey through dreamy, introspective soundscapes.

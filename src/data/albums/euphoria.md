@@ -15,7 +15,7 @@ tracks:
   - "Fever Dream"
   - "Shimmering Nights"
   - "Nova Rising"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Euphoria** is Isla Nova’s breakout debut album, bursting with retro synths and bold energy. With infectious beats and empowering lyrics, this record captures the thrill of self-discovery and the rush of living unapologetically.

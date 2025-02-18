@@ -15,7 +15,7 @@ tracks:
   - "Starry-eyed Summer"
   - "Kaleidoscope Love"
   - "Morning Glow"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Sweet Reverie** is Hoilin’s delightful debut album, filled with catchy J-Pop melodies and whimsical charm. This album brings joy and positivity, capturing the essence of fleeting moments of beauty and playfulness.

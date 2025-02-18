@@ -15,7 +15,7 @@ tracks:
   - "Rapture in Rhythm"
   - "Electric Embrace"
   - "Satin Goodbye"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Satin Dreams** is the second album by Luna Deluxe, an intimate exploration of disco-pop's sensual and soulful side. The album balances infectious grooves with reflective moments, capturing themes of passion, fantasy, and bittersweet goodbyes. It solidifies Luna’s place as a defining voice in contemporary disco.

@@ -15,7 +15,7 @@ tracks:
   - "Celestial Tides"
   - "Pulse of Polaris"
   - "Crescendo"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Ethereal Currents** is the debut album by experimental R&B artist Amarié. The album blends lush electronic textures with soulful melodies, creating a sonic journey that explores themes of empowerment, identity, and vulnerability. Each track is designed to immerse the listener in a deeply emotional and atmospheric experience, where every beat and note is woven with thought-provoking, introspective lyrics.

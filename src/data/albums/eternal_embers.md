@@ -15,7 +15,7 @@ tracks:
   - "Cinder Song"
   - "Hearts Aflame"
   - "Burning Bright"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Eternal Embers** is Phoenix Halo’s electrifying second album, blending fiery intensity with the glamour of neo-glam rock. This album solidifies Phoenix Halo’s status as a trailblazer, igniting a new era of bold musical expression.

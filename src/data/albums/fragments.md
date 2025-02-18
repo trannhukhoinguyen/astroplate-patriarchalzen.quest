@@ -15,7 +15,7 @@ tracks:
   - "Of Roots and Wings"
   - "The Mirror's Edge"
   - "Lost Horizon"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Fragments** is Revelyn’s profound sophomore album, weaving themes of introspection and resilience. With sharp melodies and poignant lyrics, this record delves into the broken and the beautiful.

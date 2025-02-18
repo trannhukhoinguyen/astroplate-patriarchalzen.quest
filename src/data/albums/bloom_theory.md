@@ -15,7 +15,7 @@ tracks:
   - "Blossom Horizon"
   - "Nurtured Soul"
   - "Final Bloom"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Bloom Theory** is Zariah Bloom’s captivating debut album, intertwining soulful melodies with themes of love and growth. With lush instrumentation and heartfelt lyrics, this record redefines the essence of neo-soul.

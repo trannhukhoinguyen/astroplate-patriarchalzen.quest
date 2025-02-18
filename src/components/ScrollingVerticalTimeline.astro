@@ -1,0 +1,153 @@
+---
+$(() => {
+  let stickyTop = 0,
+      scrollTarget = false;
+  let timeline = $(".timeline__nav"),
+      items = $("li", timeline),
+      milestones = $(".timeline__section .milestone"),
+      offsetTop = parseInt(timeline.css("top"));
+  const TIMELINE_VALUES = {
+    start: 190,
+    step: 30
+  };
+  $(window)
+      .resize(function () {
+        timeline.removeClass("fixed");
+        stickyTop = timeline.offset().top - offsetTop;
+        $(window).trigger("scroll");
+      })
+      .trigger("resize");
+  $(window)
+      .scroll(function () {
+        if ($(window).scrollTop() > stickyTop) {
+          timeline.addClass("fixed");
+        } else {
+          timeline.removeClass("fixed");
+        }
+      })
+      .trigger("scroll");
+  items.find("span").click(function () {
+    let li = $(this).parent(),
+        index = li.index(),
+        milestone = milestones.eq(index);
+    if (!li.hasClass("active") && milestone.length) {
+      scrollTarget = index;
+      let scrollTargetTop = milestone.offset().top - 80;
+      $("html, body").animate(
+          {
+            scrollTop: scrollTargetTop
+          },
+          {
+            duration: 400,
+            complete: function complete() {
+              scrollTarget = false;
+            }
+          }
+      );
+    }
+  });
+  $(window)
+      .scroll(function () {
+        let viewLine = $(window).scrollTop() + $(window).height() / 3,
+            active = -1;
+        if (scrollTarget === false) {
+          milestones.each(function () {
+            if ($(this).offset().top - viewLine > 0) {
+              return false;
+            }
+            active++;
+          });
+        } else {
+          active = scrollTarget;
+        }
+        timeline.css(
+            "top",
+            -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + "px"
+        );
+        items.filter(".active").removeClass("active");
+        items.eq(active != -1 ? active : 0).addClass("active");
+      })
+      .trigger("scroll");
+});
+
+---
+
+<article class="timeline">
+  <nav class="timeline__nav">
+    <ul>
+      <li><span>1993</span></li>
+      <li><span>1994</span></li>
+      <li><span>1995</span></li>
+      <li><span>1996</span></li>
+      <li><span>1997</span></li>
+    </ul>
+  </nav>
+  <section class="timeline__section">
+    <div class="wrapper">
+      <h2 class="milestone">1993</h2>
+      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+      <h2 class="milestone">1994</h2>
+      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+      <h2 class="milestone">1995</h2>
+      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+      <h2 class="milestone">1996</h2>
+      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+      <h2 class="milestone">1997</h2>
+      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+    </div>
+  </section>
+</article>
+
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+  html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: "Exo 2", sans-serif;
+    line-height: 1.5;
+  }
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 16.66% 50px;
+    width: 100%;
+  }
+  article {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .timeline__nav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    transition: top 0.3s ease-out;
+  }
+  .timeline__nav ul {
+    list-style: none;
+    list-style-position: inside;
+    margin: 15px 0;
+  }
+  .timeline__nav ul li {
+    margin: 15px 0;
+    padding-left: 0;
+    list-style-type: none;
+    color: #bfc1c3;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .timeline__nav ul li.active {
+    font-weight: bold;
+    color: #f94125;
+    border-bottom: 1px dotted transparent;
+    transform: scale(1.2);
+  }
+  .timeline__nav ul li:hover {
+    color: #000;
+  }
+
+</style>

@@ -15,7 +15,7 @@ tracks:
   - "Stillness in Motion"
   - "Window to the Past"
   - "Final Reverie"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Fleeting Echoes** is Gold’s introspective debut album, weaving themes of love, nostalgia, and self-discovery. With dreamy production and delicate vocals, the album captures fleeting moments of beauty and emotion, establishing Gold as a compelling voice in indie pop.

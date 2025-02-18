@@ -15,7 +15,7 @@ tracks:
   - "Night Strobe"
   - "Friction"
   - "Burn Bright"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Electric Velvet** is HARLXN’s explosive debut album, packed with high-energy beats and sharp, rebellious lyrics. With addictive hooks and a bold sound, this album is a celebration of individuality and empowerment, cementing HARLXN as a rising star in electro-pop.

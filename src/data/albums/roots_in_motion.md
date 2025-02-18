@@ -15,7 +15,7 @@ tracks:
   - "Echoes of Accra"
   - "Diaspora Groove"
   - "Motion Reprise"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Roots in Motion** is K-Adom’s electrifying debut album, blending Afrobeat rhythms with modern fusion elements. With bold themes of heritage and unity, this record sets the tone for a new wave in Afrobeat Fusion.

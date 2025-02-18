@@ -15,7 +15,7 @@ tracks:
   - "Sakura Glow"
   - "Gentle Breeze"
   - "Nightfall Whisper"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Twilight Bloom** is Hoilin’s serene sophomore album, blending romantic J-Pop melodies with elegant imagery. This album captures the magic of twilight, creating a tranquil and heartfelt listening experience.

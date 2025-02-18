@@ -15,7 +15,7 @@ tracks:
   - "Transient Glow"
   - "Celestial Drift"
   - "Ephemeral Light"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Whispering Glades** is Ivy Veil’s enchanting debut album, blending ambient synths and organic textures into ethereal electronica. This album invites listeners into a world of solitude, transformation, and hope, all through Ivy Veil’s hypnotic voice and lush soundscapes.

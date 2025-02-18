@@ -15,7 +15,7 @@ tracks:
   - "Harmonic Veil"
   - "Twilight Serenade"
   - "Echoes in the Eclipse"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Solstice Noir** is the debut album by Eclipse Aurelian, a cinematic exploration of ambient jazz. Combining sultry brass with ethereal soundscapes, the album captures the mystery and grandeur of a golden eclipse, setting the tone for his sophisticated and introspective artistry.

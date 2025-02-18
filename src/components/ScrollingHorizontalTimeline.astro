@@ -1,0 +1,245 @@
+---
+document.addEventListener('wheel', function(event) {
+  event.preventDefault();
+
+  document.querySelector('.horizontal-window').scrollLeft += event.deltaY;
+});
+
+---
+
+<div class="horizontal-window">
+  <div class="intro">
+    <div class="intro-content">
+      <h2>Introduction to web development</h2>
+      <p>This timeline shows the most important events in the history of web development and the programming languages used.</p>
+    </div>
+  </div>
+  <div class="timelineContainer">
+    <div class="line"></div>
+    <div class="card">
+      <div class="upper card1">
+        <span class="year">1991</span>
+        <span class="code-introduction">&#x3c; /HTML &#x3e;</span>
+      </div>
+      <div class="lower">
+        <p>HTML (HyperText Markup Language) was invented by Tim Berners-Lee and forms the basis of the World Wide Web.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card2">
+        <span class="year">1995</span>
+        <span class="code-introduction">{JavaScript}</span>
+      </div>
+      <div class="lower">
+        <p>JavaScript was developed by Brendan Eich and is the most important language for interactive websites.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card3">
+        <span class="year">1996</span>
+        <span class="code-introduction">{CSS}</span>
+      </div>
+      <div class="lower">
+        <p>CSS (Cascading Style Sheets) was published to design the presentation and layout of websites.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card4">
+        <span class="year">1998</span>
+        <span class="code-introduction">&#x3c;?php?&#x3e;</span>
+      </div>
+      <div class="lower">
+        <p>PHP (Hypertext Preprocessor) became popular as a server-side scripting language for web development.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card5">
+        <span class="year">2003</span>
+        <span class="code-introduction">{jQuery}</span>
+      </div>
+      <div class="lower">
+        <p>jQuery, a JavaScript library, was published to simplify the writing of JavaScript.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card6">
+        <span class="year">2008</span>
+        <span class="code-introduction">&#x3c; /HTML5 &#x3e;</span>
+      </div>
+      <div class="lower">
+        <p>HTML5 was released and brought numerous new functions and APIs for modern web applications.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card7">
+        <span class="year">2010</span>
+        <span class="code-introduction">{Node.js}</span>
+      </div>
+      <div class="lower">
+        <p>Node.js made it possible to execute JavaScript on the server, which revolutionized web development.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="upper card8">
+        <span class="year">2013</span>
+        <span class="code-introduction">{React.js}</span>
+      </div>
+      <div class="lower">
+        <p>React, a JavaScript library for building user interfaces, was released by Facebook.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: beige;
+    overflow: hidden;
+    cursor: default;
+  }
+
+  .horizontal-window {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .intro {
+    width: 100vw;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .intro-content {
+    text-align: center;
+    flex-shrink: 0;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+  }
+
+  .line {
+    position: absolute;
+    width: calc(100% - 150px);
+    height: 2px;
+    background-color: #ccc;
+    top: 50%;
+    z-index: 1;
+  }
+
+  .timelineContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+    width: calc(auto +100px);
+    gap: 50px;
+  }
+
+  .card {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  .card:hover .upper,
+  .card:hover .lower {
+    transform: translateY(0);
+  }
+
+  .upper {
+    height: 200px;
+    width: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    transform: translateY(100px);
+    transition: 0.3s ease-in-out;
+  }
+
+  .year {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .lower {
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+    transition: 0.3s ease-in-out;
+    color: black;
+    z-index: 2;
+  }
+
+  .lower p {
+    text-align: center;
+  }
+
+  .card1 {
+    background-color: #FF6961;
+  }
+
+  .card2 {
+    background-color: #A8E4A0;
+  }
+
+  .card3 {
+    background-color: #8bd7f6;
+  }
+
+  .card4 {
+    background-color: #9db4c4;
+  }
+
+  .card5 {
+    background-color: #98e8cd;
+  }
+
+  .card6 {
+    background-color: #f98f93;
+  }
+
+  .card7 {
+    background-color: #90eae0;
+  }
+
+  .card8 {
+    background-color: #fcdf94;
+  }
+</style>

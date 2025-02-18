@@ -15,7 +15,7 @@ tracks:
   - "Crimson Serenade"
   - "Eclipse of the Crown"
   - "Final Spark"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Rebellion** is Stardust Royale’s electrifying debut album, capturing the energy and extravagance of glam rock. With soaring anthems and powerful lyrics, this album celebrates individuality and freedom in its most vibrant form.

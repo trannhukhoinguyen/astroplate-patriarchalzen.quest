@@ -10,7 +10,7 @@ const { nation } = Astro.props;
 
 <a
   href={`/nations/${nation?.id}`}
-  class="artist"
+  class="nation"
   style={`--image: url('${nation?.data?.image.src}');`}
   data-name={nation?.data?.name}
   data-astro-prefetch

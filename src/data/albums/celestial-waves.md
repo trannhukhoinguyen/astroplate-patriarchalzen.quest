@@ -15,7 +15,7 @@ tracks:
   - "Aurora's Lament"
   - "Serene Radiance"
   - "Infinite Horizon"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Celestial Waves** is the sophomore album by experimental R&B artist Amarié. Following the success of her debut, this album delves into themes of serenity, introspection, and emotional depth. Each track is a harmonious blend of soulful melodies and atmospheric soundscapes, creating an immersive listening exp

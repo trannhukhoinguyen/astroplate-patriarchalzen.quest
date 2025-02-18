@@ -15,7 +15,7 @@ tracks:
   - "Less is More"
   - "Resonance"
   - "Void"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Death** is Z.T.’s raw and introspective debut album, combining minimalist beats with poignant lyrics. This record strips hip-hop down to its core, focusing on the essence of storytelling and sound.

@@ -15,7 +15,7 @@ tracks:
   - "Luminous Lagaan"
   - "Bhangra Beatdown"
   - "Trail of Echoes"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Spice Trail Beats** is the third album by DJ Bolly, celebrating the rich diversity of Indian rhythms and melodies fused with global electronic beats. With tracks like *Tabla Tango* and *Neon Spice*, this album is a vibrant, high-energy exploration of sound that bridges cultures and generations.

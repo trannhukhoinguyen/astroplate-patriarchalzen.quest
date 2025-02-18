@@ -15,7 +15,7 @@ tracks:
   - "Binary Whisper"
   - "Dusk and Data"
   - "Final Transmission"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Shadow Circuit** is VXN’s electrifying debut album, weaving cinematic soundscapes with pulsating electronic rhythms. This record pushes the boundaries of electronic music with its futuristic and immersive energy.

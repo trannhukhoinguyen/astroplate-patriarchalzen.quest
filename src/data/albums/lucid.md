@@ -15,7 +15,7 @@ tracks:
   - "Dreamcatcher"
   - "Nocturnal Visions"
   - "Endless Glow"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Lucid** is Wale’s introspective sophomore album, blending serene soundscapes with heartfelt lyrics. This record expands on his dream pop style, drawing listeners into its radiant and tranquil world.

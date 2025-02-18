@@ -5,7 +5,7 @@ image:
   alt: ""
 publishDate: 2025-02-18
 nation: "vietnam"
-area: "central-vietnam"
+area: "central_vietnam"
 address: "123 abc"
 ---
 

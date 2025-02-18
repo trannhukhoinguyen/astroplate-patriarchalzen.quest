@@ -15,7 +15,7 @@ tracks:
   - "Digital Skies"
   - "Hologram Heart"
   - "Chrono Pulse"
-artist: "yongming-yanshou"
+artist: "yongming_yanshou"
 ---
 
 **Neon Dreams** is the debut album by synthwave artist Echo Lume. It combines retro-futuristic soundscapes with modern production techniques to create a cinematic auditory journey. Each track is crafted to immerse the listener in a vibrant, neon-lit world, where nostalgia and innovation collide.
