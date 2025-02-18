@@ -37,7 +37,7 @@ const temples = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
-    country: z.string(),
+    nation: z.string(),
     area: z.string(),
     address: z.string(),
   }),
@@ -52,12 +52,12 @@ const areas = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
-    country: z.string(),
+    nation: z.string(),
   }),
 });
 
-const countries = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/countries" }),
+const nations = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/nations" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -65,7 +65,9 @@ const countries = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
+    capital: z.string(),
+    continent: z.string(),
   }),
 });
 // Export all collections
-export const collections = {artists, albums, temples, areas, countries};
+export const collections = {artists, albums, temples, areas, nations};

@@ -50,31 +50,31 @@ const albums = await getCollection(
 const { Content } = await render(artist);
 ---
 
-<BaseLayout title={artist.data.name}>
+<BaseLayout title={artist?.data?.name}>
   <section>
     <header class="title-header">
       <h2>
-        {artist.data.stage_name}
-        <span class="faded">({artist.data.name})</span>
+        {artist?.data?.stage_name}
+        <span class="faded">({artist?.data?.name})</span>
       </h2>
       <div>
         <a class="back" href="/public">View all</a>
         <span class="faded">/</span>
-        <a href={`/${nextArtist.id}`}>Next Zen Patriarch</a>
+        <a href={`/${nextArtist?.id}`}>Next Zen Patriarch</a>
       </div>
     </header>
     <Separator />
     <div class="content-wrap">
       <img
         class="image fade-in"
-        src={artist.data.image.src}
-        alt={artist.data.image.alt}
+        src={artist?.data?.image.src}
+        alt={artist?.data?.image.alt}
       />
       <div class="content">
         <h3>Biography</h3>
         <Content />
         <dl>
-          <dt>Genre</dt><dd>{artist.data.genre}</dd>
+          <dt>Genre</dt><dd>{artist?.data?.genre}</dd>
         </dl>
       </div>
       {

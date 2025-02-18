@@ -5,10 +5,12 @@ import Search from "../components/Search.astro";
 import Cross from "../assets/images/cross.svg";
 
 type Props = {
-  artistsTotal: number;
+  artistsTotal?: number;
+  nationsTotal?: number;
 };
 
-const { artistsTotal } = Astro.props;
+const { artistsTotal, nationsTotal } = Astro.props;
+const content = artistsTotal ? artistsTotal : nationsTotal ? nationsTotal : "";
 ---
 
 <header class="title-header title-header--initial">
@@ -26,7 +28,7 @@ const { artistsTotal } = Astro.props;
     </div>
   </div>
   <span><TextSlider content="Zen Temples" /></span>
-  <span><TextSlider content={artistsTotal} /></span>
+  <span><TextSlider content={content} /></span>
 </header>
 
 <Separator />

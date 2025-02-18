@@ -2,27 +2,38 @@
 import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  album: CollectionEntry<"albums">;
+  album?: CollectionEntry<"albums">;
+  area?: CollectionEntry<"areas">[];
+  temple?: CollectionEntry<"temples">[];
 };
 
-const { album } = Astro.props;
+const { album, area, temple } = Astro.props;
+const info = album ? album : area ? area : temple ? temple : "";
+const infos = album ? 'albums' : area ? 'areas' : temple ? 'temples' : "";
+const href = album
+    ? `/${info?.data?.artist?.id}/${infos}/${info?.id}`
+    : area
+        ? `/${info?.data?.nation?.id}/${infos}/${info?.id}`
+        : temple
+            ? `/${info?.data?.area?.id}/${infos}/${info?.id}`
+            : "";
 ---
 
-<a class="album-card" href={`/${album.data.artist.id}/albums/${album.id}`}>
+<a class=`${info}-card info-card` href={href}>
   <div>
     <img
       class="fade-in"
       loading="lazy"
-      src={album.data.image.src}
-      alt={album.data.image.alt}
+      src={info?.data?.image.src}
+      alt={info?.data?.image.alt}
     />
   </div>
-  <h3>{album.data.name}</h3>
-  <p>{new Date(album.data.publishDate).getFullYear()}</p>
+  <h3>{info?.data?.name}</h3>
+  <p>{new Date(info?.data?.publishDate).getFullYear()}</p>
 </a>
 
 <style>
-  .album-card {
+  .info-card {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;

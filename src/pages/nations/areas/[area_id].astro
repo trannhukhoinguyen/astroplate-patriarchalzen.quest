@@ -1,0 +1,84 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render, getEntry } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Separator from "../../../components/Separator.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all areas from the 'areas' collection
+  const areas = await getCollection("areas");
+
+  /*
+  // Filter areas to ensure each has valid nation data, then map to generate paths
+  const paths = areas.filter(area => area.data.nation && area.data.nation.id) // Ensure the area has a valid nation reference
+  .map((area) => {
+    return {
+      params: {
+        nation_id: area.data.nation.id, // Include nation ID in the route parameters
+        area_id: area.id,             // Include area ID in the route parameters
+      },
+      props: {
+        nation: area.data.nation,      // Pass the nation data as props
+        area                           // Pass the area data as props
+      },
+    };
+  });
+  */
+
+  const paths = await Promise.all(
+    areas.map(async (area) => {
+      const nation = await getEntry("nations", area.data.nation.id); // Fetch nation by ID
+      return {
+        params: {
+          nation_id: area.data.nation.id, // Include nation ID in route parameters
+          area_id: area.id, // Include area ID in route parameters
+        },
+        props: {
+          nation, // Pass full nation data as props
+          area, // Pass area data as props
+        },
+      };
+    }),
+  );
+
+  // Return the generated paths for static page generation
+  return paths;
+};
+
+type Props = {
+  nation: CollectionEntry<"nations">; // The nation associated with the area
+  area: CollectionEntry<"areas">; // The area being rendered
+};
+
+const { nation, area } = Astro.props; // Extract nation and area data from props
+
+// Render the content of the area (e.g., markdown or MDX content)
+const { Content } = await render(area);
+---
+
+<BaseLayout title={area.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {area.data.name}
+        <!--<span class="faded">by {nation.data.stage_name}</span>-->
+      </h2>
+      <div><a class="back" href={`/${nation.id}`}>Back to {nation.data.name}</a></div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={area.data.image.src}
+        alt={area.data.image.alt}
+      />
+      <div class="content">
+        <!--<h3>Track List</h3>-->
+        <ol>
+          <!--{area.data.tracks.map((track) => <li>{track}</li>)}-->
+        </ol>
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

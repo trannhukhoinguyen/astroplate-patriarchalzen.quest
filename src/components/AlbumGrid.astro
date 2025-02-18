@@ -3,14 +3,24 @@ import type { CollectionEntry } from "astro:content";
 import AlbumCard from "./AlbumCard.astro";
 
 type Props = {
-  albums: CollectionEntry<"albums">[];
+  albums?: CollectionEntry<"albums">[];
+  areas?: CollectionEntry<"areas">[];
+  temples?: CollectionEntry<"temples">[];
 };
 
-const { albums } = Astro.props;
+const { albums, areas, temples } = Astro.props;
 ---
 
 <section>
-  {albums.map((album) => <AlbumCard album={album} />)}
+  {
+      albums
+          ? albums.map(album => <AlbumCard album={album} />)
+          : areas
+              ? areas.map(area => <AlbumCard area={area} />)
+              : temples
+                  ? temples.map(temple => <AlbumCard temple={temple} />)
+                  : ""
+  }
 </section>
 
 <style>

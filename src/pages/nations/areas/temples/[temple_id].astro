@@ -1,0 +1,84 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render, getEntry } from "astro:content";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import Separator from "../../../../components/Separator.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all temples from the 'temples' collection
+  const temples = await getCollection("temples");
+
+  /*
+  // Filter temples to ensure each has valid area data, then map to generate paths
+  const paths = temples.filter(temple => temple.data.area && temple.data.area.id) // Ensure the temple has a valid area reference
+  .map((temple) => {
+    return {
+      params: {
+        area_id: temple.data.area.id, // Include area ID in the route parameters
+        temple_id: temple.id,             // Include temple ID in the route parameters
+      },
+      props: {
+        area: temple.data.area,      // Pass the area data as props
+        temple                           // Pass the temple data as props
+      },
+    };
+  });
+  */
+
+  const paths = await Promise.all(
+    temples.map(async (temple) => {
+      const area = await getEntry("areas", temple.data.area.id); // Fetch area by ID
+      return {
+        params: {
+          area_id: temple.data.area.id, // Include area ID in route parameters
+          temple_id: temple.id, // Include temple ID in route parameters
+        },
+        props: {
+          area, // Pass full area data as props
+          temple, // Pass temple data as props
+        },
+      };
+    }),
+  );
+
+  // Return the generated paths for static page generation
+  return paths;
+};
+
+type Props = {
+  area: CollectionEntry<"areas">; // The area associated with the temple
+  temple: CollectionEntry<"temples">; // The temple being rendered
+};
+
+const { area, temple } = Astro.props; // Extract area and temple data from props
+
+// Render the content of the temple (e.g., markdown or MDX content)
+const { Content } = await render(temple);
+---
+
+<BaseLayout title={temple.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {temple.data.name}
+        <!--<span class="faded">by {area.data.stage_name}</span>-->
+      </h2>
+      <div><a class="back" href={`/${area.id}`}>Back to {area.data.name}</a></div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={temple.data.image.src}
+        alt={temple.data.image.alt}
+      />
+      <div class="content">
+        <!--<h3>Track List</h3>-->
+        <ol>
+          <!--{temple.data.tracks.map((track) => <li>{track}</li>)}-->
+        </ol>
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

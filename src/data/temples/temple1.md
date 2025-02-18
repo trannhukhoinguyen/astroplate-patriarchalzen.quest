@@ -4,7 +4,7 @@ image:
   src: "/images/temples/temple.webp"
   alt: "An"
 publishDate: 2025-02-17
-country: "yongming-yanshou"
+nation: "yongming-yanshou"
 area: "yongming-yanshou"
 address: "yongming-yanshou"
 ---

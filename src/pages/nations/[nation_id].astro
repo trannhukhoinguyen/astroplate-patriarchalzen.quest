@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Separator from "../../components/Separator.astro";
+import AlbumGrid from "../../components/AlbumGrid.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all nations from the 'nations' collection
+  const nations = await getCollection("nations");
+
+  // Map over the nations to generate paths for each nation's page
+  const paths = nations.map((nation) => {
+    return {
+      params: { nation_id: nation.id }, // URL parameter for the nation's ID
+      props: { nations, nation }, // Pass the full nation and all nations as props
+    };
+  });
+
+  // Return the generated paths to Astro for static page generation
+  return paths;
+};
+
+type Props = {
+  nations: CollectionEntry<"nations">[]; // Array of all nations in the collection
+  nation: CollectionEntry<"nations">; // Current nation being rendered
+};
+
+const { nations, nation } = Astro.props; // Extract the nations list and current nation from the props
+
+// Extract the ID of the current nation
+const nation_id = nation.id;
+
+// Find the index of the current nation in the nations array
+const currentNationIndex = nations.findIndex((a) => a.id === nation_id);
+
+// Calculate the index of the "next" nation in the array (wrap around if at the last nation)
+const nextNationIndex = (currentNationIndex + 1) % nations.length;
+
+// Get the "next" nation based on the calculated index
+const nextNation = nations[nextNationIndex];
+
+// Fetch all areas that belong to the current nation
+const areas = await getCollection(
+    "areas",
+    ({ data }) => data?.nation?.id === nation_id,
+);
+
+// Render the content of the current nation (e.g., markdown or MDX)
+const { Content } = await render(nation);
+---
+
+<BaseLayout title={nation.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        <!--{nation.data.stage_name}-->
+        <span class="faded">({nation.data.name})</span>
+      </h2>
+      <div>
+        <a class="back" href="/public">View all</a>
+        <span class="faded">/</span>
+        <a href={`/${nextNation.id}`}>Next Country</a>
+      </div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+          class="image fade-in"
+          src={nation.data.image.src}
+          alt={nation.data.image.alt}
+      />
+      <div class="content">
+        <!--<h3>Biography</h3>-->
+        <Content />
+        <dl>
+          <!--<dt>Genre</dt><dd>{nation.data.genre}</dd>-->
+        </dl>
+      </div>
+      {
+          areas.length > 0 && (
+              <div class="areas">
+                <h3>Areas</h3>
+                <AlbumGrid areas={areas} />
+              </div>
+          )
+      }
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .content-wrap {
+    grid-template-areas: "img" "content" "areas";
+    grid-template-columns: 100%;
+    @media screen and (min-width: 44em) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "img img" "content areas";
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: 30vw 1fr 170px;
+      grid-template-areas: "img content areas";
+    }
+  }
+  .areas {
+    grid-area: areas;
+  }
+  .content p:last-child {
+    margin-top: 2.5rem;
+    display: flex;
+  }
+</style>
