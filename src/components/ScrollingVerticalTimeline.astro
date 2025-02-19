@@ -1,5 +1,7 @@
 ---
 import { useEffect } from "astro/client";
+import {getCollection, render} from "astro:content";
+const years = await getCollection("years");
 ---
 
 <script is:inline>
@@ -79,25 +81,19 @@ import { useEffect } from "astro/client";
 <article class="timeline">
   <nav class="timeline__nav">
     <ul>
-      <li><span>1993</span></li>
-      <li><span>1994</span></li>
-      <li><span>1995</span></li>
-      <li><span>1996</span></li>
-      <li><span>1997</span></li>
+      { years.map(year => <li><span>{year.data.title}</span></li>) }
     </ul>
   </nav>
   <section class="timeline__section">
     <div class="wrapper">
-      <h2 class="milestone">1993</h2>
-      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
-      <h2 class="milestone">1994</h2>
-      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
-      <h2 class="milestone">1995</h2>
-      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
-      <h2 class="milestone">1996</h2>
-      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
-      <h2 class="milestone">1997</h2>
-      <p>Something Something Somethingg more and more and more more and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and moremore and more and more.</p>
+      {
+        years.map(year => {
+            <h2 class="milestone">{year.data.subTitle}</h2>
+            <p>{
+              year.data.content?.map(item => <img src={item} />)
+            }</p>
+        })
+      }
     </div>
   </section>
 </article>
@@ -153,5 +149,4 @@ import { useEffect } from "astro/client";
   .timeline__nav ul li:hover {
     color: #000;
   }
-
 </style>

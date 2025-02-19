@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+import MasterCard from "./MasterCard.astro";
+import Tooltip from "./Tooltip.astro";
+
+type Props = {
+  masters?: CollectionEntry<"masters">[];
+};
+
+const { masters } = Astro.props;
+const grid = "masters";
+---
+
+<section class="master-grid" id="grid" data-grid={grid}>
+  { masters?.map(master => <MasterCard master={master} />) }
+</section>
+
+<Tooltip grid={grid} />
+
+<style>
+  section {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    margin: 1rem 0 10rem;
+    min-height: 400px;
+    @media screen and (min-width: 30em) {
+      grid-template-columns: repeat(4, calc(100% / 4));
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: repeat(7, calc(100% / 7));
+    }
+  }
+</style>

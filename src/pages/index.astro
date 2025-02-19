@@ -1,14 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ArtistGrid from "../components/ArtistGrid.astro";
-import ArtistGridHeader from "../components/ArtistGridHeader.astro";
+import MasterGrid from "../components/MasterGrid.astro";
+import MasterGridHeader from "../components/MasterGridHeader.astro";
 import Preloader from "../components/Preloader.astro";
-import ScrollingHorizontalTimeline from "../components/ScrollingHorizontalTimeline.astro";
-import ScrollingVerticalTimeline from "../components/ScrollingVerticalTimeline.astro";
+import MonthlyVerticalTimeline from "../components/MonthlyVerticalTimeline.astro";
 
-const allArtists = await getCollection("artists");
-const artistsTotal = allArtists.length;
+const allMasters = await getCollection("masters");
+const mastersTotal = allMasters.length;
 const title = "Patriarchal Zen - All Zen Patriarchs";
 ---
 
@@ -19,13 +18,11 @@ const title = "Patriarchal Zen - All Zen Patriarchs";
   -->
   <!--<Preloader />-->
 
-  <ArtistGridHeader artistsTotal={artistsTotal} />
+  <MasterGridHeader mastersTotal={mastersTotal} />
 
-  <!--<ArtistGrid artists={allArtists} />-->
+  <!--<MasterGrid masters={allMasters} />-->
 
-  <!--<ScrollingHorizontalTimeline />-->
-
-  <ScrollingVerticalTimeline />
+  <MonthlyVerticalTimeline />
 
 </BaseLayout>
 <script src="../scripts/index.js"></script>

@@ -1,12 +1,12 @@
 import { defineCollection, reference, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const artists = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/artists" }),
+const masters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/masters" }),
   schema: z.object({
     name: z.string(),
-    stage_name: z.string(),
-    genre: z.string(),
+    dynasty: z.string(),
+    sect: z.string(),
     image: z.object({
       src: z.string(),
       alt: z.string(),
@@ -14,8 +14,8 @@ const artists = defineCollection({
   }),
 });
 
-const albums = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/albums" }),
+const records = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/records" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -23,8 +23,8 @@ const albums = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
-    tracks: z.array(z.string()),
-    artist: reference('artists'),
+    chapters: z.array(z.string()),
+    master: reference('masters'),
   }),
 });
 
@@ -71,5 +71,13 @@ const nations = defineCollection({
     continent: z.string(),
   }),
 });
+
+const years = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: "./src/data/years" }),
+  schema: z.object({
+    title: z.string(),
+    content: z.array(z.array(z.string()),),
+  }),
+});
 // Export all collections
-export const collections = {artists, albums, temples, areas, nations};
+export const collections = {masters, records, temples, areas, nations, years};

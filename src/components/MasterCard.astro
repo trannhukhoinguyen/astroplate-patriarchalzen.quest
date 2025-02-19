@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  master: CollectionEntry<"masters">;
+};
+
+const { master } = Astro.props;
+---
+
+<a
+  href={`/${master?.id}`}
+  class="master"
+  style={`--image: url('${master?.data?.image.src}');`}
+  data-stagename={master?.data?.dynasty}
+  data-name={master?.data?.name}
+  data-sect={master?.data?.sect || ""}
+  data-astro-prefetch
+  aria-label={master?.data?.name}></a>
+
+<style>
+  a {
+    background-image: var(--image);
+    background-size: cover;
+    background-position: 50% 0%;
+    aspect-ratio: 0.8;
+  }
+</style>

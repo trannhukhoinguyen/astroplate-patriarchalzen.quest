@@ -3,8 +3,8 @@ import gsap from 'gsap';
 class Tooltip {
   constructor(gridEl) {
     this.grid = gridEl;
-    this.artists = this.grid.children;
-    if (this.artists.length === 0) return;
+    this.masters = this.grid.children;
+    if (this.masters.length === 0) return;
     this.tooltip = document.querySelector('.tooltip');
     this.arrow = this.tooltip.querySelector('.tooltip__row--ra svg');
     this.OFFSET_X = 20; // Distance from cursor to left edge of tooltip
@@ -29,12 +29,12 @@ class Tooltip {
     this.rowAnimationDirections = {
       stagename: { in: { yPercent: -100 }, out: { yPercent: -100 } }, // In and out to/from the top
       name: { in: { yPercent: 100 }, out: { yPercent: 100 } },        // In and out to/from the bottom
-      genre: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
+      sect: { in: { yPercent: 100 }, out: { yPercent: 100 } },       // In and out to/from the bottom
       arrow: { in: { yPercent: -100 }, out: { yPercent: -100 } },     // In and out to/from the top
     };
-    this.hoverTarget = null; // Tracks the currently hovered `.artist`
-    this.isTooltipVisible = false; // Tracks tooltip visibility
-    this.scaleDownTimeout; // Tracks the scale-down timeout
+    this.hoverTarget = null; // chapters the currently hovered `.master`
+    this.isTooltipVisible = false; // chapters tooltip visibility
+    this.scaleDownTimeout; // chapters the scale-down timeout
     this.scaleDownTimeline; // Stores the tooltip scale-down timeline
     this.mouseLeaveTimeout; // Timeout for mouseleave handling
     this.rowTimelines = {}; // Stores timelines for each row
@@ -57,9 +57,9 @@ class Tooltip {
     this.grid.addEventListener('mousemove', this.handleMouseMove);
     window.addEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.addEventListener('mouseenter', this.handleMouseEnter);
-      artist.addEventListener('mouseleave', this.handleMouseLeave);
+    [...this.masters].forEach(master => {
+      master.addEventListener('mouseenter', this.handleMouseEnter);
+      master.addEventListener('mouseleave', this.handleMouseLeave);
     });
   }
 
@@ -97,7 +97,7 @@ class Tooltip {
     this.scaleDownTimeout = setTimeout(() => {
       if (!this.hoverTarget) {
         this.scaleDownTimeline = gsap.timeline();
-        this.updateTooltip({ stagename: '', name: '', genre: '' }, this.scaleDownTimeline, 'out');
+        this.updateTooltip({ stagename: '', name: '', sect: '' }, this.scaleDownTimeline, 'out');
         this.scaleDownTimeline.to(
           this.tooltip,
           { ...this.animationConfig.tooltip, scale: 0 },
@@ -117,10 +117,10 @@ class Tooltip {
 
     const stageName = this.hoverTarget.dataset.stagename;
     const name = this.hoverTarget.dataset.name;
-    const genre = this.hoverTarget.dataset.genre;
+    const sect = this.hoverTarget.dataset.sect;
 
     const updateTimeline = gsap.timeline();
-    this.updateTooltip({ stagename: stageName, name, genre }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
+    this.updateTooltip({ stagename: stageName, name, sect }, updateTimeline, this.isTooltipVisible ? 'none' : 'in');
   };
 
   handleMouseLeave = () => {
@@ -142,9 +142,9 @@ class Tooltip {
     this.grid.addEventListener('mousemove', this.handleMouseMove);
     window.addEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.addEventListener('mouseenter', this.handleMouseEnter);
-      artist.addEventListener('mouseleave', this.handleMouseLeave);
+    [...this.masters].forEach(master => {
+      master.addEventListener('mouseenter', this.handleMouseEnter);
+      master.addEventListener('mouseleave', this.handleMouseLeave);
     });
   }
 
@@ -159,9 +159,9 @@ class Tooltip {
     this.grid.removeEventListener('mousemove', this.handleMouseMove);
     window.removeEventListener('resize', this.handleResize);
 
-    [...this.artists].forEach(artist => {
-      artist.removeEventListener('mouseenter', this.handleMouseEnter);
-      artist.removeEventListener('mouseleave', this.handleMouseLeave);
+    [...this.masters].forEach(master => {
+      master.removeEventListener('mouseenter', this.handleMouseEnter);
+      master.removeEventListener('mouseleave', this.handleMouseLeave);
 
     });
   }
@@ -232,7 +232,7 @@ class Tooltip {
       const transitionOutDirection = {
         stagename: { yPercent: 100 }, // Slide down for stagename
         name: { yPercent: -100 },    // Slide up for name
-        genre: { yPercent: -100 },   // Slide up for genre
+        sect: { yPercent: -100 },   // Slide up for sect
       }[rowField] || { yPercent: 0 };
 
       this.rowTimelines[rowSelector].to(currentSlider, {
