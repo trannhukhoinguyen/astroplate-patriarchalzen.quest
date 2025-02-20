@@ -88,7 +88,7 @@ const years = await getCollection("years");
     <div class="wrapper">
       {
         years.map(year => {
-            <h2 class="milestone">{year.data.subTitle}</h2>
+            <!--<h2 class="milestone">{year.data.subTitle}</h2>-->
             <p>{
               year.data.content?.map(item => <img src={item} />)
             }</p>

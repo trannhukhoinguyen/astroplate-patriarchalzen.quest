@@ -5,11 +5,15 @@ const masters = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/masters" }),
   schema: z.object({
     name: z.string(),
-    dynasty: z.string(),
-    sect: z.string(),
+    name_en: z.string() || null,
+    name_vi: z.string() || null,
+    name_zh: z.string() || null,
+    dynasty: z.string() || null,
+    sect: z.string() || null, // e.g. Linji (Rinzai), Caodong (Soto), Yunmen (Unmon), Fayan (Hogen), Guiyang (Igyō (潙仰宗)),
+    disciples: z.array(z.string()) || null,
     image: z.object({
-      src: z.string(),
-      alt: z.string(),
+      src: z.string() || null,
+      alt: z.string() || null,
     }),
   }),
 });

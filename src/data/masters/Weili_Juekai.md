@@ -1,7 +1,11 @@
 ---
 name: "Weili Juekai"
+name_en: "Weili Juekai"
+name_vi: "Weili Juekai"
+name_zh: "Weili Juekai"
 dynasty: "None"
-sect: "None"
+sect: "Caodong (Soto)"
+disciples: []
 image: 
     src: "/images/masters/Weili_Juekai.jpg"
     alt: "Weili Juekai"

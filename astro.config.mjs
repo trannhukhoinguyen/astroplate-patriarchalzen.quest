@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
@@ -9,8 +8,10 @@ export default defineConfig({
     enabled: false
   },
   prefetch: true,
-  site: 'https://playersclub88.netlify.app/',
-  integrations: [sitemap()],
+  site: 'https://patriarchal-zen-quest.vercel.app/',
+  integrations: [
+    sitemap(),
+  ],
   experimental: {
     svg: true,
   },
