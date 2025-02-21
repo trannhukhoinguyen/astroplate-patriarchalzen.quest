@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import MasterGrid from "../components/MasterGrid.astro";
 import MasterGridHeader from "../components/MasterGridHeader.astro";
 import Preloader from "../components/Preloader.astro";
-import PeriodicTable from "../components/PeriodicTable.astro";
+import ScrollingVerticalTimeline from "../components/ScrollingVerticalTimeline.astro";
 
 const allMasters = await getCollection("masters");
 const mastersTotal = allMasters.length;
@@ -22,7 +22,7 @@ const title = "Patriarchal Zen - All Zen Patriarchs";
 
   <!--<MasterGrid masters={allMasters} />-->
 
-  <PeriodicTable masters={allMasters} />
+  <ScrollingVerticalTimeline />
 
 </BaseLayout>
 <script src="../scripts/index.js"></script>
