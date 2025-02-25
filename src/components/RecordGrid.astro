@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import AlbumCard from "./RecordCard.astro";
+import RecordCard from "./RecordCard.astro";
 
 type Props = {
   records: CollectionEntry<"records">[];
@@ -10,7 +10,7 @@ const { records } = Astro.props;
 ---
 
 <section>
-  { records.map(album => <AlbumCard album={album} />) }
+  { records.map(record => <RecordCard record={record} />) }
 </section>
 
 <style>

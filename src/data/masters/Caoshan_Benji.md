@@ -4,7 +4,7 @@ name_en: "Caoshan Benji"
 name_vi: "Caoshan Benji"
 name_zh: "Caoshan Benji"
 dynasty: "None"
-sect: "None"
+sect: "Caodong (Soto)"
 disciples: []
 image: 
     src: "/images/masters/Caoshan_Benji.jpg"

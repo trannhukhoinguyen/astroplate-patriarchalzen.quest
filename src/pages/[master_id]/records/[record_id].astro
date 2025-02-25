@@ -10,32 +10,32 @@ export const getStaticPaths = async () => {
 
   /*
   // Filter records to ensure each has valid master data, then map to generate paths
-  const paths = records.filter(album => album.data.master && album.data.master.id) // Ensure the album has a valid master reference
-  .map((album) => {
+  const paths = records.filter(record => record.data.master && record.data.master.id) // Ensure the record has a valid master reference
+  .map((record) => {
     return {
       params: {
-        master_id: album.data.master.id, // Include master ID in the route parameters
-        album_id: album.id,             // Include album ID in the route parameters
+        master_id: record.data.master.id, // Include master ID in the route parameters
+        record_id: record.id,             // Include record ID in the route parameters
       },
       props: {
-        master: album.data.master,      // Pass the master data as props
-        album                           // Pass the album data as props
+        master: record.data.master,      // Pass the master data as props
+        record                           // Pass the record data as props
       },
     };
   });
   */
 
   const paths = await Promise.all(
-    records.map(async (album) => {
-      const master = await getEntry("masters", album.data.master.id); // Fetch master by ID
+    records.map(async (record) => {
+      const master = await getEntry("masters", record.data.master.id); // Fetch master by ID
       return {
         params: {
-          master_id: album.data.master.id, // Include master ID in route parameters
-          album_id: album.id, // Include album ID in route parameters
+          master_id: record.data.master.id, // Include master ID in route parameters
+          record_id: record.id, // Include record ID in route parameters
         },
         props: {
           master, // Pass full master data as props
-          album, // Pass album data as props
+          record, // Pass record data as props
         },
       };
     }),
@@ -46,21 +46,21 @@ export const getStaticPaths = async () => {
 };
 
 type Props = {
-  master: CollectionEntry<"masters">; // The master associated with the album
-  album: CollectionEntry<"records">; // The album being rendered
+  master: CollectionEntry<"masters">; // The master associated with the record
+  record: CollectionEntry<"records">; // The record being rendered
 };
 
-const { master, album } = Astro.props; // Extract master and album data from props
+const { master, record } = Astro.props; // Extract master and record data from props
 
-// Render the content of the album (e.g., markdown or MDX content)
-const { Content } = await render(album);
+// Render the content of the record (e.g., markdown or MDX content)
+const { Content } = await render(record);
 ---
 
-<BaseLayout title={album.data.name}>
+<BaseLayout title={record.data.name}>
   <section>
     <header class="title-header">
       <h2>
-        {album.data.name}
+        {record.data.name}
         <span class="faded">by {master.data.dynasty}</span>
       </h2>
       <div><a class="back" href={`/${master.id}`}>Back to {master.data.name}</a></div>
@@ -69,13 +69,13 @@ const { Content } = await render(album);
     <div class="content-wrap">
       <img
         class="image fade-in"
-        src={album.data.image.src}
-        alt={album.data.image.alt}
+        src={record.data.image.src}
+        alt={record.data.image.alt}
       />
       <div class="content">
         <h3>Track List</h3>
         <ol>
-          {album.data.chapters.map((track) => <li>{track}</li>)}
+          {record.data.chapters.map((track) => <li>{track}</li>)}
         </ol>
         <Content />
       </div>
