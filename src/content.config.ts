@@ -11,6 +11,7 @@ const masters = defineCollection({
     name_jp: z.string() || null,
     dynasty: z.string() || null,
     sect: z.string() || null, // e.g. Linji (Rinzai), Caodong (Soto), Yunmen (Unmon), Fayan (Hogen), Guiyang (Igyō (潙仰宗)),
+    color: z.string() || null,
     disciples: z.array(z.string()) || null,
     image: z.object({
       src: z.string() || null,

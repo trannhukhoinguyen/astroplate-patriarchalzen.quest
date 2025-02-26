@@ -6,6 +6,7 @@ name_zh: "Yaoshan Weiyan"
 name_jp: ""
 dynasty: "None"
 sect: "None"
+color: "gold"
 disciples: []
 image: 
     src: "/images/masters/Yaoshan_Weiyan.jpg"

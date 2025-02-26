@@ -11,18 +11,81 @@ const { master } = Astro.props;
 <a
   href={`/${master?.id}`}
   class="master"
-  style={`--image: url('${master?.data?.image.src}');`}
   data-stagename={master?.data?.dynasty}
   data-name={master?.data?.name}
   data-sect={master?.data?.sect || ""}
   data-astro-prefetch
-  aria-label={master?.data?.name}></a>
+  aria-label={master?.data?.name}
+>
+    <span class=`tag ${master?.data?.color}`>{master?.data?.name}</span>
+</a>
 
 <style>
-  a {
-    background-image: var(--image);
-    background-size: cover;
-    background-position: 50% 0%;
-    aspect-ratio: 0.8;
+  .tag {
+      background: #e1e366;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 14px;
+      margin: 0 0 0 20px;
+      border-radius: 9px;
+      color: #2d313a;
+      position: relative;
+      z-index: 1;
+  }
+
+  span.tag:before {
+      content: "";
+      display: block;
+      height: 39px;
+      width: 39px;
+      position: absolute;
+      left: -13px;
+      top: 6px;
+      border-radius: 9px;
+      transform: rotate(45.1deg);
+      background: #e1e366;
+      z-index: -1;
+  }
+
+  span.tag:after {
+      content: "";
+      display: block;
+      background: #2d313a;
+      height: 11px;
+      width: 11px;
+      position: absolute;
+      left: -5px;
+      top: 19px;
+      border-radius: 100%;
+  }
+
+  .tag.LightSkyBlue, .tag.LightSkyBlue:before {
+      background: LightSkyBlue;
+  }
+  .tag.gold, .tag.gold:before {
+      background: gold;
+  }
+  .tag.orange, .tag.orange:before {
+      background: orange;
+  }
+  .tag.purple, .tag.purple:before {
+      background: purple;
+  }
+  .tag.LightSkyBlue, .tag.LightSkyBlue:before {
+      background: LightSkyBlue;
+  }
+  .tag.gold, .tag.gold:before {
+      background: gold;
+  }
+  .tag.orange, .tag.orange:before {
+      background: orange;
+  }
+  .tag.purple, .tag.purple:before {
+      background: purple;
+  }
+
+  .tag:after {
+      background: white;
   }
 </style>

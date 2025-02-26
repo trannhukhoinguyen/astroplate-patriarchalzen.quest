@@ -1,0 +1,313 @@
+---
+---
+
+<main>
+  <div class="floor"></div>
+  <div class="sun">
+    <div class="face face--back"></div>
+    <div class="face face--front"></div>
+  </div>
+  <div class="sun sun--reflect">
+    <div class="face face--back"></div>
+    <div class="face face--front"></div>
+  </div>
+  <div class="scroll">Scroll ⤵</div>
+</main>
+<div class="warning" hidden="hidden">
+  <p>Hello, this page uses some modern CSS features. If you see this message, that means your browser doesn't support the following CSS properties :</p>
+  <ul>
+    <li class="translate"><code>translate</code></li>
+    <li class="scale"><code>scale</code></li>
+    <li class="rotate"><code>rotate</code></li>
+    <li class="aspect-ratio"><code>aspect-ratio</code></li>
+    <li class="mask"><code>mask</code></li>
+    <li class="mask-repeat"><code>mask-repeat</code></li>
+    <li class="animation-timeline"><code>animation-timeline</code></li>
+  </ul>
+</div>
+
+<style>
+  main {
+    --sun-size: 52vmin;
+    --g: linear-gradient(to bottom, #000, #000);
+    display: grid;
+    place-items: center;
+    height: 200vh;
+    background-color: #151a46;
+    -webkit-animation: sky 1s linear forwards;
+    animation: sky 1s linear forwards;
+    animation-timeline: scroll();
+  }
+
+  .scroll {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-family: sans-serif;
+    background-color: #fff;
+  }
+
+  .floor {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: calc((100vh - var(--sun-size)) / 2);
+    background: linear-gradient(0deg, black, #16336a) #16336a no-repeat;
+    -webkit-animation: floor 1s linear forwards;
+    animation: floor 1s linear forwards;
+    animation-timeline: scroll();
+  }
+
+  .sun {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: var(--sun-size);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    translate: -50% -50%;
+    -webkit-animation: sun 1s linear forwards;
+    animation: sun 1s linear forwards;
+    animation-timeline: scroll();
+  }
+  .sun .face {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  .sun .face--back {
+    opacity: 0;
+    box-shadow: 0 0 calc(var(--sun-size) / 5) #eee268;
+    -webkit-animation: sun-back 1s linear forwards;
+    animation: sun-back 1s linear forwards;
+    animation-timeline: scroll();
+  }
+  .sun .face--front {
+    -webkit-mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 5.2% , var(--g) 0 47.5%/100% 4.8% , var(--g) 0 54%/100% 4.4% , var(--g) 0 60.5%/100% 4% , var(--g) 0 67%/100% 3.6% , var(--g) 0 73.5%/100% 3.2% , var(--g) 0 80%/100% 2.8% , var(--g) 0 86.5%/100% 2.4%;
+    mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 5.2% , var(--g) 0 47.5%/100% 4.8% , var(--g) 0 54%/100% 4.4% , var(--g) 0 60.5%/100% 4% , var(--g) 0 67%/100% 3.6% , var(--g) 0 73.5%/100% 3.2% , var(--g) 0 80%/100% 2.8% , var(--g) 0 86.5%/100% 2.4%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-image: linear-gradient(180deg, #eee268 0%, #ff1fae 100%);
+    background-image: linear-gradient(180deg in oklab, #eee268 0%, #ff1fae 100%);
+    background-color: #eee268;
+    background-repeat: no-repeat;
+    -webkit-animation: sun-front 1s linear forwards;
+    animation: sun-front 1s linear forwards;
+    animation-timeline: scroll();
+  }
+  .sun--reflect {
+    rotate: 180deg;
+    transform-origin: bottom center;
+    -webkit-animation: reflect 1s linear forwards;
+    animation: reflect 1s linear forwards;
+    animation-timeline: scroll();
+    filter: blur(1vw);
+    scale: 1 0.5;
+    opacity: 0.3;
+  }
+
+  @-webkit-keyframes sun {
+    from {
+      translate: -50% -50%;
+      scale: 1;
+    }
+    50% {
+      translate: -50% -75%;
+    }
+    to {
+      translate: -100% -125%;
+      scale: 0.25;
+    }
+  }
+
+  @keyframes sun {
+    from {
+      translate: -50% -50%;
+      scale: 1;
+    }
+    50% {
+      translate: -50% -75%;
+    }
+    to {
+      translate: -100% -125%;
+      scale: 0.25;
+    }
+  }
+  @-webkit-keyframes reflect {
+    from {
+      translate: -50% -50%;
+      scale: 1 0.5;
+      filter: blur(1vw);
+    }
+    50% {
+      translate: -50% -40%;
+    }
+    to {
+      translate: -100% -35%;
+      scale: 0.25 0.12;
+      filter: blur(5vw);
+    }
+  }
+  @keyframes reflect {
+    from {
+      translate: -50% -50%;
+      scale: 1 0.5;
+      filter: blur(1vw);
+    }
+    50% {
+      translate: -50% -40%;
+    }
+    to {
+      translate: -100% -35%;
+      scale: 0.25 0.12;
+      filter: blur(5vw);
+    }
+  }
+  @-webkit-keyframes sun-back {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes sun-back {
+    0%, 50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes sun-front {
+    to {
+      -webkit-mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 20% , var(--g) 0 54%/100% 20% , var(--g) 0 67%/100% 20% , var(--g) 0 80%/100% 20% , var(--g) 0 93%/100% 20% , var(--g) 0 106%/100% 20% , var(--g) 0 119%/100% 20% , var(--g) 0 132%/100% 20%;
+      mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 20% , var(--g) 0 54%/100% 20% , var(--g) 0 67%/100% 20% , var(--g) 0 80%/100% 20% , var(--g) 0 93%/100% 20% , var(--g) 0 106%/100% 20% , var(--g) 0 119%/100% 20% , var(--g) 0 132%/100% 20%;
+      background-position: 0 var(--sun-size);
+    }
+  }
+  @keyframes sun-front {
+    to {
+      -webkit-mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 20% , var(--g) 0 54%/100% 20% , var(--g) 0 67%/100% 20% , var(--g) 0 80%/100% 20% , var(--g) 0 93%/100% 20% , var(--g) 0 106%/100% 20% , var(--g) 0 119%/100% 20% , var(--g) 0 132%/100% 20%;
+      mask: var(--g) 0 0/100% 38% , var(--g) 0 41%/100% 20% , var(--g) 0 54%/100% 20% , var(--g) 0 67%/100% 20% , var(--g) 0 80%/100% 20% , var(--g) 0 93%/100% 20% , var(--g) 0 106%/100% 20% , var(--g) 0 119%/100% 20% , var(--g) 0 132%/100% 20%;
+      background-position: 0 var(--sun-size);
+    }
+  }
+  @-webkit-keyframes sky {
+    to {
+      background-color: #7aaadb;
+    }
+  }
+  @keyframes sky {
+    to {
+      background-color: #7aaadb;
+    }
+  }
+  @-webkit-keyframes floor {
+    from {
+      filter: brightness(100%);
+      background-size: 100% 100%;
+    }
+    to {
+      filter: brightness(300%);
+      background-size: 100% 200%;
+    }
+  }
+  @keyframes floor {
+    from {
+      filter: brightness(100%);
+      background-size: 100% 100%;
+    }
+    to {
+      filter: brightness(300%);
+      background-size: 100% 200%;
+    }
+  }
+  /********************************************/
+  /********************************************/
+  /********************************************/
+  .warning {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 50rem);
+    padding: 1rem;
+    border: 0.2rem solid;
+    background-color: #fff;
+  }
+  .warning :where(li) {
+    display: none;
+  }
+
+  @supports not (aspect-ratio: 1/1) {
+    .warning {
+      display: block !important;
+    }
+
+    .aspect-ratio {
+      display: list-item;
+    }
+  }
+  @supports not (translate: 0% 0%) {
+    .warning {
+      display: block !important;
+    }
+
+    .translate {
+      display: list-item;
+    }
+  }
+  @supports not (scale: 1) {
+    .warning {
+      display: block !important;
+    }
+
+    .scale {
+      display: list-item;
+    }
+  }
+  @supports not (rotate: 180deg) {
+    .warning {
+      display: block !important;
+    }
+
+    .rotate {
+      display: list-item;
+    }
+  }
+  @supports not ((-webkit-mask: linear-gradient(to bottom, #000, #000)) or (mask: linear-gradient(to bottom, #000, #000))) {
+    .warning {
+      display: block !important;
+    }
+
+    .mask {
+      display: list-item;
+    }
+  }
+  @supports not ((-webkit-mask-repeat: no-repeat) or (mask-repeat: no-repeat)) {
+    .warning {
+      display: block !important;
+    }
+
+    .mask-repeat {
+      display: list-item;
+    }
+  }
+  @supports not (animation-timeline: scroll()) {
+    .warning {
+      display: block !important;
+    }
+
+    .animation-timeline {
+      display: list-item;
+    }
+  }
+</style>

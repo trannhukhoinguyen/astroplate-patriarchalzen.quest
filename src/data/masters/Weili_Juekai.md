@@ -6,6 +6,7 @@ name_zh: "Weili Juekai"
 name_jp: ""
 dynasty: "None"
 sect: "Caodong (Soto)"
+color: "green"
 disciples: []
 image: 
     src: "/images/masters/Weili_Juekai.jpg"

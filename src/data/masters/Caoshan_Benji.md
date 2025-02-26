@@ -6,6 +6,7 @@ name_zh: "Caoshan Benji"
 name_jp: ""
 dynasty: "None"
 sect: "Caodong (Soto)"
+color: "indigo"
 disciples: []
 image: 
     src: "/images/masters/Caoshan_Benji.jpg"

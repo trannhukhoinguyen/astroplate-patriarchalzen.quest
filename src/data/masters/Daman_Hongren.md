@@ -6,6 +6,7 @@ name_zh: "Daman Hongren"
 name_jp: ""
 dynasty: "None"
 sect: "None"
+color: "red"
 disciples: []
 image: 
     src: "/images/masters/Daman_Hongren.jpg"

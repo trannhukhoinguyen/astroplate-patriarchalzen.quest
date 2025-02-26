@@ -6,6 +6,7 @@ name_zh: "永明延壽"
 name_jp: "Yōmyō Enju"
 dynasty: "None"
 sect: "Fayan (Hogen)"
+color: "teal"
 disciples: []
 image: 
     src: "/images/masters/Yongming_Yanshou.jpg"

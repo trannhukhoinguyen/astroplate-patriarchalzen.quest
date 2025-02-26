@@ -6,6 +6,7 @@ name_zh: "Bankei Yotaku"
 name_jp: ""
 dynasty: "None"
 sect: "Linji - Yangqi (Rinzai - Yogi)"
+color: "orange"
 disciples: []
 image: 
     src: "/images/masters/Bankei_Yotaku.jpg"

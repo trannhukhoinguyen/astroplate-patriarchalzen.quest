@@ -6,6 +6,7 @@ name_zh: "Baizhang Huaihai"
 name_jp: ""
 dynasty: "None"
 sect: "None"
+color: "gold"
 disciples: []
 image: 
     src: "/images/masters/Baizhang_Huaihai.jpg"
