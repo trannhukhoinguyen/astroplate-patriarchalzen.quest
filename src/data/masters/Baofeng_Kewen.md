@@ -3,6 +3,7 @@ name: "Baofeng Kewen"
 name_en: "Baofeng Kewen"
 name_vi: "Baofeng Kewen"
 name_zh: "Baofeng Kewen"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Baofeng Kewen"
 ---
 
-Baofeng Kewen 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

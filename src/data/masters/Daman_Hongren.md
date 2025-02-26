@@ -3,6 +3,7 @@ name: "Daman Hongren"
 name_en: "Daman Hongren"
 name_vi: "Daman Hongren"
 name_zh: "Daman Hongren"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Daman Hongren"
 ---
 
-Daman Hongren 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

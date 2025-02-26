@@ -3,6 +3,7 @@ name: "Weili Juekai"
 name_en: "Weili Juekai"
 name_vi: "Weili Juekai"
 name_zh: "Weili Juekai"
+name_jp: ""
 dynasty: "None"
 sect: "Caodong (Soto)"
 disciples: []
@@ -10,6 +11,8 @@ image:
     src: "/images/masters/Weili_Juekai.jpg"
     alt: "Weili Juekai"
 ---
+
+#### GIỚI THIỆU:
 
 Sư hiệu __DUY LỰC__, tự __GIÁC KHAI__, thế danh __LA DŨ__ sanh ngày __5/5/1923__, tại làng Long Tuyền (Bình Thủy), Tỉnh Cần Thơ (VN).
 

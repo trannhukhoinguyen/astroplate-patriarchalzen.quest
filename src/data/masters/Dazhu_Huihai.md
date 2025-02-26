@@ -3,6 +3,7 @@ name: "Dazhu Huihai"
 name_en: "Dazhu Huihai"
 name_vi: "Dazhu Huihai"
 name_zh: "Dazhu Huihai"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Dazhu Huihai"
 ---
 
-Dazhu Huihai 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

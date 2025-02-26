@@ -3,6 +3,7 @@ name: "Huitang Zuxin"
 name_en: "Huitang Zuxin"
 name_vi: "Huitang Zuxin"
 name_zh: "Huitang Zuxin"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Huitang Zuxin"
 ---
 
-Huitang Zuxin 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

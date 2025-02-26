@@ -3,6 +3,7 @@ name: "Banwo Jinglu"
 name_en: "Banwo Jinglu"
 name_vi: "Banwo Jinglu"
 name_zh: "Banwo Jinglu"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Banwo Jinglu"
 ---
 
-Banwo Jinglu 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

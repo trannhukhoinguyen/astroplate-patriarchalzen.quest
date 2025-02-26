@@ -3,6 +3,7 @@ name: "Yaoshan Weiyan"
 name_en: "Yaoshan Weiyan"
 name_vi: "Yaoshan Weiyan"
 name_zh: "Yaoshan Weiyan"
+name_jp: ""
 dynasty: "None"
 sect: "None"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Yaoshan Weiyan"
 ---
 
-Yaoshan Weiyan 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+

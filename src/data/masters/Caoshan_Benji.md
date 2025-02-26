@@ -3,6 +3,7 @@ name: "Caoshan Benji"
 name_en: "Caoshan Benji"
 name_vi: "Caoshan Benji"
 name_zh: "Caoshan Benji"
+name_jp: ""
 dynasty: "None"
 sect: "Caodong (Soto)"
 disciples: []
@@ -11,4 +12,11 @@ image:
     alt: "Caoshan Benji"
 ---
 
-Caoshan Benji 1
+#### GIỚI THIỆU:
+
+
+
+#### TÁC PHẨM / NGỮ LỤC:
+
+📖 
+
