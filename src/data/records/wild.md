@@ -1,5 +1,5 @@
 ---
-name: "Wild"
+name: "Tâm Bất Sinh"
 image:
   src: "/images/records/wild.webp"
   alt: "An abstract album art design featuring bold, sweeping brushstrokes in crimson, deep violet, and gold with subtle guitar string patterns embedded, evoking raw energy and passion."
@@ -15,7 +15,7 @@ chapters:
   - "The Wanderer"
   - "Raw Grace"
   - "Final Flame"
-master: "baizhang-huaihai"
+master: "bankei_yotaku"
 ---
 
 **Wild** is Revelyn’s explosive debut album, a fearless blend of anthems and introspection. With raw lyrics and passionate melodies, this record captures the essence of freedom and self-discovery.
