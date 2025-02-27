@@ -18,4 +18,4 @@ chapters:
 master: "bankei_yotaku"
 ---
 
-**Wild** is Revelyn’s explosive debut album, a fearless blend of anthems and introspection. With raw lyrics and passionate melodies, this record captures the essence of freedom and self-discovery.
+**Tâm Bất Sinh** 
