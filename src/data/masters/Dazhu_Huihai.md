@@ -6,7 +6,7 @@ name_zh: "Dazhu Huihai"
 name_jp: ""
 dynasty: "None"
 sect: "None"
-color: "purple"
+color: "HotPink"
 disciples: []
 image: 
     src: "/images/masters/Dazhu_Huihai.jpg"
