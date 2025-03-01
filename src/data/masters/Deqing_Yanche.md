@@ -33,4 +33,5 @@ As a result of his long life and good reputation, master Xu Yun is revered in Ch
 #### TÁC PHẨM / NGỮ LỤC:
 
 📖 <a href="https://www.dharmasite.net/HuVanHoaThuongHoaTruyen/contents.htm" target="_blank">HƯ VÂN HÒA THƯỢNG HỌA TRUYỆN</a>
+📖 <a href="https://motniemvangsanh.vercel.app/hu-van-nien-pho" target="_blank">HƯ VÂN NIÊN PHỔ - THƠM NGÁT HƯƠNG LAN</a>
 
