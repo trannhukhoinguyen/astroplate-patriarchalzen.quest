@@ -1,7 +1,7 @@
 ---
 name: "DUY LỰC NGỮ LỤC"
 image:
-  src: "/images/records/aurora_drift.webp"
+  src: "/images/records/weili_speech_records.webp"
   alt: "DUY LỰC NGỮ LỤC"
 publishDate: 2025-02-15
 chapters:

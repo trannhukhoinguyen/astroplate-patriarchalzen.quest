@@ -11,21 +11,42 @@ import Footer from "../components/Footer.astro";
 
 import "@fontsource-variable/instrument-sans";
 import instrumentSansWoff2 from "@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2";
+import { getLangFromUrl } from "../scripts/languageParser";
+import theme from "../config/theme.json";
+
+// font families
+const pf = theme.fonts.font_family.primary;
+const sf = theme.fonts.font_family.secondary;
+
+let fontPrimary, fontSecondary;
+if (theme.fonts.font_family.primary) {
+  fontPrimary = theme.fonts.font_family.primary
+      .replace(/\+/g, " ")
+      .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+}
+if (theme.fonts.font_family.secondary) {
+  fontSecondary = theme.fonts.font_family.secondary
+      .replace(/\+/g, " ")
+      .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+}
 
 type Props = {
   title: string;
   description?: string;
+  lang: string;
 };
 
-const { title, description = "Patriarchal Zen" } = Astro.props;
+const { title, description = "Patriarchal Zen", lang } = Astro.props;
 
 // Current page value (/home, /about, /404 ...)
 const currentPage =
   Astro.url.pathname.replace(/\/$/, "").split("/").pop() || "home";
+
+const language = lang || getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en" data-page={currentPage}>
+<html lang={lang} data-page={currentPage}>
   <head>
     <SEO
       title={title}

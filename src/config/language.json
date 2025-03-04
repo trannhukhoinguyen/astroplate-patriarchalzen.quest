@@ -1,0 +1,14 @@
+[
+  {
+    "languageName": "\uD83C\uDDFA\uD83C\uDDF8 English",
+    "languageCode": "en",
+    "contentDir": "en",
+    "weight": 1
+  },
+  {
+    "languageName": "\uD83C\uDDFB\uD83C\uDDF3 Vietnamese",
+    "languageCode": "vi",
+    "contentDir": "vi",
+    "weight": 2
+  }
+]

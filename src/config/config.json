@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Tổ Sư Thiền - Patriarchal Zen",
+    "meta_title": "Tổ Sư Thiền - Patriarchal Zen",
+    "meta_image": "/images/monocolor-unknown-zen-master.jpg",
+    "meta_description": "Tham Tổ Sư Thiền - Patriarchal Zen - Blogs, Koans, Conversations, Speeches, Teachings, Masters, Alerts, FAQs, Books, PDF, MP3, Youtube",
+    "base_url": "https://tosuthien.quest",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_darkmode": "/images/logo-darkmode.png",
+    "logo_width": "150",
+    "logo_height": "30",
+    "logo_text": "Tổ Sư Thiền - Patriarchal Zen"
+  },
+
+  "settings": {
+    "search": true,
+    "sticky_header": true,
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 50,
+    "summary_length": 200,
+    "blog_folder": "masters",
+    "blog_folder_masters": "masters",
+    "collection_folder": "masters",
+    "collection_folder_masters": "masters",
+    "default_language": "vi",
+    "disable_languages": [],
+    "default_language_in_subdir": false
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "HÃY THAM THIỀN ĐI! TRY TO MEDITATE PATRIARCHAL ZEN!"
+  },
+
+  "navigation_button": {
+    "enable": false,
+    "label": "TRY TO MEDITATE!",
+    "link": "/"
+  },
+
+  "metadata": {
+    "meta_author": "Tổ Sư Thiền - Patriarchal Zen",
+    "meta_image": "/images/sit-on-the-mountain-peak.jpg",
+    "meta_description": "Tổ Sư Thiền - Patriarchal Zen - Blogs, Koans, Teachings, Speeches, Masters, Alerts, FAQs, Books, PDF, MP3, Youtube"
+  }
+}

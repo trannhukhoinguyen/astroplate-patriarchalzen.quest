@@ -1,0 +1,19 @@
+{
+  "main": [
+    {
+      "name": "facebook",
+      "icon": "FaFacebook",
+      "link": "https://www.facebook.com/tosuthien2024"
+    },
+    {
+      "name": "twitter",
+      "icon": "FaTwitter",
+      "link": "https://twitter.com/patriarchalzen"
+    },
+    {
+      "name": "youtube",
+      "icon": "FaYoutube",
+      "link": "https://youtube.com/@patriarchalzen"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ name_en: "Caoshan Benji"
 name_vi: "Caoshan Benji"
 name_zh: "Caoshan Benji"
 name_jp: ""
-dynasty: "None"
+dynasty: "840 - 901"
 sect: "Caodong (Soto)"
 color: "indigo"
 disciples: []

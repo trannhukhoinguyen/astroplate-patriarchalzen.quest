@@ -61,7 +61,7 @@ const { Content } = await render(record);
     <header class="title-header">
       <h2>
         {record.data.name}
-        <span class="faded">by {master.data.dynasty}</span>
+        <span class="faded">by {master.data.name}</span>
       </h2>
       <div><a class="back" href={`/${master.id}`}>Back to {master.data.name}</a></div>
     </header>
@@ -73,7 +73,7 @@ const { Content } = await render(record);
         alt={record.data.image.alt}
       />
       <div class="content">
-        <h3>Track List</h3>
+        <h3>Chapter List</h3>
         <ol>
           {record.data.chapters.map((track) => <li>{track}</li>)}
         </ol>

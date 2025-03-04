@@ -4,7 +4,7 @@ name_en: "Weili Juekai"
 name_vi: "Weili Juekai"
 name_zh: "Weili Juekai"
 name_jp: ""
-dynasty: "None"
+dynasty: "5/5/1923 - 7/1/2000"
 sect: "Caodong (Soto)"
 color: "green"
 disciples: []

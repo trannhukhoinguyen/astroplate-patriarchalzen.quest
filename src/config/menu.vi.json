@@ -1,0 +1,43 @@
+{
+  "main": [
+    { "name": "Trang chủ", "url": "/" },
+    { "name": "Là gì?", "url": "/zen-blogs" },
+    { "name": "🕯", "url": "/candle-off" },
+
+    {
+      "name": "Thiền sư",
+      "url": "/masters",
+      "hasChildren": true,
+      "children": [
+        { "name": "Thiền sư", "url": "/masters" },
+        { "name": "Địa danh", "url": "/places" },
+        { "name": "Tông phái", "url": "/zen-schools" }
+      ]
+    },
+    {
+      "name": "Tuyệt tác",
+      "url": "/masterpieces",
+      "hasChildren": true,
+      "children": [
+        { "name": "Ngữ lục sách tấn", "url": "/teachings" },
+        { "name": "Ngữ lục Đối đáp", "url": "/conversations" },
+        { "name": "Hỏi đáp", "url": "/faqs" },
+        { "name": "Cảnh ngữ", "url": "/alerts" },
+        { "name": "Kinh liễu nghĩa", "url": "/sutras" },
+        { "name": "Công án", "url": "/koans" }
+      ]
+    },
+    {
+      "name": "Media",
+      "url": "/media",
+      "hasChildren": true,
+      "children": [
+        { "name": "Tủ Sách", "url": "/books" },
+        { "name": "PDF & MP3", "url": "/download" },
+        { "name": "Youtube", "url": "/youtube" }
+      ]
+    },
+
+    { "name": "Thiền viện", "url": "/monasteries" }
+  ]
+}

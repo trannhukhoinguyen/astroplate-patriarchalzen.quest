@@ -10,15 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.2.1",
     "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/instrument-sans": "^5.1.0",
     "astro": "^5.3.1",
     "astro-seo": "^0.8.4",
     "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
     "lenis": "^1.1.17",
-    "lunar-javascript": "^1.7.0",
-    "moment-calendar": "^0.0.4",
     "sass": "^1.85.1"
   },
   "devDependencies": {

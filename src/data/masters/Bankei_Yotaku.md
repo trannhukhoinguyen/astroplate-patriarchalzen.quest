@@ -2,10 +2,10 @@
 name: "Bankei Yotaku"
 name_en: "Bankei Yotaku"
 name_vi: "Bankei Yotaku"
-name_zh: "Bankei Yotaku"
-name_jp: ""
-dynasty: "None"
-sect: "Linji - Yangqi (Rinzai - Yogi - Myōshinji-ha)"
+name_zh: "盤珪永琢"
+name_jp: "盤珪永琢"
+dynasty: "1622 — 1693"
+sect: "Linji (Rinzai)"
 color: "orange"
 disciples: []
 image: 
@@ -59,7 +59,4 @@ Năm 1740, 47 năm sau khi Sư tịch, Nhật hoàng lại phong danh hiệu kh�
 
 #### RECORDS:
 
-📖 <a href="https://www.niemphat.vn/downloads/thien-tong/hoc-thien/tam-bat-sinh-ts-bankei-ns-tri-hai-dich.pdf" target="_blank">TÂM BẤT SINH (PDF)</a>
-
-🎶 <a href="https://www.youtube.com/watch?v=zcYR8c3Plxk&list=PLJhUBezoFJ-3lFkC0KYPMN5f1v4e8hHWm" target="_blank">TÂM BẤT SINH (Audio)</a>
-
+📖 TÂM BẤT SINH (PDF)

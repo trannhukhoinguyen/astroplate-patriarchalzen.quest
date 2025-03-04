@@ -1,10 +1,10 @@
 ---
 name: "Baizhang Huaihai"
 name_en: "Baizhang Huaihai"
-name_vi: "Baizhang Huaihai"
-name_zh: "Baizhang Huaihai"
-name_jp: ""
-dynasty: "None"
+name_vi: "Bách Trượng Hoài Hải"
+name_zh: "百丈懷海"
+name_jp: "Hyakujō Ekai"
+dynasty: "720 - 814"
 sect: "None"
 color: "gold"
 disciples: []
