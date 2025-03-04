@@ -1,16 +1,16 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import AreaCard from "./AreaCard.astro";
+import TempleCard from "../TempleCard.astro";
 
 type Props = {
-  areas: CollectionEntry<"areas">[];
+    temples: CollectionEntry<"temples">[];
 };
 
-const { areas } = Astro.props;
+const { temples } = Astro.props;
 ---
 
 <section>
-  { areas.map(area => <AreaCard area={area} />) }
+  { temples.map(temple => <TempleCard temple={temple} />) }
 </section>
 
 <style>
