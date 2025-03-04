@@ -13,11 +13,11 @@ image:
     alt: "Baizhang Huaihai"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 
 

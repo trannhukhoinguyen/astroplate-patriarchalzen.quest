@@ -13,7 +13,7 @@ image:
     alt: "Yongming Yanshou"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 I. 
 
@@ -119,7 +119,7 @@ Vua Cao Ly Triều Tiên là Quang Tông (光宗) xem ngôn giáo của ông c�
 
 Sau khi tiến hành độ tăng, truyền thọ giới pháp và phóng sinh, đến giờ Thìn buổi sáng ngày 26 tháng 12 năm thứ 8 (975) niên hiệu Khai Bảo (開寶), ông đốt hương lễ Phật, dặn dò đồ chúng rồi ngồi kiết già thị tịch. Ông thọ 72 tuổi, hạ lạp 42 năm. Đến ngày mùng 6 tháng giêng năm sau, đệ tử trang nghiêm thỉnh nhục thân ông nhập tháp ở núi Đại Từ.
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 [Vạn Thiện Đồng Quy Tập](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (萬善同歸集, 3 quyển)
 

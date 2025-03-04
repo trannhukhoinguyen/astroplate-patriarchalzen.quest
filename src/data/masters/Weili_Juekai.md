@@ -13,7 +13,7 @@ image:
     alt: "Weili Juekai"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 Sư hiệu __DUY LỰC__, tự __GIÁC KHAI__, thế danh __LA DŨ__ sanh ngày __5/5/1923__, tại làng Long Tuyền (Bình Thủy), Tỉnh Cần Thơ (VN).
 
@@ -51,7 +51,9 @@ Sư viên tịch vào lúc 10 giờ 30 phút ngày 07 tháng 01 năm 2000 tại 
 Sư dịch thuật, chú giải và biên soạn các Kinh điển cùng Ngữ lục hơn 20 loại, lượng sách phát hành tại Việt Nam trên mấy mươi ngàn quyển. 
 Các kinh sách chữ Việt được phát hành bao gồm:
 
-#### DỊCH VÀ CHÚ GIẢI:
+#### RECORDS:
+
+##### 1:
 
 📖 <a href="http://tosuthien.info/kinh_sach_storage/kinh%20lang%20nghiem.pdf" target="_blank">Kinh Lăng Nghiêm</a>
 
@@ -79,7 +81,7 @@ Các kinh sách chữ Việt được phát hành bao gồm:
 
 📖 <a href="https://thuvienhoasen.org/a9867/tin-tam-minh-tich-nghia-giai" target="_blank">Tín Tâm Minh Tịch Nghĩa Giải</a>
 
-#### BIÊN SOẠN:
+##### 2:
 
 📖 <a href="http://tosuthien.info/kinh_sach_storage/cong%20an%20cua%20phat%20thich%20ca%20va%20to%20dat%20ma.pdf" target="_blank">Công-án Của Phật Thích-ca & Tổ Đạt-ma</a>
 
@@ -98,7 +100,7 @@ Các kinh sách chữ Việt được phát hành bao gồm:
 📖 <a href="http://tosuthien.info/kinh_sach_storage/got%20nhat%20loi%20to%20va%20thanh%20hien.pdf" target="_blank">Góp Nhặt Lời Phật Tổ & Thánh Hiền</a>
 
 
-#### KỆ TRUYỀN PHÁP - PHÁI LÂM TẾ:
+#### DHARMA TRANSMISSION POEM:
 
 >TÂM NGUYÊN QUẢNG LỤC,
 >
@@ -116,7 +118,7 @@ Các kinh sách chữ Việt được phát hành bao gồm:
 >
 >VĨNH KẾ TỔ TÔNG.
 
-#### PHÁP QUYỂN / CỘI NGUỒN TRUYỀN THỪA (NGUYÊN LƯU)
+#### RECORDS OF LINEAGE ORIGIN
 
 Nguyên lưu của Ngài do lão hòa thượng Hoằng Tu đề ngạn vào mùa xuân năm Mậu Thìn 1988, PL 3015 tại Tổ Đường của Từ Ân Thiền Tự (440 Hồng Bàng, F.16, Q.11, Sài Gòn - Nam Việt):
 

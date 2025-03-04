@@ -5,7 +5,7 @@ name_vi: "Bankei Yotaku"
 name_zh: "Bankei Yotaku"
 name_jp: ""
 dynasty: "None"
-sect: "Linji - Yangqi (Rinzai - Yogi)"
+sect: "Linji - Yangqi (Rinzai - Yogi - Myōshinji-ha)"
 color: "orange"
 disciples: []
 image: 
@@ -13,7 +13,7 @@ image:
     alt: "Bankei Yotaku"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 I.
 
@@ -57,7 +57,9 @@ Nói xong, Sư ngồi kết già thị tịch.
 
 Năm 1740, 47 năm sau khi Sư tịch, Nhật hoàng lại phong danh hiệu khác là Đại Pháp Chính Nhãn Quốc sư (大法正眼國師, daihō shōgen kokushi).
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
-📖 [TÂM BẤT SINH](https://www.niemphat.vn/downloads/thien-tong/hoc-thien/tam-bat-sinh-ts-bankei-ns-tri-hai-dich.pdf)
+📖 <a href="https://www.niemphat.vn/downloads/thien-tong/hoc-thien/tam-bat-sinh-ts-bankei-ns-tri-hai-dich.pdf" target="_blank">TÂM BẤT SINH (PDF)</a>
+
+🎶 <a href="https://www.youtube.com/watch?v=zcYR8c3Plxk&list=PLJhUBezoFJ-3lFkC0KYPMN5f1v4e8hHWm" target="_blank">TÂM BẤT SINH (Audio)</a>
 

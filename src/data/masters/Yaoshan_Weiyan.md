@@ -13,11 +13,11 @@ image:
     alt: "Yaoshan Weiyan"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 
 

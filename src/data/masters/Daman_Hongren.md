@@ -13,11 +13,11 @@ image:
     alt: "Daman Hongren"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 
 

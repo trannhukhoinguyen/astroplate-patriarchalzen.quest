@@ -13,11 +13,11 @@ image:
     alt: "Huitang Zuxin"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 
 

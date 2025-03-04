@@ -13,11 +13,11 @@ image:
     alt: "Caoshan Benji"
 ---
 
-#### GIỚI THIỆU:
+#### INTRODUCTION:
 
 
 
-#### TÁC PHẨM / NGỮ LỤC:
+#### RECORDS:
 
 📖 
 
