@@ -27,11 +27,7 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
+    tailwind(),
   ],
   i18n: {
     locales: filteredSupportedLang,
