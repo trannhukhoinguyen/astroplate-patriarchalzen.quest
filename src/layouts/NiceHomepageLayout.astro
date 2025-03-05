@@ -15,7 +15,6 @@ import instrumentSansWoff2 from "@fontsource-variable/instrument-sans/files/inst
 type Props = {
   title: string;
   description?: string;
-  lang: string;
 };
 
 const { title, description = "Patriarchal Zen", lang } = Astro.props;
@@ -26,7 +25,7 @@ const currentPage =
 ---
 
 <!doctype html>
-<html lang={lang} data-page={currentPage}>
+<html data-page={currentPage}>
   <head>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap");
