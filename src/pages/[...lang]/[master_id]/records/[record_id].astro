@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render, getEntry } from "astro:content";
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import Separator from "../../../../components/Separator.astro";
+import {getLangFromUrl} from "../../../../scripts/languageParser";
 
 export const getStaticPaths = async () => {
   // Fetch all records from the 'records' collection
@@ -54,9 +55,10 @@ const { master, record } = Astro.props; // Extract master and record data from p
 
 // Render the content of the record (e.g., markdown or MDX content)
 const { Content } = await render(record);
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<BaseLayout title={record.data.name}>
+<BaseLayout title={record.data.name} lang={lang}>
   <section>
     <header class="title-header">
       <h2>
@@ -75,7 +77,7 @@ const { Content } = await render(record);
       <div class="content">
         <h3>Chapter List</h3>
         <ol>
-          {record.data.chapters.map((track) => <li>{track}</li>)}
+          {record.data.chapters.map((chapter) => <li>{chapter}</li>)}
         </ol>
         <Content />
       </div>

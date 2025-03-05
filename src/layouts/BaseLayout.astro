@@ -33,7 +33,7 @@ if (theme.fonts.font_family.secondary) {
 type Props = {
   title: string;
   description?: string;
-  lang: string;
+  lang?: string;
 };
 
 const { title, description = "Patriarchal Zen", lang } = Astro.props;
@@ -46,7 +46,7 @@ const language = lang || getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang={lang} data-page={currentPage}>
+<html lang={language} data-page={currentPage}>
   <head>
     <SEO
       title={title}
