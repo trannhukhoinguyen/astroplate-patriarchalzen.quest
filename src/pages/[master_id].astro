@@ -1,0 +1,111 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Separator from "../components/Separator.astro";
+import RecordGrid from "../components/Grid/RecordGrid.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all masters from the 'masters' collection
+  const masters = await getCollection("masters");
+
+  // Map over the masters to generate paths for each master's page
+  const paths = masters.map((master) => {
+    return {
+      params: { master_id: master.id }, // URL parameter for the master's ID
+      props: { masters, master }, // Pass the full master and all masters as props
+    };
+  });
+
+  // Return the generated paths to Astro for static page generation
+  return paths;
+};
+
+type Props = {
+  masters: CollectionEntry<"masters">[]; // Array of all masters in the collection
+  master: CollectionEntry<"masters">; // Current master being rendered
+};
+
+const { masters, master } = Astro.props; // Extract the masters list and current master from the props
+
+// Extract the ID of the current master
+const master_id = master.id;
+
+// Find the index of the current master in the masters array
+const currentMasterIndex = masters.findIndex((a) => a.id === master_id);
+
+// Calculate the index of the "next" master in the array (wrap around if at the last master)
+const nextMasterIndex = (currentMasterIndex + 1) % masters.length;
+
+// Get the "next" master based on the calculated index
+const nextMaster = masters[nextMasterIndex];
+
+// Fetch all records that belong to the current master
+const records = await getCollection(
+  "records",
+  ({ data }) => data.master.id === master_id,
+);
+
+// Render the content of the current master (e.g., markdown or MDX)
+const { Content } = await render(master);
+---
+
+<BaseLayout title={master?.data?.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {master?.data?.name}
+        <span class="faded">({master?.data?.dynasty})</span>
+      </h2>
+      <div>
+        <a class="back" href="/">View all</a>
+        <span class="faded">/</span>
+        <a href={`/${nextMaster?.id}`}>Next Zen Patriarch</a>
+      </div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={master?.data?.image.src}
+        alt={master?.data?.image.alt}
+      />
+      <div class="content">
+        <h3>Biography</h3>
+        <Content />
+        <dl>
+          <dt>sect</dt><dd>{master?.data?.sect}</dd>
+        </dl>
+      </div>
+      {
+        records.length > 0 && (
+          <div class="records">
+            <h3>Releases</h3>
+            <RecordGrid records={records} />
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
+<style>
+  .content-wrap {
+    grid-template-areas: "img" "content" "records";
+    grid-template-columns: 100%;
+    @media screen and (min-width: 44em) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "img img" "content records";
+    }
+    @media screen and (min-width: 50em) {
+      grid-template-columns: 30vw 1fr 170px;
+      grid-template-areas: "img content records";
+    }
+  }
+  .records {
+    grid-area: records;
+  }
+  .content p:last-child {
+    margin-top: 2.5rem;
+    display: flex;
+  }
+</style>

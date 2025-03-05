@@ -1,0 +1,84 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection, render, getEntry } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Separator from "../../../components/Separator.astro";
+
+export const getStaticPaths = async () => {
+  // Fetch all records from the 'records' collection
+  const records = await getCollection("records");
+
+  /*
+  // Filter records to ensure each has valid master data, then map to generate paths
+  const paths = records.filter(record => record.data.master && record.data.master.id) // Ensure the record has a valid master reference
+  .map((record) => {
+    return {
+      params: {
+        master_id: record.data.master.id, // Include master ID in the route parameters
+        record_id: record.id,             // Include record ID in the route parameters
+      },
+      props: {
+        master: record.data.master,      // Pass the master data as props
+        record                           // Pass the record data as props
+      },
+    };
+  });
+  */
+
+  const paths = await Promise.all(
+    records.map(async (record) => {
+      const master = await getEntry("masters", record.data.master.id); // Fetch master by ID
+      return {
+        params: {
+          master_id: record.data.master.id, // Include master ID in route parameters
+          record_id: record.id, // Include record ID in route parameters
+        },
+        props: {
+          master, // Pass full master data as props
+          record, // Pass record data as props
+        },
+      };
+    }),
+  );
+
+  // Return the generated paths for static page generation
+  return paths;
+};
+
+type Props = {
+  master: CollectionEntry<"masters">; // The master associated with the record
+  record: CollectionEntry<"records">; // The record being rendered
+};
+
+const { master, record } = Astro.props; // Extract master and record data from props
+
+// Render the content of the record (e.g., markdown or MDX content)
+const { Content } = await render(record);
+---
+
+<BaseLayout title={record.data.name}>
+  <section>
+    <header class="title-header">
+      <h2>
+        {record.data.name}
+        <span class="faded">by {master.data.name}</span>
+      </h2>
+      <div><a class="back" href={`/${master.id}`}>Back to {master.data.name}</a></div>
+    </header>
+    <Separator />
+    <div class="content-wrap">
+      <img
+        class="image fade-in"
+        src={record.data.image.src}
+        alt={record.data.image.alt}
+      />
+      <div class="content">
+        <h3>Chapter List</h3>
+        <ol>
+          {record.data.chapters.map((chapter) => <li>{chapter}</li>)}
+        </ol>
+        <Content />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
