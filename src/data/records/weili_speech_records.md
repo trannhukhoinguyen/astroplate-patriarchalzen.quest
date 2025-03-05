@@ -3,7 +3,7 @@ name: "DUY LỰC NGỮ LỤC"
 image:
   src: "/images/records/weili_speech_records.webp"
   alt: "DUY LỰC NGỮ LỤC"
-publishDate: 2025-02-15
+publishDate: 1999-01-01
 chapters:
   - "DUY LỰC NGỮ LỤC QUYỂN THƯỢNG (1983 - 1989)"
   - "DUY LỰC NGỮ LỤC QUYỂN HẠ (1992 - 1999)"
