@@ -1,9 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render, getEntry } from "astro:content";
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Separator from "../../../components/Separator.astro";
-import TempleGrid from "../../../components/Grid/TempleGrid.astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import Separator from "../../../../components/Separator.astro";
+import TempleGrid from "../../../../components/Grid/TempleGrid.astro";
+import {getLangFromUrl} from "../../../../scripts/languageParser";
 
 export const getStaticPaths = async () => {
   // Fetch all areas from the 'areas' collection
@@ -64,9 +65,10 @@ const temples = await getCollection(
 
 // Render the content of the area (e.g., markdown or MDX content)
 const { Content } = await render(area);
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<BaseLayout title={area.data.name}>
+<BaseLayout title={area.data.name} lang={lang}>
   <section>
     <header class="title-header">
       <h2>

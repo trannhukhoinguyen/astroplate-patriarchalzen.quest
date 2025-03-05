@@ -1,9 +1,10 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Separator from "../../components/Separator.astro";
-import AreaGrid from "../../components/Grid/AreaGrid.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Separator from "../../../components/Separator.astro";
+import AreaGrid from "../../../components/Grid/AreaGrid.astro";
+import {getLangFromUrl} from "../../../scripts/languageParser";
 
 export const getStaticPaths = async () => {
   // Fetch all nations from the 'nations' collection
@@ -48,10 +49,10 @@ const areas = await getCollection(
 
 // Render the content of the current nation (e.g., markdown or MDX)
 const { Content } = await render(nation);
+const lang = getLangFromUrl(Astro.url);
 ---
 
-
-<BaseLayout title={nation.data.name}>
+<BaseLayout title={nation.data.name} lang={lang}>
   <section>
     <header class="title-header">
       <h2>

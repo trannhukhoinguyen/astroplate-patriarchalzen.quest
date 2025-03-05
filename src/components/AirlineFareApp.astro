@@ -1,0 +1,780 @@
+---
+import type {CollectionEntry} from "astro:content";
+import { useEffect } from "react";
+
+type Props = {
+    masters: Array<CollectionEntry<"masters">>
+};
+const { masters } = Astro.props;
+---
+
+
+<div class="container">
+    <div class="app-bar">
+        <span class="mac-icon red"></span>
+        <span class="mac-icon yellow"></span>
+        <span class="mac-icon green"></span>
+    </div>
+    <div class="grid">
+        <div class="grid-two rate-cards">
+            <div class="rate"><sup>$</sup>34</div>
+            <div class="rate-info">
+                <p class="rate-name">Cheapset</p>
+                <p class="rate-hour">2h 37m average</p>
+            </div>
+        </div>
+        <div class="grid-two rate-cards active">
+            <div class="rate"><sup>$</sup>56</div>
+            <div class="rate-info">
+                <p class="rate-name">Best</p>
+                <p class="rate-hour">1h 50m average</p>
+            </div>
+        </div>
+        <div class="grid-two rate-cards">
+            <div class="rate"><sup>$</sup>93</div>
+            <div class="rate-info">
+                <p class="rate-name">Fasted</p>
+                <p class="rate-hour">1h 21m average</p>
+            </div>
+        </div>
+        <div class="grid-two rate-cards">
+            <div class="rate"><sup>$</sup>58</div>
+            <div class="rate-info">
+                <p class="rate-name">Fly greener</p>
+                <p class="rate-hour">1h 55m average</p>
+            </div>
+        </div>
+        <div class="grid-three">
+            <button class="price-alerts">Get price alerts</button>
+            <div class="mutiple-choices">
+                <p class="filter-titles">Stops</p>
+                <label for="non-stop" class="multiple-choice">
+                    <input type="checkbox" id="non-stop" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>Non-stop</span>
+                    <span>$34</span>
+                </label>
+                <label for="1-stop" class="multiple-choice">
+                    <input type="checkbox" checked id="1-stop" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>1 stop</span>
+                    <span>$70</span>
+                </label>
+                <label for="2-stop" class="multiple-choice">
+                    <input type="checkbox" id="2-stop" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>2+ stop</span>
+                    <span>$98</span>
+                </label>
+            </div>
+            <div class="range-sliders">
+                <p class="filter-titles">Departure times</p>
+                <p class="filter-range">11:00 AM - 11:00 PM</p>
+                <input type="range" value="250" min="0" max="500">
+            </div>
+            <div class="range-sliders">
+                <p class="filter-titles">Trip Duration</p>
+                <p class="filter-range">2 hours - 12 hours</p>
+                <input type="range" value="50" min="0" max="500">
+            </div>
+            <div class="mutiple-choices">
+                <p class="filter-titles">Baggage</p>
+                <label for="small-bag" class="multiple-choice">
+                    <input type="checkbox" checked id="small-bag" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>1 small bag</span>
+                    <span>$34</span>
+                </label>
+                <label for="2-cabin" class="multiple-choice">
+                    <input type="checkbox" id="2-cabin" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>2 cabin bags</span>
+                    <span>$58</span>
+                </label>
+                <label for="checked-in" class="multiple-choice">
+                    <input type="checkbox" id="checked-in" class="input-check" />
+                    <div class="check-box"></div>
+                    <span>checked-in bags</span>
+                    <span>$112</span>
+                </label>
+            </div>
+        </div>
+        <div class="grid-four">
+            <div class="travel-card">
+                <div class="travel-image">
+                    <div class="image-one"></div>
+                </div>
+                <div class="travel-arrival-info">
+                    <p class="travel-time">10:30 AM</p>
+                    <p class="travel-arrival">Barcelona (BCN)</p>
+                    <p class="travel-arrival-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-range">
+                    <p class="range-time">1h 50m</p>
+                    <div class="range">
+                        <div class="range-pos range-start"></div>
+                        <div class="range-pos range-end"></div>
+                        <div class="ranger"></div>
+                    </div>
+                    <p class="range-stops">
+                        <span>Non-stop</span>
+                    </p>
+                </div>
+                <div class="travel-departure-info">
+                    <p class="travel-time">12:20 AM</p>
+                    <p class="travel-departure">ROME (ROM)</p>
+                    <p class="travel-departure-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-rate-final">
+                    <div class="travel-rate"><sup>$</sup>56</div>
+                    <button class="select-rate">Select</button>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-image">
+                    <div class="image-one"></div>
+                    <div class="image-two"></div>
+                </div>
+                <div class="travel-arrival-info">
+                    <p class="travel-time">07:45 AM</p>
+                    <p class="travel-arrival">Barcelona (BCN)</p>
+                    <p class="travel-arrival-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-range">
+                    <p class="range-time">7h 55m</p>
+                    <div class="range">
+                        <div class="range-pos range-start"></div>
+                        <div class="range-pos range-end"></div>
+                        <div class="ranger"></div>
+                    </div>
+                    <p class="range-stops">
+                        <span class="range-stop">VIE</span>
+                    </p>
+                </div>
+                <div class="travel-departure-info">
+                    <p class="travel-time">3:40 PM</p>
+                    <p class="travel-departure">ROME (ROM)</p>
+                    <p class="travel-departure-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-rate-final">
+                    <div class="travel-rate"><sup>$</sup>68</div>
+                    <button class="select-rate">Select</button>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-image">
+                    <div class="image-one"></div>
+                    <div class="image-two"></div>
+                </div>
+                <div class="travel-arrival-info">
+                    <p class="travel-time">10:35 PM</p>
+                    <p class="travel-arrival">Barcelona (BCN)</p>
+                    <p class="travel-arrival-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-range">
+                    <p class="range-time">17h 15m</p>
+                    <div class="range">
+                        <div class="range-pos range-start"></div>
+                        <div class="range-pos range-end"></div>
+                        <div class="ranger"></div>
+                    </div>
+                    <p class="range-stops">
+                        <span class="range-stop">PMI</span>
+                        <span class="range-stop">VLC</span>
+                    </p>
+                </div>
+                <div class="travel-departure-info">
+                    <p class="travel-time">3:50 PM</p>
+                    <p class="travel-departure">ROME (ROM)</p>
+                    <p class="travel-departure-date">Tuesday, Apr 22, 2020</p>
+                </div>
+                <div class="travel-rate-final">
+                    <div class="travel-rate"><sup>$</sup>82</div>
+                    <button class="select-rate">Select</button>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-image">
+                    <div class="image-one"></div>
+                </div>
+                <div class="travel-arrival-info">
+                    <p class="travel-time">09:30 AM</p>
+                    <p class="travel-arrival">Barcelona (BCN)</p>
+                    <p class="travel-arrival-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-range">
+                    <p class="range-time">23h 15m</p>
+                    <div class="range">
+                        <div class="range-pos range-start"></div>
+                        <div class="range-pos range-end"></div>
+                        <div class="ranger"></div>
+                    </div>
+                    <p class="range-stops">
+                        <span class="range-stop">CGN</span>
+                        <span class="range-stop">KTW</span>
+                    </p>
+                </div>
+                <div class="travel-departure-info">
+                    <p class="travel-time">8:45 AM</p>
+                    <p class="travel-departure">ROME (ROM)</p>
+                    <p class="travel-departure-date">Tuesday, Apr 22, 2020</p>
+                </div>
+                <div class="travel-rate-final">
+                    <div class="travel-rate"><sup>$</sup>91</div>
+                    <button class="select-rate">Select</button>
+                </div>
+            </div>
+            <div class="travel-card">
+                <div class="travel-image">
+                    <div class="image-one"></div>
+                    <div class="image-two"></div>
+                </div>
+                <div class="travel-arrival-info">
+                    <p class="travel-time">09:30 AM</p>
+                    <p class="travel-arrival">Barcelona (BCN)</p>
+                    <p class="travel-arrival-date">Tuesday, Apr 21, 2020</p>
+                </div>
+                <div class="travel-range">
+                    <p class="range-time">28h 00m</p>
+                    <div class="range">
+                        <div class="range-pos range-start"></div>
+                        <div class="range-pos range-end"></div>
+                        <div class="ranger"></div>
+                    </div>
+                    <p class="range-stops">
+                        <span class="range-stop">PMI</span>
+                        <span class="range-stop">CGN</span>
+                        <span class="range-stop">KTW</span>
+                    </p>
+                </div>
+                <div class="travel-departure-info">
+                    <p class="travel-time">1:30 PM</p>
+                    <p class="travel-departure">ROME (ROM)</p>
+                    <p class="travel-departure-date">Tuesday, Apr 22, 2020</p>
+                </div>
+                <div class="travel-rate-final">
+                    <div class="travel-rate"><sup>$</sup>120</div>
+                    <button class="select-rate">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+  $background: #ebf3ec;
+  $grey: #f5f5f8;
+  $white: #fff;
+  $purple: #484aa3;
+  $light-purple: #e9e9f8;
+  $big-text-color: #4b5287;
+  $small-text-color: #565d8e;
+  $orange: #fa7a57;
+  $faded-gray: #c9cbda;
+
+  /*--------------------------------------*/
+/*  *,
+  *::after,
+  *::before {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  html {
+    font-family: "Open Sans", sans-serif;
+  }*/
+  body {
+    background: $background;
+    /*width: 100vw;*/
+/*    display: flex;
+    justify-content: center;*/
+    /*align-items: center;*/
+    height: 100vh;
+/*    min-width: 1270px;
+    min-height: 800px;*/
+  }
+  /*--------------------------------------*/
+
+  .container {
+    width: 100%;
+    padding: 15px;
+    border: 6px solid;
+    border-radius: 30px;
+    background: $grey;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  }
+
+  .app-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    .mac-icon {
+      height: 12px;
+      width: 12px;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 50%;
+      &.red {
+        background: #ee4947;
+      }
+      &.yellow {
+        background: #f0dd3d;
+      }
+      &.green {
+        background: #2dd75e;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 210px) 270px;
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 20px;
+    width: 100vw;
+  }
+
+  .grid > div {
+    background: #fff;
+    border-radius: 15px;
+  }
+
+  .grid > .grid-one {
+    grid-column: span 4;
+    background: $purple;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .grid-three {
+    grid-row: span 5;
+    margin-top: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > * {
+      align-self: stretch;
+    }
+  }
+
+  .price-alerts {
+    padding: 10px 0;
+    background: $light-purple;
+    border: 0;
+    border-radius: 5px;
+    color: $purple;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  .filter-titles {
+    color: $purple;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .mutiple-choices {
+    margin-bottom: 20px;
+    .check-box {
+      height: 20px;
+      width: 20px;
+      border-radius: 7px;
+      background: $light-purple;
+      transition: all 0.3s ease;
+      position: relative;
+      margin-right: 10px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background: $white;
+        transition: all 0.3s ease;
+      }
+
+      &::before {
+        height: 10px;
+        width: 2px;
+        transform: translateX(10px) translateY(5px) rotate(45deg) scale(0);
+      }
+
+      &::after {
+        height: 5px;
+        width: 2px;
+        transform: translateX(6px) translateY(9px) rotate(-45deg) scale(0);
+      }
+    }
+    .input-check {
+      visibility: hidden;
+      position: absolute;
+      &:checked ~ .check-box {
+        background: $purple;
+        &::before {
+          transform: translateX(10px) translateY(5px) rotate(45deg) scale(1);
+        }
+        &::after {
+          transform: translateX(6px) translateY(9px) rotate(-45deg) scale(1);
+        }
+      }
+    }
+    span {
+      font-size: 12px;
+      color: $purple;
+      &:first-of-type {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .multiple-choice {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+  .range-sliders {
+    margin-bottom: 20px;
+    .filter-range {
+      color: $purple;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      background: $light-purple;
+      -webkit-appearance: none;
+      height: 4px;
+      border-radius: 5px;
+      outline: none;
+
+      // Range Handle - Chrome
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $purple;
+        cursor: pointer;
+      }
+
+      &:active::-webkit-slider-thumb {
+        background: $purple;
+      }
+
+      // Range Handle - Firefox
+      &::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        border: 0;
+        border-radius: 50%;
+        background: $purple;
+        cursor: pointer;
+      }
+
+      &:active::-moz-range-thumb {
+        background: $purple;
+      }
+    }
+  }
+
+  .grid .grid-four {
+    grid-column: span 4;
+    grid-row: span 4;
+    background: $grey;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 0;
+    &::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
+  }
+
+  .current-travel {
+    color: #fff;
+    line-height: 20px;
+  }
+
+  .current-travel-class {
+    font-size: 12px;
+  }
+
+  .calendars {
+    display: flex;
+    align-items: center;
+  }
+
+  .calendar {
+    background: $grey;
+    color: $purple;
+    width: 190px;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    svg {
+      fill: $purple;
+      margin-right: 10px;
+    }
+    &.blank {
+      color: $faded-gray;
+    }
+  }
+  .user-info {
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-image {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .user-name {
+    color: $purple;
+    margin-right: auto;
+    .name {
+      font-weight: bolder;
+    }
+  }
+
+  .kebab-menu {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: $purple;
+    box-shadow: 0 13px 0 0 $purple, 0 26px 0 0 $purple;
+    margin-top: -26px;
+  }
+
+  .rate-cards {
+    padding: 19px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $purple;
+    cursor: pointer;
+    transition: all 300ms ease;
+    &.active {
+      background: $purple;
+      color: $white;
+    }
+  }
+
+  .rate {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15px;
+    sup {
+      font-size: 12px;
+    }
+  }
+
+  .rate-info {
+    line-height: 18px;
+  }
+
+  .rate-name {
+    font-weight: bold;
+  }
+
+  .rate-hour {
+    font-size: 10px;
+  }
+
+  .travel-card {
+    height: 120px;
+    width: 100%;
+    background: $white;
+    border-radius: 15px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .travel-card + .travel-card {
+    margin: 20px 0;
+  }
+
+  .travel-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .travel-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+    .image-one,
+    .image-two {
+      height: 30px;
+      width: 30px;
+      background: $orange;
+      border-radius: 50%;
+    }
+
+    .image-two {
+      background: $purple;
+      margin-top: -10px;
+      border: 2px solid $white;
+    }
+  }
+
+  .travel-arrival-info,
+  .travel-departure-info {
+    color: $purple;
+    margin-right: 30px;
+    .travel-time {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .travel-arrival,
+    .travel-departure {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    .travel-arrival-date,
+    .travel-departure-date {
+      font-size: 12px;
+    }
+  }
+
+  .travel-range {
+    width: calc(100% - 30px - 242px - 140px - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    .range-stops,
+    .range-time {
+      color: $purple;
+      margin: 2px 0;
+      font-size: 12px;
+    }
+
+    .range-stops {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-evenly;
+      .range-stop {
+        position: relative;
+      }
+      .range-stop::before {
+        content: "";
+        height: 7px;
+        width: 7px;
+        background: $purple;
+        border-radius: 50%;
+        position: absolute;
+        top: -13.5px;
+      }
+    }
+  }
+
+  .range {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .range-pos {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+      &.range-start {
+        background: $white;
+        margin-right: auto;
+        border: 5px solid $purple;
+      }
+      &.range-end {
+        background: $purple;
+        border: 5px solid $light-purple;
+      }
+    }
+    .ranger {
+      position: absolute;
+      width: 100%;
+      border-top: 2px dotted $purple;
+    }
+  }
+
+  .travel-rate-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .travel-rate {
+      color: $purple;
+      font-size: 25px;
+      font-weight: bold;
+      sup {
+        font-size: 10px;
+      }
+    }
+
+    .select-rate {
+      border: 0;
+      padding: 10px 50px;
+      border-radius: 7px;
+      background: $orange;
+      color: $white;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+</style>
+
+<script is:inline>
+useEffect(() => {
+    let rate_cards = document.querySelectorAll(".rate-cards");
+    rate_cards.forEach((rate_card) => {
+        rate_card.addEventListener("click", () => {
+            rate_cards.forEach((rate_card) => rate_card.classList.remove("active"));
+            rate_card.classList.add("active");
+        });
+    });
+}, []);
+</script>

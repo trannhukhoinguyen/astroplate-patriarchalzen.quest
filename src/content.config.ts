@@ -77,13 +77,5 @@ const nations = defineCollection({
     continent: z.string(),
   }),
 });
-
-const years = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/years" }),
-  schema: z.object({
-    title: z.string(),
-    content: z.array(z.array(z.string()),),
-  }),
-});
 // Export all collections
-export const collections = {masters, records, temples, areas, nations, years};
+export const collections = {masters, records, temples, areas, nations};

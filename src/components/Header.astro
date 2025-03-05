@@ -39,16 +39,16 @@ const activeRoute = routes[currentPath] || null;
 
 <header>
   <h1>
-    <a href="/" class={activeRoute === "Home" ? "current" : ""}
-      ><TextSlider content="Patriarchal Zen" /></a>
+    <a href="/" class={activeRoute === "Home" ? "current" : ""}><TextSlider content="Patriarchal Zen" /></a>
   </h1>
   <span><TextSlider content="Speech Record" /></span>
   <ul>
     <li>
       <a
+        title="Temples around the World"
         href="/nations"
         class={activeRoute === "Nations" ? "current" : ""}
-        data-astro-prefetch><TextSlider content="Temples around the World" /></a>
+        data-astro-prefetch><TextSlider content="Temples 🌎" /></a>
     </li>
     <li>
       {/* Theme switcher */}

@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import {getLangFromUrl} from "../scripts/languageParser";
 
 const title = "Patriarchal Zen - 404";
+const lang = getLangFromUrl(Astro.url);
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} lang={lang}>
   <div class="content content--page">
     <h1>404</h1>
     <p>Without zen, we are all lost</p>
