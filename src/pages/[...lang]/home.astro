@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import NiceHomepageLayout from "../../layouts/NiceHomepageLayout.astro";
-import Preloader from "../../components/Preloader.astro";
 import {getLangFromUrl} from "../../scripts/languageParser";
 
 const allMasters = await getCollection("masters");

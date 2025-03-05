@@ -3,7 +3,6 @@ import  { getCollection } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import NationGrid from "../../../components/Grid/NationGrid.astro";
 import NationGridHeader from "../../../components/NationGridHeader.astro";
-import Preloader from "../../../components/Preloader.astro";
 import {getLangFromUrl} from "../../../scripts/languageParser";
 
 const allNations = await getCollection("nations");
@@ -13,11 +12,6 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <BaseLayout title={title} lang={lang}>
-  <!--
-    The <Preloader /> component is used to preload all images on the homepage using the images.loaded.js script.
-    If you don’t want to use the preloader (e.g., for faster page load times or if you don’t require preloading images), you can safely remove the <Preloader /> component from this layout.
-  -->
-  <!--<Preloader />-->
   <NationGridHeader nationsTotal={nationsTotal} />
   <NationGrid nations={allNations} />
 </BaseLayout>
