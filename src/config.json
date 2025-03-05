@@ -3,8 +3,8 @@
     "title": "Tổ Sư Thiền - Patriarchal Zen",
     "meta_title": "Tổ Sư Thiền - Patriarchal Zen",
     "meta_image": "/images/monocolor-unknown-zen-master.jpg",
-    "meta_description": "Tham Tổ Sư Thiền - Patriarchal Zen - Blogs, Koans, Conversations, Speeches, Teachings, Masters, Alerts, FAQs, Books, PDF, MP3, Youtube",
-    "base_url": "https://tosuthien.quest",
+    "meta_description": "Tham Tổ Sư Thiền - Patriarchal Zen",
+    "base_url": "https://patriarchal.quest",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -45,6 +45,6 @@
   "metadata": {
     "meta_author": "Tổ Sư Thiền - Patriarchal Zen",
     "meta_image": "/images/sit-on-the-mountain-peak.jpg",
-    "meta_description": "Tổ Sư Thiền - Patriarchal Zen - Blogs, Koans, Teachings, Speeches, Masters, Alerts, FAQs, Books, PDF, MP3, Youtube"
+    "meta_description": "Tổ Sư Thiền - Patriarchal Zen"
   }
 }

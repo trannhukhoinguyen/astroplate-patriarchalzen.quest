@@ -1,4 +1,4 @@
-import {fonts, colors as _colors} from "./src/config/theme.json";
+import {fonts, colors as _colors} from "./src/theme.json";
 
 let font_base = Number(fonts.font_size.base.replace("px", ""));
 let font_scale = Number(fonts.font_size.scale);

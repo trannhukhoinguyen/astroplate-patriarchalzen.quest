@@ -11,8 +11,7 @@ import Footer from "../components/Footer.astro";
 
 import "@fontsource-variable/instrument-sans";
 import instrumentSansWoff2 from "@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2";
-import { getLangFromUrl } from "../scripts/languageParser";
-import theme from "../config/theme.json";
+import theme from "../theme.json";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -33,20 +32,17 @@ if (theme.fonts.font_family.secondary) {
 type Props = {
   title: string;
   description?: string;
-  lang: string;
 };
 
-const { title, description = "Patriarchal Zen", lang } = Astro.props;
+const { title, description = "Patriarchal Zen" } = Astro.props;
 
 // Current page value (/home, /about, /404 ...)
 const currentPage =
   Astro.url.pathname.replace(/\/$/, "").split("/").pop() || "home";
-
-const language = lang || getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang={lang} data-page={currentPage}>
+<html data-page={currentPage}>
   <head>
     <SEO
       title={title}

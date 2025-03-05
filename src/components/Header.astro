@@ -2,25 +2,6 @@
 import TextSlider from "../components/TextSlider.astro";
 import Separator from "../components/Separator.astro";
 import ThemeSwitcher from "../components/ThemeSwitcher.astro";
-import LanguageSwitcher from "../components/LanguageSwitcher";
-import config from "../config/config.json";
-import languages from "../config/language.json";
-import {
-  getLangFromUrl,
-  getTranslations,
-  slugSelector,
-} from "../scripts/languageParser";
-import type { ContentEntryMap } from "astro:content";
-
-let lang = getLangFromUrl(Astro.url);
-const menu = await getTranslations(lang as keyof ContentEntryMap);
-const { default_language } = config.settings;
-const { pathname } = Astro.url;
-const { get_started } = await getTranslations(lang as keyof ContentEntryMap);
-const disabledLanguages = config.settings.disable_languages as string[];
-if (disabledLanguages.includes(lang)) {
-  lang = default_language;
-}
 
 // Get the current pathname
 const currentPath = Astro.url.pathname;
@@ -39,24 +20,20 @@ const activeRoute = routes[currentPath] || null;
 
 <header>
   <h1>
-    <a href="/" class={activeRoute === "Home" ? "current" : ""}
-      ><TextSlider content="Patriarchal Zen" /></a>
+    <a href="/" class={activeRoute === "Home" ? "current" : ""}><TextSlider content="Patriarchal Zen" /></a>
   </h1>
   <span><TextSlider content="Speech Record" /></span>
   <ul>
     <li>
       <a
+        title="Temples around the World"
         href="/nations"
         class={activeRoute === "Nations" ? "current" : ""}
-        data-astro-prefetch><TextSlider content="Temples around the World" /></a>
+        data-astro-prefetch><TextSlider content="Temples 🌎" /></a>
     </li>
     <li>
       {/* Theme switcher */}
       <ThemeSwitcher tailwind.config.js="mr-5" />
-    </li>
-    <li>
-      {/* Language switcher */}
-      <LanguageSwitcher client:load lang={lang} pathname={pathname} />
     </li>
   </ul>
 </header>
