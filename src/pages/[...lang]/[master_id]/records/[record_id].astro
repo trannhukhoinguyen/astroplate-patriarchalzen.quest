@@ -1,8 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { getCollection, render, getEntry } from "astro:content";
-import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Separator from "../../../components/Separator.astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import Separator from "../../../../components/Separator.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all records from the 'records' collection
