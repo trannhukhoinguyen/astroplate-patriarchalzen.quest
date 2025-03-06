@@ -14,7 +14,7 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap(),
-    tailwind(),
+    tailwind()
   ],
   experimental: {
     svg: true,

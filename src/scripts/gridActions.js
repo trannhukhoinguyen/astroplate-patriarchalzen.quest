@@ -212,7 +212,7 @@ const addCharactersToPage = characters => {
       })
       .join('');
 
-  document.querySelector('#character-list').innerHTML = characterList;
+  if (document.querySelector('#character-list')) document.querySelector('#character-list').innerHTML = characterList;
 };
 const getPaginatedData = async url => {
   const data = [];
