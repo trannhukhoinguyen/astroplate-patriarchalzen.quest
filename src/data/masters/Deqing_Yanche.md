@@ -4,6 +4,7 @@ name_en: "Deqing Yanche"
 name_vi: "Deqing Yanche"
 name_zh: "Deqing Yanche"
 name_jp: ""
+life_time: ['', '']
 dynasty: "None"
 sect: "43th Linji - Yanqi, 8th Weiyang (Guiyang), 12th Yunmen, 8th Fayan, 43th Caodong"
 color: "teal"

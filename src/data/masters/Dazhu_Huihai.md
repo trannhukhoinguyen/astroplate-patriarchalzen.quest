@@ -4,6 +4,7 @@ name_en: "Dazhu Huihai"
 name_vi: "Dazhu Huihai"
 name_zh: "Dazhu Huihai"
 name_jp: ""
+life_time: ['', '']
 dynasty: "None"
 sect: "None"
 color: "HotPink"

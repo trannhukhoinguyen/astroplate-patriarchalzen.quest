@@ -4,6 +4,7 @@ name_en: "Bankei Yotaku"
 name_vi: "Bankei Yotaku"
 name_zh: "盤珪永琢"
 name_jp: "盤珪永琢"
+life_time: ['1622', '1693']
 dynasty: "1622 — 1693"
 sect: "Linji (Rinzai)"
 color: "orange"

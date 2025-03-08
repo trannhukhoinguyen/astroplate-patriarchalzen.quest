@@ -4,6 +4,7 @@ name_en: "Caoshan Benji"
 name_vi: "Caoshan Benji"
 name_zh: "Caoshan Benji"
 name_jp: ""
+life_time: ['840', '901']
 dynasty: "840 - 901"
 sect: "Caodong (Soto)"
 color: "indigo"

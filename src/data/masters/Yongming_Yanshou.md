@@ -4,6 +4,7 @@ name_en: "Yongming Yanshou"
 name_vi: "Vĩnh Minh Diên Thọ"
 name_zh: "永明延壽"
 name_jp: "Yōmyō Enju"
+life_time: ['17/11/904', '26/12/975']
 dynasty: "None"
 sect: "Fayan (Hogen)"
 color: "teal"
@@ -17,7 +18,7 @@ image:
 
 I. 
 
-Vĩnh Minh Diên Thọ (17/11/904 – 26/12/975), cũng được gọi là Huệ Nhật Trí Giác (慧日智覺), Vĩnh Minh Đại sư, là Thiền sư Trung Quốc thuộc tông Pháp Nhãn, nối pháp Quốc sư Thiên Thai Đức Thiều.
+Vĩnh Minh Diên Thọ (17/11/904 AL – 26/12/975 AL) ~ (26/12/904 – 29/1/976), cũng được gọi là Huệ Nhật Trí Giác (慧日智覺), Vĩnh Minh Đại sư, là Thiền sư Trung Quốc thuộc tông Pháp Nhãn, nối pháp Quốc sư Thiên Thai Đức Thiều.
 
 Tông Pháp Nhãn rất phồn thịnh dưới sự hoằng hoá của ông. Học chúng đến rất đông – có lúc đến 2000 người để tham Thiền. 
 
@@ -53,17 +54,18 @@ Nghe như vậy, vua cho phép ông từ quan để xuất gia.
 
 Sau khi xuất gia, ông đến ngọn Thiên Trụ trên núi Thiên Thai và tu tập tọa Thiền trong chín tuần (90 ngày), có chim xích án làm tổ trong áo của ông. 
 
-Kế đến, ông đến tham vấn Quốc sư Thiên Thai Đức Thiều và được ấn khả, Đức Thiều căn dặn: "Ông với nguyên soáicó duyên, ngày sau sẽ đại hưng Phật sự!".
+Kế đến, ông đến tham vấn Quốc sư Thiên Thai Đức Thiều và được ấn khả, Đức Thiều căn dặn: "Ông với nguyên soái có duyên, ngày sau sẽ đại hưng Phật sự!".
 
 III.
 
 Vào năm thứ 2 (952) niên hiệu Quảng Thuận (廣順), ông đến trụ trì tại Tuyết Đậu Sơn Tư Thánh Tự (資聖寺). 
 
-Về sau, thể theo lời thỉnh cầu đặc biệt của Trung Ý Vương (忠懿王), ông nhậm chức trụ trì Linh Ẩn Tự, rồi chuyển sang Vĩnh Minh Tự (永明寺) và hoằng pháp tại đây trong vòng 15 năm và độ được khoảng 1.700 đệ tử, tăng chúng tham học trong pháp hội lên đến 2.000 người.
+Về sau, thể theo lời thỉnh cầu đặc biệt của Trung Ý Vương (忠懿王), ông nhậm chức trụ trì Linh Ẩn Tự, 
+-rồi chuyển sang Vĩnh Minh Tự (永明寺) và hoằng pháp tại đây trong vòng 15 năm và độ được khoảng 1.700 đệ tử, tăng chúng tham học trong pháp hội lên đến 2.000 người.
 
 Ông kiêm tu cả Thiền lẫn Tịnh Độ, ban đêm thường hành trì pháp môn Niệm Phật. 
 
-Nhà vua bèn cho xây dựng Tây Phương Quảng Giáo Điện (西方廣敎殿) và cử ông đến đây trú trì. 
+Nhà vua bèn cho xây dựng Tây Phương Quảng Giáo Điện (西方廣敎殿) và cử ông đến đây trụ trì. 
 
 Chính vì lẽ đó, Thạch Chi Tông Hiểu (石芝宗曉) kính ngưỡng ông và coi ông như là vị tổ đời thứ 7 của Liên Tông. 
 
@@ -105,7 +107,7 @@ Cho đến mê ngộ phàm thánh đi đứng ngồi nằm đều là vọng th�
 
 Tâm xưa nay chẳng sinh, nay cũng chẳng diệt. Nếu biết tâm mình như thế, đối chư Phật cũng vậy. 
 
-Cho nên Duy-ma-cật nói: 'Trực tâm là đạo trường!' vì không có hư giả vậy."
+Cho nên Duy-ma-cật nói: 'Trực tâm là đạo tràng!' vì không có hư giả vậy."
 
 Có tăng hỏi: "Học nhân ở tại Vĩnh Minh đã lâu, vì sao chẳng hội gia phong Vĩnh Minh?" 
 
@@ -115,16 +117,26 @@ Tăng nói: "Chỗ chẳng hội làm sao mà hội?"
 
 Ông đáp: "Thai trâu sanh voi con, biển biết dấy bụi hồng."
 
-Vua Cao Ly Triều Tiên là Quang Tông (光宗) xem ngôn giáo của ông cảm thấy rất kính trọng, bèn sai sứ giả sang Trung Quốc thăm hỏi ông, tự mình giữ lệ đệ tử và cho người dùng kim tuyến dệt thành áo ca-sa kết kèm theo rất nhiều châu ngọc để cúng dường cho ông. Sau vua lại phái 36 vị tăng đến tham học nơi ông và tất cả đều được tông chỉ. Khi đã đắc pháp, họ quay về Triều Tiên, mỗi người giáo hóa một nơi khiến cho tông Pháp Nhãn được mở mang sang Cao Ly và không bị thất truyền.[1]
+Vua Cao Ly Triều Tiên là Quang Tông (光宗) xem ngôn giáo của ông cảm thấy rất kính trọng, bèn sai sứ giả sang Trung Quốc thăm hỏi ông, tự mình giữ lệ đệ tử và cho người dùng kim tuyến dệt thành áo ca-sa kết kèm theo rất nhiều châu ngọc để cúng dường cho ông. 
+Sau vua lại phái 36 vị tăng đến tham học nơi ông và tất cả đều được tông chỉ. 
+Khi đã đắc pháp, họ quay về Triều Tiên, mỗi người giáo hóa một nơi khiến cho tông Pháp Nhãn được mở mang sang Cao Ly và không bị thất truyền.
 
-Sau khi tiến hành độ tăng, truyền thọ giới pháp và phóng sinh, đến giờ Thìn buổi sáng ngày 26 tháng 12 năm thứ 8 (975) niên hiệu Khai Bảo (開寶), ông đốt hương lễ Phật, dặn dò đồ chúng rồi ngồi kiết già thị tịch. Ông thọ 72 tuổi, hạ lạp 42 năm. Đến ngày mùng 6 tháng giêng năm sau, đệ tử trang nghiêm thỉnh nhục thân ông nhập tháp ở núi Đại Từ.
+Sau khi tiến hành độ tăng, truyền thọ giới pháp và phóng sinh, đến giờ Thìn buổi sáng ngày 26 tháng 12 năm thứ 8 (975) niên hiệu Khai Bảo (開寶), ông đốt hương lễ Phật, dặn dò đồ chúng rồi ngồi kiết già thị tịch. 
+Ông thọ 72 tuổi, hạ lạp 42 năm. Đến ngày mùng 6 tháng giêng năm sau, đệ tử trang nghiêm thỉnh nhục thân ông nhập tháp ở núi Đại Từ.
 
 #### RECORDS:
 
-📖 [Vạn Thiện Đồng Quy Tập](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (萬善同歸集, 3 quyển)
+📖 [Vạn Thiện Đồng Quy Tập](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (萬善同歸集, 3 quyển) - Collection of All Good Deeds Returning
 
-📖 [Tông Kính Lục](https://shorturl.at/qYq8m)
+📖 [Tông Kính Lục](https://shorturl.at/qYq8m) (宗鏡錄 / 心镜录, 100 quyển) - 
+    Records of the Source Mirror / 
+    Record of the Mirror of Orthodoxy / 
+    Source Mirror Record / 
+    Record  of the Axiom Mirror / 
+    Record of the Mirror of the Tradition /
+    (Zongjing lu / Xinjing lu)
+    (Record of the Mind Mirror)
 
 📖 Huệ Nhật Vĩnh Minh Tự Trí Giác Thiền Sư Tự Hành Lục (慧日永明寺智覺禪師自行錄)
 
-📖 Duy Tâm Quyết (唯心訣)
+📖 [Duy Tâm Quyết](https://thienphatgiao.org/duy-tam-quyet/) (唯心訣, ユイシンケツ) - *-

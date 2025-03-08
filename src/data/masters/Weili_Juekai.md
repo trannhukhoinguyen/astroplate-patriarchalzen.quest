@@ -4,6 +4,7 @@ name_en: "Weili Juekai"
 name_vi: "Weili Juekai"
 name_zh: "Weili Juekai"
 name_jp: ""
+life_time: ['1923', '2000']
 dynasty: "5/5/1923 - 7/1/2000"
 sect: "Caodong (Soto)"
 color: "green"

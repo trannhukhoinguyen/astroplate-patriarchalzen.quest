@@ -4,6 +4,7 @@ name_en: "Daman Hongren"
 name_vi: "Daman Hongren"
 name_zh: "Daman Hongren"
 name_jp: ""
+life_time: ['', '']
 dynasty: "None"
 sect: "None"
 color: "red"
