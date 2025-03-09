@@ -14,7 +14,7 @@ const path = require("path");
       filePath: "tailwind.config.js",
       patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
     },
-    { filePath: "src/config/theme.json", patterns: ["colors.darkmode"] },
+    { filePath: "src/theme.json", patterns: ["colors.darkmode"] },
   ];
 
   const filePaths = [

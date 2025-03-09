@@ -14,7 +14,7 @@ image:
     alt: "Yongming Yanshou"
 ---
 
-#### INTRODUCTION:
+## INTRODUCTION
 
 I. 
 
@@ -124,19 +124,13 @@ Khi đã đắc pháp, họ quay về Triều Tiên, mỗi người giáo hóa m
 Sau khi tiến hành độ tăng, truyền thọ giới pháp và phóng sinh, đến giờ Thìn buổi sáng ngày 26 tháng 12 năm thứ 8 (975) niên hiệu Khai Bảo (開寶), ông đốt hương lễ Phật, dặn dò đồ chúng rồi ngồi kiết già thị tịch. 
 Ông thọ 72 tuổi, hạ lạp 42 năm. Đến ngày mùng 6 tháng giêng năm sau, đệ tử trang nghiêm thỉnh nhục thân ông nhập tháp ở núi Đại Từ.
 
-#### RECORDS:
+## RECORDS:
 
-📖 [Vạn Thiện Đồng Quy Tập](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (萬善同歸集, 3 quyển) - Collection of All Good Deeds Returning
+📖 [🇬🇧/🇺🇸 Collection of All Good Deeds Returning](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (🇨🇳 萬善同歸集, 🇻🇳 Vạn Thiện Đồng Quy Tập)
 
-📖 [Tông Kính Lục](https://shorturl.at/qYq8m) (宗鏡錄 / 心镜录, 100 quyển) - 
-    Records of the Source Mirror / 
-    Record of the Mirror of Orthodoxy / 
-    Source Mirror Record / 
-    Record  of the Axiom Mirror / 
-    Record of the Mirror of the Tradition /
-    (Zongjing lu / Xinjing lu)
-    (Record of the Mind Mirror)
+📖 [🇬🇧/🇺🇸 Records of Source Mirror ](https://shorturl.at/qYq8m) (🇨🇳 宗鏡錄 / 心镜录, 🇻🇳 Tông Kính Lục) - 
+Records of the (Mirror of Orthodoxy / Axiom Mirror / Mirror of the Tradition  / Mind Mirror) / Zongjing lu / Xinjing lu
 
-📖 Huệ Nhật Vĩnh Minh Tự Trí Giác Thiền Sư Tự Hành Lục (慧日永明寺智覺禪師自行錄)
+📖 [🇬🇧/🇺🇸 The Secret of Mind](https://thienphatgiao.org/duy-tam-quyet/) (🇨🇳 唯心訣, 🇯🇵 ユイシンケツ, 🇻🇳 Duy Tâm Quyết)
 
-📖 [Duy Tâm Quyết](https://thienphatgiao.org/duy-tam-quyet/) (唯心訣, ユイシンケツ) - *-
+📖 🇬🇧/🇺🇸 ??? (🇨🇳 慧日永明寺智覺禪師自行錄, 🇻🇳 Huệ Nhật Vĩnh Minh Tự Trí Giác Thiền Sư Tự Hành Lục)

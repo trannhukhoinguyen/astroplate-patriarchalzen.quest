@@ -21,7 +21,7 @@
   --color-placeholder: #f8f8f8;
   --font-size-s: 0.85rem;
   --font-size-l: clamp(1.25rem, 3vw, 1.75rem);
-  --font-size-xl: clamp(1.5rem, 5vw, 2.75rem);
+  --font-size-xl: clamp(1.5rem, 5vw, 2.25rem);
 }
 
 body {
@@ -41,17 +41,21 @@ body {
   }
 }
 
+em {
+  opacity: 70%;
+}
+
 h2 {
   font-family: 'Noto Sans Tai Viet', serif;
   font-size: var(--font-size-xl);
-  margin: 0;
-  line-height: 0.85;
+  margin: 12px 12px 12px 0;
+  /*line-height: 0.85;*/
 }
 
 h3 {
   font-family: 'Noto Sans Tai Viet', serif;
   font-size: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 p+h3 {

@@ -14,7 +14,7 @@ image:
     alt: "Deqing Yanche"
 ---
 
-#### INTRODUCTION:
+## INTRODUCTION
 The Legacy of Ch’an Master Xu Yun (1840-1959)
 
 Master Xu Yun had an extraordinary and very long life. He lived into his 120th year, and his life spanned two centuries and three dynasties. It is a belief within traditional Chinese culture that the purer the character, the longer the life that is lived. Master Xu Yun’s long life is attributed to his following of the Buddhist monastic vows including a vegetarian diet – and the fact that when young and still a layman, he refused an arranged marriage. More than this, however, but his father, fearing that his son would not follow in his footsteps and become a scholar-official, hired a Daoist master to teach Xu Yun the secrets of that religion. Xu Yun studied the Daoist teachings but did not agree with them – as he much preferred the Buddha’s teachings and yearned from an early age to seek further instruction in the Dharma, and to become a Buddhist monk.
@@ -31,7 +31,7 @@ He spent much of his life re-building and restoring temples and monasteries all 
 
 As a result of his long life and good reputation, master Xu Yun is revered in China, and the Chinese diaspora, as well as becoming ever better known in the West through translated texts, and improved travel opportunities to China. Ch’an lineages have been established outside of China, and individuals and groups are able to receive Ch’an training in monasteries and temples on the mainland and elsewhere. The Chinese language internet contains thousands of pages dedicated to the memory of Xu Yun, set-up by devout lay individuals, monastics, and temples, and there is now ample biographical material entered in encyclopaedias. There are even rumours amongst Chinese Buddhists that master Xu Yun has been re-born and now lives quietly in the Chinese hills, keeping a watchful eye on the Dharma and its practice. His biography – originally compiled by the scholar Cen Xue Lu in the 1950’s – has undergone a number of revisions and extensions as more and more information has come to light, and has been gathered together. Indeed, his reputation has never waned, but has gone from strength to strength over the years. Through master Xu Yun’s spiritual power and wisdom, a wave of transmission of Chinese Buddhist teaching has emanated from China out into the world, and it is a movement that has gathered strength and does not look like stopping any time soon. Today, a new generation is able to read about master Xu Yun, and watch his life story on Chinese DVD. As time goes by, master Xu Yun’s influence appears to be stronger than ever. There are hundreds of photographs of this great master, and any one who looks at them will instantly understand why this is so.
 
-#### RECORDS:
+## RECORDS:
 
 📖 <a href="https://www.dharmasite.net/HuVanHoaThuongHoaTruyen/contents.htm" target="_blank">HƯ VÂN HÒA THƯỢNG HỌA TRUYỆN</a>
 

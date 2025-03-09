@@ -26,10 +26,18 @@ const activeRoute = routes[currentPath] || null;
   <ul>
     <li>
       <a
+        title="Tiếng Việt"
+        href="https://tosuthien.quest"
+        target="_blank"
+        class={activeRoute === "Nations" ? "current" : ""}
+        data-astro-prefetch><TextSlider content="🇻🇳 Tiếng Việt" /></a>
+    </li>
+    <li>
+      <a
         title="Temples around the World"
         href="/nations"
         class={activeRoute === "Nations" ? "current" : ""}
-        data-astro-prefetch><TextSlider content="Temples 🌎" /></a>
+        data-astro-prefetch><TextSlider content="🌎 Temples" /></a>
     </li>
     <li>
       {/* Theme switcher */}
