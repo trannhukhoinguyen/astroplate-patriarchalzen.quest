@@ -1,8 +1,12 @@
 ---
-name: "DUY LỰC NGỮ LỤC"
+name: "Weili Speech Record"
+name_en: "Weili Speech Record"
+name_zh: ""
+name_vi: "Duy Lực ngữ lục"
+name_jp: ""
 image:
   src: "/images/records/weili_speech_records.webp"
-  alt: "DUY LỰC NGỮ LỤC"
+  alt: "Duy Lực ngữ lục"
 publishDate: 1999-01-01
 chapters:
   - "DUY LỰC NGỮ LỤC QUYỂN THƯỢNG (1983 - 1989)"

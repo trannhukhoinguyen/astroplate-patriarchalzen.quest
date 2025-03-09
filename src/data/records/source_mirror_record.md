@@ -1,7 +1,9 @@
 ---
-name: "Tông Kính Lục"
+name: "Source Mirror Record"
 name_en: "Source Mirror Record"
 name_zh: "宗鏡錄"
+name_vi: "Tông Kính Lục"
+name_jp: ""
 image:
   src: "/images/records/source_mirror_record.webp"
   alt: ""

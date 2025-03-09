@@ -128,9 +128,9 @@ Sau khi tiến hành độ tăng, truyền thọ giới pháp và phóng sinh, �
 
 📖 [🇬🇧/🇺🇸 Collection of All Good Deeds Returning](https://hoavouu.com/images/file/_x5aNWAx0QgQAGtw/vanthiendongquy.pdf) (🇨🇳 萬善同歸集, 🇻🇳 Vạn Thiện Đồng Quy Tập)
 
-📖 [🇬🇧/🇺🇸 Records of Source Mirror ](https://shorturl.at/qYq8m) (🇨🇳 宗鏡錄 / 心镜录, 🇻🇳 Tông Kính Lục) - 
+📖 [🇬🇧/🇺🇸 Records of Source Mirror](https://shorturl.at/qYq8m) (🇨🇳 宗鏡錄 / 心镜录, 🇻🇳 Tông Kính Lục) - 
 Records of the (Mirror of Orthodoxy / Axiom Mirror / Mirror of the Tradition  / Mind Mirror) / Zongjing lu / Xinjing lu
 
-📖 [🇬🇧/🇺🇸 The Secret of Mind](https://thienphatgiao.org/duy-tam-quyet/) (🇨🇳 唯心訣, 🇯🇵 ユイシンケツ, 🇻🇳 Duy Tâm Quyết)
+📖 [🇬🇧/🇺🇸 Only Mind Secret](https://thienphatgiao.org/duy-tam-quyet/) (🇨🇳 唯心訣, 🇯🇵 ユイシンケツ, 🇻🇳 Duy Tâm Quyết)
 
 📖 🇬🇧/🇺🇸 ??? (🇨🇳 慧日永明寺智覺禪師自行錄, 🇻🇳 Huệ Nhật Vĩnh Minh Tự Trí Giác Thiền Sư Tự Hành Lục)

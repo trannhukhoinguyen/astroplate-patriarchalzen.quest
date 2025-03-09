@@ -2,10 +2,10 @@
 name: "Dazhu Huihai"
 name_en: "Dazhu Huihai"
 name_vi: "Đại Châu Huệ Hải"
-name_zh: "Dazhu Huihai"
-name_jp: ""
+name_zh: "大珠慧海"
+name_jp: "Daiju Ekai"
 life_time: ['', '']
-dynasty: "None"
+dynasty: "8th/9th century"
 sect: "None"
 color: "HotPink"
 disciples: []
@@ -18,7 +18,7 @@ image:
 
 ### Biography
 
-Dazhu Huihai (Chinese: 大珠慧海) (fl. 788) was a Chan Master in the Hongzhou School, and was a disciple of Mazu Daoyi.
+Dazhu Huihai (Chinese: 大珠慧海) was a Chan Master in the Hongzhou School, and was a disciple of Mazu Daoyi.
 
 The Dunwu rudao yaomen lun (Treatise on the Essential Doctrine of Suddenly Entering into Enlightenment) is attributed to him. His name, Dazhu, means "Great Pearl."[1]
 
@@ -99,5 +99,5 @@ It is the everlasting one."
 
 ## RECORDS:
 
-📖 [🇬🇧/🇺🇸 The Path to Sudden Attainment](https://thuvienhoasen.org/images/file/vmwAmJ1G0QgQAN5j/don-ngo-nhap-dao-yeu-mon-luc.pdf) (🇨🇳 頓悟入道要門論, 🇻🇳 Đốn Ngộ Nhập Đạo Yếu Môn Luận) (Dịch Giả : Dương Đình Hỷ) - Collection of All Good Deeds Returning
+📖 [🇬🇧/🇺🇸 The Path to Sudden Attainment](https://thuvienhoasen.org/images/file/vmwAmJ1G0QgQAN5j/don-ngo-nhap-dao-yeu-mon-luc.pdf) (🇨🇳 頓悟入道要門論, 🇻🇳 Đốn Ngộ Nhập Đạo Yếu Môn Luận) (Dịch Giả : Dương Đình Hỷ) - Gateway to the Sudden Enlightenment to Truth
 

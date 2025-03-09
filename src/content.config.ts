@@ -25,6 +25,10 @@ const records = defineCollection({
   loader: glob({ pattern: '**/*.md', base: "./src/data/records" }),
   schema: z.object({
     name: z.string(),
+    name_en: z.string() || null,
+    name_vi: z.string() || null,
+    name_zh: z.string() || null,
+    name_jp: z.string() || null,
     image: z.object({
       src: z.string(),
       alt: z.string(),

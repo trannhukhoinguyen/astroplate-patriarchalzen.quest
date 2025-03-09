@@ -1,7 +1,9 @@
 ---
-name: "Duy Tâm Quyết"
+name: "Only Mind Secret"
 name_en: "Only Mind Secret"
 name_zh: "唯心訣"
+name_vi: "Duy Tâm Quyết"
+name_jp: ""
 image:
   src: "/images/records/only_mind_secret.webp"
   alt: ""
