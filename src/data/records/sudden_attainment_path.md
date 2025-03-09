@@ -13,4 +13,6 @@ chapters:
 master: "dazhu_huihai"
 ---
 
-📖 <a href="https://thuvienhoasen.org/images/file/vmwAmJ1G0QgQAN5j/don-ngo-nhap-dao-yeu-mon-luc.pdf" target="_blank">ĐỐN NGỘ NHẬP ĐẠO YẾU MÔN LUẬN (PDF)</a>
+📖 <a href="https://thuvienhoasen.org/images/file/T-QYop1G0QgQAJ0b/donngonhapdaoyeumon.pdf" target="_blank">ĐỐN NGỘ NHẬP ĐẠO YẾU MÔN LUẬN (PDF)</a>
+
+🎶 <a href="https://www.youtube.com/watch?v=rMZUfz1C6pI" target="_blank">ĐỐN NGỘ NHẬP ĐẠO YẾU MÔN LUẬN (Audio)</a>
