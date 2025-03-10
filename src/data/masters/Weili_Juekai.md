@@ -14,7 +14,7 @@ image:
     alt: "Weili Juekai"
 ---
 
-#### INTRODUCTION:
+## INTRODUCTION
 
 Sư hiệu __DUY LỰC__, tự __GIÁC KHAI__, thế danh __LA DŨ__ sanh ngày __5/5/1923__, tại làng Long Tuyền (Bình Thủy), Tỉnh Cần Thơ (VN).
 
@@ -52,7 +52,7 @@ Sư viên tịch vào lúc 10 giờ 30 phút ngày 07 tháng 01 năm 2000 tại 
 Sư dịch thuật, chú giải và biên soạn các Kinh điển cùng Ngữ lục hơn 20 loại, lượng sách phát hành tại Việt Nam trên mấy mươi ngàn quyển. 
 Các kinh sách chữ Việt được phát hành bao gồm:
 
-#### RECORDS:
+## RECORDS:
 
 ##### 1:
 

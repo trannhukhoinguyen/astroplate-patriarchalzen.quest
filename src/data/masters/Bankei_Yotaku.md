@@ -14,7 +14,7 @@ image:
     alt: "Bankei Yotaku"
 ---
 
-#### INTRODUCTION:
+## INTRODUCTION
 
 I.
 
@@ -58,6 +58,6 @@ Nói xong, Sư ngồi kết già thị tịch.
 
 Năm 1740, 47 năm sau khi Sư tịch, Nhật hoàng lại phong danh hiệu khác là Đại Pháp Chính Nhãn Quốc sư (大法正眼國師, daihō shōgen kokushi).
 
-#### RECORDS:
+## RECORDS:
 
 📖 TÂM BẤT SINH (PDF)

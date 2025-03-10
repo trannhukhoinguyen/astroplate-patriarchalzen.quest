@@ -44,8 +44,8 @@ const { className }: { className?: string } = Astro.props;
   )
 }
 
-<script is:inline lang="ts">
-  import { settings } from "../config/config.json";
+<script type="module" is:inline lang="ts">
+  import { settings } from "../config.json";
   const matchMedia = window.matchMedia("(prefers-color-scheme: dark)");
 
   matchMedia.addEventListener("change", () =>

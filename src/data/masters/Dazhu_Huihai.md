@@ -1,11 +1,11 @@
 ---
 name: "Dazhu Huihai"
 name_en: "Dazhu Huihai"
-name_vi: "Dazhu Huihai"
-name_zh: "Dazhu Huihai"
-name_jp: ""
+name_vi: "Đại Châu Huệ Hải"
+name_zh: "大珠慧海"
+name_jp: "Daiju Ekai"
 life_time: ['', '']
-dynasty: "None"
+dynasty: "8th/9th century"
 sect: "None"
 color: "HotPink"
 disciples: []
@@ -14,11 +14,90 @@ image:
     alt: "Dazhu Huihai"
 ---
 
-#### INTRODUCTION:
+## INTRODUCTION
 
+### Biography
 
+Dazhu Huihai (Chinese: 大珠慧海) was a Chan Master in the Hongzhou School, and was a disciple of Mazu Daoyi.
 
-#### RECORDS:
+The Dunwu rudao yaomen lun (Treatise on the Essential Doctrine of Suddenly Entering into Enlightenment) is attributed to him. His name, Dazhu, means "Great Pearl."[1]
 
-📖 
+The earliest biography of Dazhu Huihai was written well over a century after his death. As such, there is scant reliable information regarding Dazhu's life. He was born in Jianzhou (Fujian).[3] According to Dazhu Huihai's entry in the Jingde Chuandenglu, his preceptor was Daozhi of the Dayunsi in Yuezhou (Zhejiang). He later studied with Mazu Daoyi for six years, but then returned to the Dayunsi to look after the aging Daozhi.[4] The “Daoyi Stūpa” written by Quan Deyu lists Dazhu Huihai as the first among eleven of Mazu's students who led other disciples during Mazu's funeral. According to Jinhua Jia, this suggests that Dazhu was either the most senior or most important of Mazu's disciples.[5] Mario Poceski states that Dazhu was one of Mazu's earliest disciples, but was something of an outsider in the Hongzhou School, as he left before Mazu became famous.[3]
+
+According to the Tsung Ching Record, when Dazhu arrived at Kiangsi, he informed Mazu that he had come from Yuezhou seeking the Buddhadharma, to which Mazu replied, "Instead of looking to the treasure house which is your very own, you have left home and gone wandering far away. What for? I have absolutely nothing here at all. What is this Buddha-Dharma that you seek?"[6] When Dazhu inquired as to the meaning of his own treasure house, Mazu said:
+
+"That which asked the question is your treasure house. It contains absolutely everything you need and lacks nothing at all. It is there for you to use freely, so why this vain search for something outside yourself?"[6]
+
+At these words, Dazhu experienced enlightenment. He later said of this encounter with Mazu: “I, the poor priest, heard that the Reverend in Jiangxi said, ‘Your own treasure is perfectly complete; you are free to use it and do not need to seek outside.’ From that moment onward, I have ceased [from my seeking].”[1]
+
+Dazhu is said to have later composed the Dunwu rudao yaomen lun at his home monastery in Yuezhou. When Mazu read a copy, he said, “In Yuezhou, there is a great pearl, whose perfect brilliance shines freely without any obstruction.”[1] This is a reference to Dazhu's name, which means "Great Pearl."
+
+### Teachings
+
+#### Nature of mind
+
+The Dunwu rudao yaomen lun, attributed to Dazhu Huihai, describes the mind in the following terms:
+
+Mind has no colour, such as green or yellow, red or white; it is not long or short; it does not vanish or appear; it is free from purity and impurity alike; and its duration is eternal. It is utter stillness. Such, then, is the form and shape of our original mind, which is also our original body—the Buddhakāya![7]
+
+According to Dazhu, this original mind does not depend on the sense organs, as it is without various means of perception. Instead, Dazhu says it perceives by means of one's own nature (svabhāva) which is immaterial and motionless.[7] When asked how perception is possible, since the mind's substance cannot be found, Dazhu replies: "We may liken it to a bright mirror which, though it contains no forms, can nevertheless ‘perceive’ all forms."[8]
+
+#### Eternal perception
+
+According to Dazhu, when we encounter objects, the things being looked at do not actually exist within the sphere of perception. Similarly, he says when we do not encounter any objects, there is likewise no absence of anything in the sphere of perception either.[9] When asked if it was still possible to perceive even while nothing confronts us, Dazhu responds in the affirmative, saying:
+
+We are now talking of that perception which is independent of there being an object or not. How can that be? The nature of perception being eternal, we go on perceiving whether objects are present or not. Thereby we come to understand that, whereas objects naturally appear and disappear, the nature of perception does neither of those things; and it is the same with all your other senses.[9]
+
+Dazhu goes on to explain it is the same with hearing, as we continue to hear whether sounds are present or not. As such, Dazhu describes the nature of hearing as eternal.[10][note 1] When asked who or what is the hearer, Dazhu responds, "It is your own nature which hears and it is the inner cognizer who knows."[12]
+
+#### Simultaneous functioning of dhyāna and wisdom
+
+In the Dunwu rudao yaomen lun, Dazhu says that dhāyna is perpetual and not affected by speech or silence, stating that dhyāna functions even when we are engaged in speaking or making distinctions.[13] He says this is like the sun which does not waver whether its rays encounter the earth or not, and also like a mirror whose brightness does not waver whether it is reflecting something or not.[14] He uses this analogy to illustrate the simultaneous function of dhyāna and wisdom: where the capacity to shine (or reflect) refers to wisdom, the unwavering quality of perfect steadiness refers to dhyāna.[15] Dazhu says it is because it lacks sensation that the power of shining and reflecting is unwavering.[14]
+
+Dazhu defines wisdom as being able to distinguish "every sort of good and evil," while dhyāna means to be unaffected by love or aversion even while making these distinctions.[16] In this way, Dazhu says we should be able to perceive all appearances as though they were actually not perceived at all, which means being able to behold them while remaining free of love and hate.[17]
+
+#### Non-dwelling and making no response
+
+An important theme of the Dunwu rudao yaomen lun is non-dwelling (or non-abiding, wuzhu), which Dazhu defines as not being fixed on good or evil, being or non-being, inside or outside (or somewhere in between), void or non-void, as well as on concentration or distraction.[18] He also explains non-dwelling in terms of the intangible nature of bodhi. As it is intangible and not something to be "attained," bodhi cannot be thought about, which implies a mind dwelling upon nothing whatsoever.[19] Dazhu further says of non-dwelling:
+
+If you are fully aware in yourself of a non-dwelling mind, you will discover that there is just the fact of dwelling, with nothing to dwell upon or not to dwell upon. This full awareness in yourself of a mind dwelling upon nothing is known as having a clear perception of your own mind or, in other words, as having a clear perception of your own nature.[20]
+
+Dazhu also connects non-dwelling with allowing things to happen while making no response. He says: "Strive on! Strive on! Explore this teaching most thoroughly! Just let things happen without making any response and keep your minds from dwelling on anything whatsoever; for he who can do this thereby enters Nirvāṇa."[21] And also:
+
+Forbearance is the best of ways;
+But first dismiss both ‘self’ and ‘other’.
+When things occur, make no response—
+And thus achieve true Bodhikāya.
+
+#### Being an unconcerned person
+
+In a sermon in the Tsung Ching Record, Dazhu tells his listeners that they should be "unconcerned people" rather than go about "toiling and moiling," holding forth about their understanding of the Dharma while telling others that they are practicing Ch'an and studying the Way. Dazhu describes this disapprovingly as a "craze for karmic activities," saying it is no different from pursuing sounds and forms. Instead, Dazhu advises his audience to "desist from it all" and says that being an unconcerned person means not to follow sights and sounds so that they stir the mind.[23] Similarly, Dazhu taught that we should "let nothing matter." He says:
+
+Walking, standing, sitting and lying—all are the functioning of your nature. In what are you out of accord with it? Just go now and take a rest (i.e. set your minds at rest) for a while. As long as you are not carried away by external winds, your nature will remain like water for ever still and clear. Let nothing matter. Take good care of yourselves![24]
+
+### Status of the Dunwu rudao yaomen lun
+
+The Dunwu rudao yaomen lun usually occurs together with a second text appended to it called the Zhufang menren canwen yulu (Record of Questions Asked by Disciples from Everywhere), also attributed to Dazhu, and the two texts together make up the Dunwu yaomen (Essential Gate of Immediate Enlightenment). According to Scott Dennis Peterman, this work stradles two distinct Chan styles, with the Dunwu rudao yaomen lun and the Zhufang menren canwen yulu reflecting, respectively, early Chan and classical Chan.[25] Peterman claims the attribution of Dazhu to either text is dubious.[26]
+
+According to Poceski, the format and doctrines of the Dunwu rudao yaomen lun mark it as a transitional text between early and classical Chan. 
+
+Poceski points to evidence supporting an early origin for the Dunwu rudao yaomen lun, such as the influence of Shenhui's teachings on it, its terminology, as well as the fact that it quotes from early texts found only among the Dunhuang manuscripts. Although it is the earliest record associated with the Hongzhou School, Poceski questions the extent to which it can be labeled a Hongzhou text, given its format and Dazhu's position within the school.[27]
+
+Jinhua Jia questions whether the text contains Dazhu's teachings at all. That is, while the Dunwu rudao yaomen lun is traditionally said to contain the teachings of Dazhu Huihai, Jia argues that the text actually records the teachings of Dazhu's preceptor, Dayun Daozhi.[28]
+
+### Notes
+
+Compare with the Śūraṅgama Sūtra, which says:
+"We’re capable of hearing sounds and silence both;
+They may be present to the ear or not.
+Though people say that when no sound is present,
+Our hearing must be absent too, in fact
+Our hearing does not lapse. It does not cease
+With silence; neither is it born of sound.
+Our hearing, then, is genuine and true.
+It is the everlasting one."
+
+## RECORDS:
+
+📖 [🇬🇧/🇺🇸 The Path to Sudden Attainment](https://thuvienhoasen.org/images/file/vmwAmJ1G0QgQAN5j/don-ngo-nhap-dao-yeu-mon-luc.pdf) (🇨🇳 頓悟入道要門論, 🇻🇳 Đốn Ngộ Nhập Đạo Yếu Môn Luận) (Dịch Giả : Dương Đình Hỷ) - Gateway to the Sudden Enlightenment to Truth
 
