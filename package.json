@@ -7,6 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "generate-json": "node scripts/jsonGenerator.js",
+    "remove-darkmode": "node scripts/removeDarkmode.js && yarn format",
     "astro": "astro"
   },
   "dependencies": {
