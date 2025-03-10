@@ -2,21 +2,6 @@
 import opentype from "opentype.js";
 ---
 
-<script is:inline>
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas?.getContext("2d");
-
-  opentype.load("your-font.ttf", function (err, font) {
-    if (err) {
-      console.error("Font could not be loaded:", err);
-      return;
-    }
-
-    const path = font.getPath("Hello", 50, 100, 72);
-    console.log(path.toSVG()); // This outputs the <path d="..." />
-  });
-</script>
-
 <div class="img">
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1787.8 505.1" style="enable-background:new 0 0 1787.8 505.1;" xml:space="preserve">
 
@@ -2141,3 +2126,18 @@ import opentype from "opentype.js";
     }
   }
 </style>
+
+<script is:inline>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas?.getContext("2d");
+
+    opentype.load("your-font.ttf", function (err, font) {
+        if (err) {
+            console.error("Font could not be loaded:", err);
+            return;
+        }
+
+        const path = font.getPath("Hello", 50, 100, 72);
+        console.log(path.toSVG()); // This outputs the <path d="..." />
+    });
+</script>
