@@ -9,7 +9,7 @@ image:
   alt: "Thiền Quan Sách Tấn"
 publishDate: 1600-02-01
 chapters:
-  - 
+  - ""
 master: "yunqi_zhuhong"
 ---
 
