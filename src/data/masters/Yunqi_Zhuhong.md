@@ -7,7 +7,7 @@ name_jp: "YUnsei Shukō"
 life_time: ['1535', '1615']
 dynasty: "None"
 sect: ""
-color: "orange"
+color: "blue"
 disciples: []
 image: 
     src: "/images/masters/Yunqi_Zhuhong.jpg"
