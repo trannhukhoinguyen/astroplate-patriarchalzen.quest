@@ -6,7 +6,7 @@ name_vi: "Thiền Quan Sách Tấn"
 name_jp: ""
 image:
   src: "/images/records/zen-encouragement-to-advance.webp"
-  alt: "Duy Lực ngữ lục"
+  alt: "Thiền Quan Sách Tấn"
 publishDate: 1600-02-01
 chapters:
   - 
