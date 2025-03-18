@@ -36,4 +36,5 @@ image:
 
 ## RECORDS:
 
-📖 
+📖 [Zen Encouragement to Advance (Read Online)](https://thientruclam.info/ht-thich-thanh-tu/thien-quan-sach-tan)
+📖 [Zen Encouragement to Advance (PDF)](https://thuvienhoasen.org/images/file/XBJYpp1G0QgQAApq/thienquansachtan.pdf)
