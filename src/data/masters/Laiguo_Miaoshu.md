@@ -1,0 +1,62 @@
+---
+name: "Laiguo Miaoshu"
+name_en: "Laiguo Miaoshu"
+name_vi: "Laiguo Miaoshu"
+name_zh: "Laiguo Miaoshu"
+name_jp: ""
+life_time: ['1881', '1953']
+dynasty: "1881 - 1953"
+sect: "Linji (Rinzai)"
+color: "green"
+disciples: []
+image: 
+    src: "/images/masters/Laiguo_Miaoshu.jpg"
+    alt: "Laiguo Miaoshu"
+---
+
+## INTRODUCTION
+
+Sư tên Diệu Thọ tự Lai Quả, hiệu là Tịnh Như, con nhà nông họ Lưu, quê ở huyện Hoàng Cương, tỉnh Hồ Bắc.
+Năm lên bảy, Sư nghe vị Tăng bên cạnh tụng câu "Vô trí diệc vô đắc" trong Tâm Kinh, Sư có tỉnh ngộ.
+
+Năm 12 tuổi, Sư có chí thoát trần, trốn đi xuất gia, bị người anh tìm bắt trở về.
+
+Năm 15 tuổi, Hòa-thượng Đại Trí dạy lấy niệm Phật để liễu thoát sanh tử, Sư bèn niệm Phật thành phiến, cho đến ngủ chiêm bao cũng vẫn lớn tiếng niệm Phật. Hòa-thượng nói : "Đây là chân thật niệm Phật. Vậy niệm Phật là người nào ông biết không ?". Sư không đáp được. Hòa-thượng nói :
+
+"Đợi ông tìm ra người niệm Phật, ta sẽ nói chuyện với ông."
+
+Năm 18 tuổi, Sư cắt gan trị bệnh cho cha.
+
+Năm Ất-tỵ (1905 TL) Sư 25 tuổi, đi hành hương ở núi Phổ Đà, gặp một vị Tăng khổ hạnh, Sư cảm kích bèn xuống tóc ở núi Bảo Hoa, Sư bị chư Tăng trong Chùa hành hạ khổ sở chẳng xiết, trốn đến bờ sông, nhiều ngày bị nhịn đói, cùng với chó hoang ở chung, muốn đâm đầu xuống sông tự vẫn, bỗng gặp vị Tăng ở Chùa Di-đà ở Kinh Khẩu cứu kịp. Sư theo vị Tăng ấy đến Chùa Kim Sơn, song vì chưa thông thuộc Quy-củ nên có hôm bị đánh hơn bốn trăm hương-bản.
+
+Ngày 26 tháng 9 năm Quang Tự thứ 34 (1908 TL), Sư nghe tiếng mõ khai tịnh sau thời khóa công phu buổi chiều tối, hoát nhiên thoát lạc như buông gánh nặng ngàn cân, đánh mất cái mũi mẹ sanh, khóc to chẳng nín, hư-không trên Trời, nước chảy dưới đất, tất cả trệ ngại hoàn toàn tiêu hết, cơ dụng hiện tiền có hỏi liền có đáp. Hòa-thượng Ban-thủ đến tận nơi khen ngợi.
+
+Một hôm Từ Bản lão nhân đưa cái khăn tay ra làm thế rửa mặt, hỏi Sư : "Là cái gì ?".
+
+Sư nói : "Đã dư chiếc khăn tay rồi".
+
+Từ lão nhân chẳng đáp mà lui. Sư từ đấy càng thận trọng.
+
+Sư từng được sung chức Phạn-đầu (nấu cơm), hết sức phụng sự nhà Chùa một cách tiết kiệm. Thủ-tọa khuyên Sư đảm nhiệm chức vụ Ban-thủ. Sư tự thấy mình còn kém bèn trốn sang Chùa Cao Mân, cũng bị đảm nhiệm chức vụ Ban-thủ. Sư bỗng có ý du phương đi ẩn tu ở núi Chung Nam, gặp Cư-sĩ Cao Hạt Niên hối thúc trở về Nam.
+
+Sư trở về Chùa Cao Mân, Tổ Nguyệt Lãng sai Minh Hiên lão nhân chọn ngày truyền Pháp cho Sư. Lúc lâm chung, Tổ nắm tay buộc Sư phải phát nguyện :
+
+"Sống làm người Cao Mân, chết làm quỷ Cao Mân".
+
+Sau khi nhậm chức Trụ-trì, Sư khôi phục lại Quy-chế cũ thuận theo lời khẩn thiết thỉnh cầu của các nơi, y theo lệ trước của Triệt Tổ Thiền Tuệ soạn quyển Tự Hành Lục ghi lại đầy đủ hành trạng cả một cuộc đời khôi vĩ dị thường của Sư. Quyển sách nầy đã được ấn hành phụ trong bộ Ngữ Lục.
+
+Sư thân hình cao lớn trắng trẻo, mắt nhỏ, tiếng to. Từ 50 tuổi về sau, Sư hành hạnh-đầu-đà và tự nhủ : 'Nếu chí nguyện chưa toại thì chẳng cạo bỏ râu tóc' để đau đáu nhớ mãi chí nguyện của mình, nhưng nghi biểu lại càng oai nghiêm, tánh tình cứng cỏi chân thật, gặp việc thì cố gắng hết sức làm, khiến cho ý không tốt của người tự tiêu tan. Cả đời Sư chỉ lấy hoằng Pháp, ngộ Đạo làm nhiệm vụ, đánh hét đều dùng, chuông trống xen nhau, chưa từng có chút lười mỏi. Đương thời, Hòa-thượng Hư Vân là người được sự trọng vọng trong Tông-môn, tuy lớn tuổi hơn Sư mà cùng với Sư khế hợp không gián cách.
+
+Sư tịch ở Thượng Hải, linh cữu đưa về Chùa Cao Mân, làng lân cận có một bà lão Phật-tử tự chặt một ngón tay sai con mang đến trước linh cữu cúng dường. Chánh-pháp cảm người vừa sâu rộng vừa lâu dài nên người nhờ sự giáo hóa của Sư mà làm được như vậy.
+
+Sư sanh vào giờ Dần, ngày 2 tháng 7 năm Tân-tỵ (1881 TL) nhằm năm Quang Tự thứ bảy, diệt độ vào giờ Dần, ngày 17 tháng 10 năm Quý-tỵ (1953 TL). Sư thọ 75 tuổi, Tăng-lạp 49 xuân, Giới-lạp 49 hạ, Pháp-lạp 39 thu, Trụ-trì 35 đông.
+
+Ngày mùng 1 tháng 11, linh cữu từ Tịnh-thất ở Thượng Hải được đưa về Chùa, mùng 8 tháng Chạp trà-tỳ, Tứ Chúng vân tập đau buồn thương tiếc như đưa đám ma cha mẹ. Xá-lợi rất nhiều, sáng như lưu-ly năm màu chói lọi. Giờ Thìn ngày 4 tháng 4 năm sau nhập Tháp rồi cất đình ở bổn tự (Cao Mân) để thờ tháp Xá-lợi.
+
+## RECORDS:
+
+##### 1:
+
+📖 <a href="https://www.niemphat.vn/downloads/thien-tong/hoc-thien/tham-thien-pho-thuyet-ts-lai-qua-ht-duy-luc-dich.pdf" target="_blank">THAM THIỀN PHỔ THUYẾT (THEORY ON THE STUDY OF ZEN)</a>
+
+📖 <a href="https://www.niemphat.vn/downloads/thien-tong/truoc-tac/thien-that-khai-thi-luc-ts-lai-qua-ht-duy-luc-dich.pdf" target="_blank">THIỀN THẤT KHAI THỊ LỤC (RECORD OF INSTRUCTIONS FOR A ZEN PERIOD)</a>
