@@ -10,7 +10,7 @@ image:
 publishDate: 1992-01-01
 chapters:
   - ""  
-master: "yongming_yanshou"
+master: "laiguo_miaoshu"
 ---
 
 THÔ TÂM DỤNG & MIÊN MẬT DỤNG
