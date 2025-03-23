@@ -1,11 +1,11 @@
 ---
-name: "Foyan Qingyuan 's Speech Record"
-name_en: "Foyan Qingyuan 's Speech Record"
+name: "Foyan Qingyuan Sayings"
+name_en: "Foyan Qingyuan Sayings"
 name_zh: ""
 name_vi: "Phật Nhãn Ngữ Lục Lục"
 name_jp: ""
 image:
-  src: "/images/records/foyan_qingyuan_speech_record.webp"
+  src: "/images/records/foyan_qingyuan_sayings.webp"
   alt: ""
 publishDate: 1120-01-01
 chapters:
