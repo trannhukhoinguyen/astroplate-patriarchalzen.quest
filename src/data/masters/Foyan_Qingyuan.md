@@ -1,1 +1,24 @@
-Foyan Qingyuan
+---
+name: "Foyan Qingyuan"
+name_en: "Foyan Qingyuan"
+name_vi: "Phật Nhãn Thanh Viễn"
+name_zh: "佛眼清遠"
+name_jp: "Butsugen Seion"
+life_time: ['1067', '1120']
+dynasty: "1067 - 1120"
+sect: ""
+color: "YellowGreen"
+disciples: []
+image: 
+    src: "/images/masters/Foyan_Qingyuan.jpg"
+    alt: "Foyan Qingyuan"
+---
+
+## INTRODUCTION
+
+
+
+## RECORDS:
+
+
+
