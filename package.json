@@ -12,12 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/mdx": "^4.2.1",
     "@astrojs/react": "^4.2.1",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/instrument-sans": "^5.1.0",
-    "astro": "^5.5.4",
+    "astro": "^5.3.1",
     "astro-seo": "^0.8.4",
     "gsap": "^3.12.5",
     "imagesloaded": "^5.0.0",
