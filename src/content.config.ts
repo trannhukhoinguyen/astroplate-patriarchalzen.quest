@@ -2,7 +2,7 @@ import { defineCollection, reference, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const masters = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/masters" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/masters" }),
   schema: z.object({
     name: z.string(),
     name_en: z.string() || null,
@@ -22,7 +22,7 @@ const masters = defineCollection({
 });
 
 const records = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/records" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/records" }),
   schema: z.object({
     name: z.string(),
     name_en: z.string() || null,
@@ -40,7 +40,7 @@ const records = defineCollection({
 });
 
 const temples = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/temples" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/temples" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -55,7 +55,7 @@ const temples = defineCollection({
 });
 
 const areas = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/areas" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/areas" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -69,7 +69,7 @@ const areas = defineCollection({
 });
 
 const nations = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: "./src/data/nations" }),
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/nations" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
