@@ -82,5 +82,18 @@ const nations = defineCollection({
     continent: z.string(),
   }),
 });
+
+const blogs = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: "./src/data/blogs" }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    // Transform string to Date object
+    date: z.coerce.date(),
+    imageURL: z.string(),
+    slug: z.string(),
+    tags: z.array(z.string()),
+  }),
+});
 // Export all collections
-export const collections = {masters, records, temples, areas, nations};
+export const collections = {masters, records, temples, areas, nations, blogs};

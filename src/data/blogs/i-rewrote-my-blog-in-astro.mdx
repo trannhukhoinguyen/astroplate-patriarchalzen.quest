@@ -1,0 +1,152 @@
+---
+title: I rewrote my blog in Astro
+date: 2024-11-01
+summary: Transistion of my blog site from Next.js to Astro
+imageURL: /blog/i-rewrote-my-blog-in-astro/cover-pic.webp
+slug: /blogs/i-rewrote-my-blog-in-astro
+tags:
+  - Astro
+---
+
+import H2 from "../../components/MDXComponents/H2";
+
+Hey there 👋! I've just migrated my blog from Next.js to Astro. In this post, I’ll dive into why I made the switch and highlight all the cool, out-of-the-box features Astro brings to the table! 😎
+
+<H2>Why I Left Next.js😔</H2>
+
+I was using Next.js 14 with Contentlayer, a solid setup for content-heavy sites.
+
+**Highlights**
+
+- Managing content was straightforward. Just set up a folder, configure your schema, and you’re ready to create `.md` or `.mdx` files.
+- Types for the schema were generated automatically.
+- MDX support was a bonus.
+
+**Cons**
+
+- Extending the config with plugins like syntax-highlighting was tedious.
+- Contentlayer isn’t actively maintained.
+
+If your still planning stick with Next.js, I recommend [content-collections](https://www.content-collections.dev/). I found it throught this [blog post](https://dub.co/blog/content-collections) very simple to integrate comes with MDX & Typescript support, and may be a good alternative to Contentlayer.
+
+<H2>Getting to Know Astro🧐</H2>
+
+In my case i know about astro earlier, it's popular for content-driven sites. Started checking few open-source repos using Astro, clonned there blog website starter template. Started replicating my Next.js app on Astro
+
+**Features**
+
+- MDX can be used with a plugin
+- Syntax highlighting is built-in with ShikiJS.
+- Content schema can be defined using Zod.
+- Devtools are optimized and suggest helpful improvements. 🔥🔥🔥
+- Easy for anyone with basic HTML and CSS knowledge to pick up.
+- Excellent documentation 📙 and well-crafted starter templates.
+
+**Challenges**
+
+- Astro isn’t an SPA by default, unlike Next.js, but it can act like one if you use the ViewTransitions component.
+- Astro generates everything statically by default, including API routes, which led to some trial and error when creating dynamic APIs.
+
+<H2>Migration process</H2>
+
+- First step i've created astro-app with blog template
+
+```bash
+npm create astro@latest
+```
+
+- Copy pasted the public & directly paste in astron project no changes required there
+- I've added necessary plugins React Components, TailwindCSS & Vercel for server side processing
+
+```typescript
+// astro.config.mjs file
+
+// @ts-check
+import { defineConfig } from "astro/config";
+
+// Here are my plugins specified👇
+import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import vercel from "@astrojs/vercel/serverless";
+
+import { transformerNotationHighlight } from "@shikijs/transformers";
+
+// https://astro.build/config
+export default defineConfig({
+  site: "https://blog.pavanbhaskar.com",
+
+  // simply add those plugins here👇
+  integrations: [mdx(), sitemap(), react(), tailwind()],
+
+  // syntax highlighting comes by default no extra packages are required!
+  markdown: {
+    shikiConfig: {
+      themes: {
+        light: "dracula",
+        dark: "everforest-light",
+      },
+      transformers: [transformerNotationHighlight()],
+    },
+  },
+
+  vite: {
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+  },
+
+  output: "hybrid",
+  // vercel adpater is to handle dynamic API's or for Server side rendering
+  adapter: vercel(),
+});
+```
+
+- I've created a schema for content with Zod
+  - So by default in astro content lives in `src/content` folder
+  - In `content` folder i've created a blog folder & moved my `MDX` files there!
+  - You can specify your content config in `config.ts` in `src/content` folder
+
+```typescript
+// config.ts file
+
+import { defineCollection, z } from "astro:content";
+
+const blogConfig = defineCollection({
+  type: "content",
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    // Transform string to Date object
+    date: z.coerce.date(),
+    imageURL: z.string(),
+    tags: z.array(z.string()),
+  }),
+});
+
+// here i've exported blog with blogConfig
+// Which means whatever content in src/content/blog folder will use blogConfig schema!
+export const collections = { blog: blogConfig };
+```
+
+- I've created API routes with my page-view count & rate limiting API's logic
+  - To create a API route which returns JSON you can create `route.json.ts` file
+  - so if i hit `localhost:4321/route.json` i'll get JSON response
+- Check here for more migration details [link](https://docs.astro.build/en/guides/migrate-to-astro/from-nextjs/)
+
+**How it improved content creation process**
+
+- Astro’s markdown support is fantastic! 🔥
+- It's a well-maintained project with a growing community. 🔥
+
+Now, all that’s left is to keep creating content!
+
+<H2>Bonus💫</H2>
+
+- Try [astro-paper](https://github.com/satnaing/astro-paper) as stater template for you blog—it’s packed with useful features, including OG image generation.
+- Check this youtube channel [coding in public](https://www.youtube.com/@CodinginPublic). Has good tutorials on Astro!
+- Even my website is open source check it out [repo link](https://github.com/pavanbhaskardev/personal-blog-astro)
+
+I missed last week’s post because of the migration. Hope you enjoyed this one! ✌️

@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["astro/content"]
+  },
   "extends": "astro/tsconfigs/base",
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]

@@ -1,0 +1,83 @@
+---
+title: What is TailwindCSS
+date: 2024-11-09
+summary: A new approach to writing CSS
+imageURL: /blog/what-is-tailwindcss/cover-pic.webp
+slug: /blogs/what-is-tailwindcss
+tags:
+  - Books
+---
+
+import H2 from "../../components/MDXComponents/H2";
+import { Image } from "astro:assets";
+
+Hey there 👋! In this post, I'll introduce TailwindCSS and explore how it improves upon traditional CSS. TailwindCSS is a modern way of writing CSS that powers website styling, including my own site!
+
+<H2>Challenges with Traditional CSS</H2>
+
+- **Repetition of Properties:** In my previous company, we used `CSS` and `SASS` for styling. Despite defining common classes, we often ended up creating new ones with similar properties, leading to redundancy.
+- **Naming Conflicts:** Finding unique class names to prevent overlap became a constant struggle.
+- **Larger Bundle Sizes:** Repeated properties across classes increased our CSS file sizes significantly.
+
+<H2>Advantages of TailwindCSS</H2>
+
+- **Utility-First Classes:** TailwindCSS provides utility classes that directly map to CSS properties, like so:
+
+```html
+<!-- Two divs styled with CSS and TailwindCSS -->
+
+<!-- Traditional CSS -->
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<div class="container"></div>
+
+<!-- TailwindCSS -->
+<div class="flex items-center justify-center"></div>
+```
+
+- **Intelligent Autocompletion:** With IntelliSense support, class suggestions are automatically populated. Check out this [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) for a streamlined experience🔥.
+- **Simplified Class Naming:** No more brainstorming for unique class names 😮‍💨.
+- **Built-In Design System:** Tailwind comes with a comprehensive design system out of the box📦.
+- **Efficient Debugging:** With HTML and styles in one place, debugging is faster and simpler.
+
+<H2>TailwindCSS Plugins🔌</H2>
+
+Tailwind plugins add powerful enhancements to your app by extending the `tailwind.config` file. Here are a couple of my favorites👇:
+
+**@tailwindcss/typography 😘**
+
+- Ideal for styling typography-heavy content. This page, for instance, uses it for easy styling [learn more](https://github.com/tailwindlabs/tailwindcss-typography).
+- Widely used for blog and article content!
+
+**tailwindcss-animate**
+
+- Adds animation utility classes to your toolkit [learn more](https://github.com/jamiebuilds/tailwindcss-animate).
+
+<H2>Learning path🛤️</H2>
+
+<Image
+  src="/blog/what-is-tailwindcss/learning-path.webp"
+  alt="Learning path"
+  height={500}
+  width={500}
+/>
+
+- If you’re new to TailwindCSS, I recommend starting with a solid understanding of CSS.
+- During build time, Tailwind classes are converted into CSS, so knowing the fundamentals of CSS will make Tailwind's utility-based approach feel like second nature.
+
+<H2>What's next🤔</H2>
+
+- Once you’re comfortable with Tailwind, you can choose a component library that complements it. Here are two paths:
+
+  - **Tailwind-Compatible Libraries:** Examples include [Shadcn](https://ui.shadcn.com/docs/components/accordion) and [Radix UI](https://www.radix-ui.com/primitives/docs/components/accordion).
+  - **CSS-Only Libraries:** If you prefer sticking to traditional CSS, consider [Material UI](https://mui.com/) or [Ant Design](https://ant.design/components/button).
+
+  **Note:** Avoid mixing a CSS-based component library with Tailwind—it can lead to a messy setup😵‍💫.
+
+Thanks for reading, and stay tuned for more updates. Peace✌️

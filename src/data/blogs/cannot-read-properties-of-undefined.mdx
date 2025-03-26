@@ -1,0 +1,122 @@
+---
+title: Cannot read properties of undefined
+date: 2025-02-08
+summary: Accessing values in javascript properly
+imageURL: /blog/cannot-read-properties-of-undefined/cover-pic.webp
+slug: /blogs/cannot-read-properties-of-undefined
+tags:
+  - Javascript
+---
+
+import Message from "../../components/Message";
+
+<Message>
+  Hi everyone, you might faced this issue while working with Javascript.
+</Message>
+
+<Message character="chimtu" direction="right">
+  Most relatable! I faced this issue many times, how can we handle this?
+</Message>
+
+<Message>
+- First of all, Javascript is not strongly typed language, so it get tricky to
+  handle stuff like this. But, you can use **optional chaining** operator `?.` to
+  handle this scenarios
+- Let's take a example where you need to access value from API response
+
+```javascript
+const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+const data = await response.json();
+
+// This is the idle value of data
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+// Now, let's say you want to access title property from data
+console.log("title: ", data.title); // title: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+
+// But, what if data is undefined or null 🤔
+// Assume scenario where API response is null
+console.log(data.title); // Uncaught TypeError: Cannot read properties of undefined (reading 'title')
+
+// To handle this, you can use optional chaining operator
+// If the data is undefined or null, we will get undefined as output
+console.log("title: ", data?.title); // title: undefined
+```
+
+</Message>
+
+<Message character="chimtu" direction="right">
+  Nice👌
+</Message>
+
+<Message>
+  There're few more operators which can help you with value checking
+
+- **Ternary Operator (?:)**: This operator is simplified version of `if else` statement, here is an example:
+
+```javascript
+const person = {
+  name: "John Doe",
+  age: 25,
+};
+
+const name = person?.name ? person.name : "stranger";
+```
+
+- **Nullish Coalescing Operator (??)**: This operator is used to check if the value is `null` or `undefined`, here is an example:
+
+```javascript
+const person = null;
+
+// If person is null or undefined, name will be "stranger"
+const name = person?.name ?? "stranger";
+```
+
+- **Tip**: Use `Typescript` because it provides data-types for variables, which can help you to avoid such issues
+
+</Message>
+
+<Message>
+  And yeah that's it, hey! it's valentine's week right, what's today?
+</Message>
+
+<Message character="chimtu" direction="right">
+  It's **Propose day**! I proposed my girlfriend❤️
+</Message>
+
+<Message>Aye, you got a girlfriend?</Message>
+
+<Message character="chimtu" direction="right">
+  Yes here name is **chitti**, She's with me now. Chitti thanu pavan
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3dUAyP58gBCiqCHCMCRnuQ?utm_source=generator&theme=0" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</Message>
+
+<Message character="chitti" direction="right">
+  Hi pavan, ela unnav?
+</Message>
+
+<Message>Hi chitti, I'm good how are you</Message>
+
+<Message character="chitti" direction="right">
+  I'm good, chala cheyppadu chimtu, ne gurinchi
+</Message>
+
+<Message>
+Aaha, Rey chimtu side ki ra...
+
+ekkada pattav ra ee guntta ni 🤣
+
+</Message>
+
+<Message character="chimtu" direction="right">
+  Mekku instagram alago ma dogs ki dogegram ani undhi anna, andhulo request
+  petta. 5 minutes chat guntta flat! mamuluga undadhu manatho
+</Message>
+
+<Message>🤣🤣🤣 Anyways have fun! see you guys in next blog</Message>
