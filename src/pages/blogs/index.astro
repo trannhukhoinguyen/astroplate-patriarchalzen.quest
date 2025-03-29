@@ -22,7 +22,7 @@ const posts = (await getCollection("blogs")).sort(
           return (
             <li>
               <a
-                href={`/${post.slug}/`}
+                href={`#`}
                 class="relative inline-block aspect-video w-full overflow-hidden rounded-md"
               >
                 {extension.includes("webm") ? (
@@ -57,7 +57,7 @@ const posts = (await getCollection("blogs")).sort(
                 </time>
               </div>
 
-              <a href={`/${post.slug}/`}>
+              <a href={`#`}>
                 <h4 class="font-secondary text-2xl transition-colors hover:text-primary">
                   {title}
                 </h4>
