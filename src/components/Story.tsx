@@ -38,7 +38,7 @@ const characterDetails: CharacterDetailsType = {
   },
 };
 
-const Message = (
+const Story = (
   {
     character = "Master",
     children,
@@ -81,4 +81,4 @@ const Message = (
   );
 };
 
-export default Message;
+export default Story;

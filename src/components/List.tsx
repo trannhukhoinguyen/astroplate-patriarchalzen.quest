@@ -38,17 +38,17 @@ const characterDetails: CharacterDetailsType = {
   },
 };
 
-const Message = (
+const List = (
   {
     character = "Master",
     children,
     direction = "left",
   }: MessageType,
   {
-      nameProp,
-      imageURLProp,
-      actionProp,
-    }: MessageProps,
+    nameProp,
+    imageURLProp,
+    actionProp,
+  }: MessageProps,
 ) => {
   const { imageURL, name, action } = characterDetails[character];
 
@@ -81,4 +81,4 @@ const Message = (
   );
 };
 
-export default Message;
+export default List;
