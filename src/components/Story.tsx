@@ -15,7 +15,7 @@ type MessageType = {
 type CharacterDetailsType = {
   [key in NonNullable<MessageType["character"]>]: {
     name: string;
-    imageURL: string;
+    imageURL?: string;
     action?: string;
   };
 };
@@ -43,12 +43,7 @@ const Story = (
     character = "Master",
     children,
     direction = "left",
-  }: MessageType,
-  {
-      nameProp,
-      imageURLProp,
-      actionProp,
-    }: MessageProps,
+  }: MessageType
 ) => {
   const { imageURL, name, action } = characterDetails[character];
 
@@ -59,7 +54,7 @@ const Story = (
     >
       <img
         className="not-prose size-12 flex-shrink-0 rounded-full bg-slate-300 object-cover"
-        src={imageURL}
+        src={imageURL ? imageURL : ''}
         alt={`${name} profile-pic`}
         height={50}
         width={50}
