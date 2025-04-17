@@ -43,12 +43,7 @@ const Message = (
     character = "Master",
     children,
     direction = "left",
-  }: MessageType,
-  {
-      nameProp,
-      imageURLProp,
-      actionProp,
-    }: MessageProps,
+  }: MessageType
 ) => {
   const { imageURL, name, action } = characterDetails[character];
 
