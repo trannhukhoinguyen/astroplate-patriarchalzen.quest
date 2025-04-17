@@ -2,7 +2,7 @@ import React from "react";
 
 type MessageType = {
   children: React.ReactNode;
-  character?: "pavan" | "chimtu" | "chitti";
+  character?: "Monk" | "Foyan" | "Monk2";
   direction?: "left" | "right";
 };
 
@@ -14,22 +14,22 @@ type CharacterDetailsType = {
 };
 
 const characterDetails: CharacterDetailsType = {
-  pavan: {
+  Monk: {
     imageURL: "/characters/pavan.webp",
-    name: "Pavan",
+    name: "Tăng",
   },
-  chimtu: {
+  Foyan: {
     imageURL: "/characters/chimtu.webp",
-    name: "Chimtu",
+    name: "Sư",
   },
-  chitti: {
+  Monk2: {
     imageURL: "/characters/chitti.webp",
-    name: "Chitti",
+    name: "Thủ tọa",
   },
 };
 
 const Message = ({
-  character = "pavan",
+  character = "Foyan",
   children,
   direction = "left",
 }: MessageType) => {
@@ -38,7 +38,7 @@ const Message = ({
   return (
     <div
       data-direction={direction}
-      className="mt-10 flex w-full gap-2 data-[direction=right]:flex-row-reverse"
+      className="mt-10 mb-10 flex w-full gap-2 data-[direction=right]:flex-row-reverse"
     >
       <img
         className="not-prose size-12 flex-shrink-0 rounded-full bg-slate-300 object-cover"
