@@ -54,7 +54,7 @@ const Message = (
     >
       <img
         className="not-prose size-12 flex-shrink-0 rounded-full bg-slate-300 object-cover"
-        src={imageURL}
+        src={imageURL ? imageURL : ''}
         alt={`${name} profile-pic`}
         height={50}
         width={50}
