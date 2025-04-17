@@ -15,7 +15,7 @@ type MessageType = {
 type CharacterDetailsType = {
   [key in NonNullable<MessageType["character"]>]: {
     name: string;
-    imageURL: string;
+    imageURL?: string;
     action?: string;
   };
 };
