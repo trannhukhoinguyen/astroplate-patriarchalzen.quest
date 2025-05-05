@@ -3,7 +3,7 @@ import { ClientRouter } from "astro:transitions";
 
 import "../styles/global.css";
 
-import { SEO } from "astro-seo";
+import { SEO as AstroSEO } from "astro-seo";
 
 import SmoothScroll from "../components/SmoothScroll.astro";
 import Header from "../components/Header.astro";
@@ -32,9 +32,24 @@ if (theme.fonts.font_family.secondary) {
 type Props = {
   title: string;
   description?: string;
+  image?: string;
+  icon16x16Href?: string;
+  icon32x32Href?: string;
+  iconApple180x180Href?: string;
+  manifestHref?: string;
+  sitemapHref?: string;
 };
 
-const { title, description = "Patriarchal Zen" } = Astro.props;
+const {
+  title,
+  description = "Patriarchal Zen",
+  image="/zen-space.jpeg",
+  icon16x16Href="/favicon/favicon-16x16.png",
+  icon32x32Href="/favicon/favicon-32x32.png",
+  iconApple180x180Href="/favicon/apple-touch-icon.png",
+  manifestHref="/favicon/site.webmanifest",
+  sitemapHref="/sitemap-index.xml",
+} = Astro.props;
 
 // Current page value (/home, /about, /404 ...)
 const currentPage =
@@ -44,7 +59,7 @@ const currentPage =
 <!doctype html>
 <html data-page={currentPage}>
   <head>
-    <SEO
+    <AstroSEO
       title={title}
       description={description}
       charset="UTF-8"
@@ -52,7 +67,7 @@ const currentPage =
         basic: {
           title: title,
           type: "image/jpeg",
-          image: "/zen-space.jpg",
+          image: image,
         },
       }}
       twitter={{
@@ -65,21 +80,21 @@ const currentPage =
             rel: "icon",
             type: "image/png",
             sizes: "16x16",
-            href: "/favicon/favicon-16x16.png",
+            href: icon16x16Href,
           },
           {
             rel: "icon",
             type: "image/png",
             sizes: "32x32",
-            href: "/favicon/favicon-32x32.png",
+            href: icon32x32Href,
           },
           {
             rel: "apple-touch-icon",
             sizes: "180x180",
-            href: "/favicon/apple-touch-icon.png",
+            href: iconApple180x180Href,
           },
-          { rel: "manifest", href: "/favicon/site.webmanifest" },
-          { rel: "sitemap", href: "/sitemap-index.xml" },
+          { rel: "manifest", href: manifestHref },
+          { rel: "sitemap", href: sitemapHref },
           {
             rel: "preload",
             href: instrumentSansWoff2,
@@ -90,7 +105,7 @@ const currentPage =
         ],
         // extending the default meta tags
         meta: [
-          { name: "twitter:image", content: "/zen-space.jpg" },
+          { name: "twitter:image", content: image },
           { name: "twitter:title", content: title },
           { name: "twitter:description", content: description },
           { name: "viewport", content: "width=device-width" },
@@ -101,6 +116,7 @@ const currentPage =
       }}
     />
     <ClientRouter />
+    <title></title>
   </head>
   <body>
     <SmoothScroll />

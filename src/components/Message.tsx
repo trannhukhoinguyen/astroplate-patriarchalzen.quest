@@ -50,7 +50,7 @@ const Message = ({
   return (
     <div
       data-direction={direction}
-      className="mt-10 mb-10 flex w-full gap-2 data-[direction=right]:flex-row-reverse"
+      className="mt-4 mb-4 flex w-full gap-2 data-[direction=right]:flex-row-reverse"
     >
       <img
         className="not-prose size-12 flex-shrink-0 rounded-full bg-slate-300 object-cover"
@@ -67,9 +67,19 @@ const Message = ({
         >
           {name} {action && ` ${action}`}
         </p>
-        <div className="w-full max-w-2xl rounded-md bg-primary/20 p-4 [&>*]:!mt-0">
-          {children}
-        </div>
+        {
+          typeof children === 'string' && children.includes('🌳')
+            ? (children as string).split('🌳')?.map((item, index) => {
+                return (
+                  <div className="w-full max-w-2xl rounded-md bg-primary/20 p-4 [&>*]:!mt-0">
+                    🌳 {item}
+                  </div>
+                )
+              })
+            : <div className="w-full max-w-2xl rounded-md bg-primary/20 p-4 [&>*]:!mt-0">
+              {children}
+            </div>
+        }
       </div>
     </div>
   );
