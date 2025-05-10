@@ -322,10 +322,10 @@ Một hôm, Sư hỏi thị giả:
 <Message actionProp="nói thay" direction="right">
   Hòa thượng nói chẳng dính dáng.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Con chỉ được câm miệng.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Hổ thẹn! Lại bị hòa thượng biết.
 </Message>
 
@@ -339,13 +339,13 @@ Nhân cánh tay có bệnh.
 <Message actionProp="nói thay" direction="right">
   Hòa thượng phải biện giải như thế này ra sao?
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Chẳng dám cô phụ một cánh tay trái của Hòa thượng.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Học nhân nghe được chẳng đặng an vui.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Đây là Hòa thượng cướp con, chỉ e là con chẳng đến cái ruộng đất ấy.
 </Message>
 
@@ -372,14 +372,15 @@ Nhân cánh tay có bệnh.
 <Message actionProp="nói thay" direction="right">
   Ông lại hội được rồi.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Ông vừa mới đến mặc áo cà sa phải không? Y cứ theo đó mà kết án.
 </Message>
-<Message actionProp="lại nói thay" direction="right">
+<Message actionProp="lại nói" direction="right">
   Theo dáng vẽ hồ lô.
 </Message>
 
 Nghe lầu sách mở cửa
+
 <Message actionProp="nói">
   Không gió tự động mở, đáng cho ăn ba mươi hèo.
 </Message>
@@ -511,7 +512,7 @@ Một hôm, nghe tiếng trà bảng lại nghe tiếng dục cổ (đánh trố
 <Message actionProp="nói thay" direction="right">
   Lúc lạnh nói lạnh, lúc nóng nói nóng.
 </Message>
-:
+
 <Message actionProp="hỏi">
   Thế nào là ruộng đất của người xưa?
 </Message>
@@ -528,81 +529,138 @@ Một hôm, nghe tiếng trà bảng lại nghe tiếng dục cổ (đánh trố
 
 ### ⚜️⚜️⚜️
 
-Nhân dạo ngọn núi Bạch Liên, đến nửa chừng núi Sư dừng chân, có Tăng ở phía sau tới nói: Hòa thượng còn ở trong ấy?
+Nhân dạo ngọn núi Bạch Liên, đến nửa chừng núi Sư dừng chân.
 
-Sư nói: Ta đến đây rồi vậy.
+<Message actionProp="ở phía sau tới hỏi" direction="right" character="YoungMonkToLeft">
+  Hòa thượng còn ở trong ấy?
+</Message>
+<Message actionProp="nói">
+  Ta đến đây rồi vậy.
+</Message>
 
 Tăng không đáp được.
 
-Sư nói thay: Cũng là chuông sau giờ trai.
+<Message actionProp="nói thay" direction="right">
+  Cũng là chuông sau giờ trai.
+</Message>
 
-Lữ Thiếu Bằng vào thất hỏi: Hòa thượng có nêu lời dạy gì chăng?
+<Message nameProp="Lữ Thiếu Bằng" actionProp="vào thất hỏi" direction="right" character="YoungMonkToLeft">
+  Hòa thượng có nêu lời dạy gì chăng?
+</Message>
+<Message actionProp="nói">
+  Nếu có lời dạy, tức là đã chôn chân rồi.
+</Message>
+<Message nameProp="Lữ Thiếu Bằng" actionProp="lại hỏi" direction="right" character="YoungMonkToLeft">
+  Xin Hòa thượng chỉ dạy vắn tắt, thẳng thắng
+</Message>
+<Message actionProp="nói">
+  Rất quanh co.
+</Message>
 
-Sư nói: Nếu có lời dạy, tức là đã chôn chân rồi.
+<Message actionProp="hỏi">
+  Có một vật, trên chống trời, dưới chở đất, đen như sơn, thường ở trong động dụng, trong động dụng thâu chẳng được, lỗi ở chỗ nào?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Có lỗi gì?
+</Message>
 
-Lại hỏi: Xin Hòa thượng chỉ dạy vắn tắt, thẳng thắng
+<Message actionProp="bảo vị tăng rằng">
+  Ta đã vì ông dốc hết sức lực. Thế nào là dốc sức?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Sáng sớm ăn cháo, giờ trai ăn cơm.
+</Message>
 
-Sư nói: Rất quanh co.
+<Message actionProp="hỏi">
+  Người hội Phật pháp vì sao lại bệnh?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Cũng biết Hòa thượng tâm tha thiết.
+</Message>
 
-Hỏi: Có một vật, trên chống trời, dưới chở đất, đen như sơn, thường ở trong động dụng, trong động dụng thâu chẳng được, lỗi ở chỗ nào?
+<Message actionProp="rút một que nhiều lửa ở trong lò, nói">
+  Ý này thế nào?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Trên cửa đánh mắc một mũi tên kim cang.
+</Message>
+<Message actionProp="lại nói thay" direction="right">
+  Chích vào tròng mắt ông, xuyên qua tim gan ông.
+</Message>
+<Message actionProp="lại nói thay" direction="right">
+  Chớ hướng trong hư không mà đóng cọc.
+</Message>
 
-Sư nói thay: Có lỗi gì?
+<Message actionProp="hỏi">
+  Có một đồ nhi, trên thân thường xuất ra hương sữa xá lợi, ý này thế nào?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  E người chẳng tin.
+</Message>
+<Message actionProp="lại hỏi">
+  Đồ nhi khác vì sao lại không?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Y được đại xiển đề.
+</Message>
 
-Sư bảo vị tăng rằng: Ta đã vì ông dốc hết sức lực. Thế nào là dốc sức?
+<Message actionProp="hỏi">
+  Hư không lại có đổi khác không?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Xanh vàng đỏ trắng, lớn nhỏ, dài ngắn.
+</Message>
 
-Sư nói thay: Sáng sớm ăn cháo, giờ trai ăn cơm.
+<Message actionProp="dựng phất tử, hỏi tăng">
+  Từ chỗ nào được đây?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Cũng chỉ là trong mộng của con.
+</Message>
 
-Hỏi: Người hội Phật pháp vì sao lại bệnh?
+<Message actionProp="hỏi" direction="right" character="YoungMonkToLeft">
+  Hòa thượng vì sao được ngộ?
+</Message>
+<Message actionProp="nói">
+  Chớ dán bít cái thấy của ta, mà vẽ thỏ cắn nhau.
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Cắn chết vậy.
+</Message>
+<Message actionProp="lại nói" direction="right">
+  Ta cũng biết ông gần gũi.
+</Message>
 
-Sư nói thay: Cũng biết Hòa thượng tâm tha thiết.
+<Message actionProp="dạy chúng">
+  Người hội Phật pháp chẳng được ăn cơm Long Môn.
+  Người chẳng hội Phật pháp cũng chẳng được ăn cơm Long Môn.
+  Người thảy chẳng thế ấy cũng chẳng được ăn cơm Long Môn. Hãy nói người nào được ăn?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Người không tàm quý
+</Message>
+<Message actionProp="lại nói" direction="right">
+  Giống như cái ta được ăn.
+</Message>
 
-Sư rút một que nhiều lửa ở trong lò, nói: Ý này thế nào?
+Có lần dạo núi,
 
-Sư nói thay: Trên cửa đánh mắc một mũi tên kim cang.
+<Message actionProp="hỏi tăng">
+  “Trúc dày chẳng ngại nước chảy qua” là sao?.
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Chẳng cho đi đêm, sáng sớm phải đến.
+</Message>
 
-Lại nói: Chích vào tròng mắt ông, xuyên qua tim gan ông.
-
-Lại nói: Chớ hướng trong hư không mà đóng cọc.
-
-Sư hỏi: Có một đồ nhi, trên thân thường xuất ra hương sữa xá lợi, ý này thế nào?
-
-Sư nói thay: E người chẳng tin.
-
-Lại hỏi: Đồ nhi khác vì sao lại không?
-
-Sư đáp thay: Y được đại xiển đề.
-
-Hỏi: Hư không lại có đổi khác không?
-
-Sư nói thay: Xanh vàng đỏ trắng, lớn nhỏ, dài ngắn.
-
-Sư dựng phất tử, hỏi tăng: Từ chỗ nào được đây?
-
-Sư nói thay: Cũng chỉ là trong mộng của con.
-
-Tăng hỏi: Hòa thượng vì sao được ngộ?
-
-Sư nói thay: Chớ dán bít cái thấy của ta, mà vẽ thỏ cắn nhau.
-
-Sư nói: Cắn chết vậy.
-
-Lại nói: Ta cũng biết ông gần gũi.
-
-Sư dạy chúng: Người hội Phật pháp chẳng được ăn cơm Long Môn. Người chẳng hội Phật pháp cũng chẳng được ăn cơm Long Môn. Người thảy chẳng thế ấy cũng chẳng được ăn cơm Long Môn. Hãy nói người nào được ăn?
-
-Sư nói thay: Người không tàm quý
-
-Lại nói: Giống như cái ta được ăn.
-
-Có lần dạo núi, Sư hỏi tăng: “Trúc dày chẳng ngại nước chảy qua” là sao?
-
-Sư nói thay: Chẳng cho đi đêm, sáng sớm phải đến.
-
-Hỏi tăng: Con chó hỏi vì sao không đuôi?
-
-Sư nói thay: Đã bị Hòa thượng nói rồi.
-
-Lại nói: Được ngay thế ấy.
+<Message actionProp="hỏi tăng">
+  Con chó hỏi vì sao không đuôi?
+</Message>
+<Message actionProp="nói thay" direction="right">
+  Đã bị Hòa thượng nói rồi.
+</Message>
+<Message actionProp="lại nói" direction="right">
+  Được ngay thế ấy.
+</Message>
 
 Nhân Tăng hỏi bệnh, Sư nói: Thân ta ở trong ấy, vì sao tâm chẳng ở trong ấy.
 
