@@ -1,9 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import TempleCard from "../TempleCard.astro";
+import TempleCard from "../cards/TempleCard.astro";
 
 type Props = {
-    temples: CollectionEntry<"temples">[];
+  temples: CollectionEntry<"temples">[];
 };
 
 const { temples } = Astro.props;
