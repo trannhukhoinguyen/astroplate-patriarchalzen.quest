@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Separator from "../../components/Separator.astro";
-import TempleGrid from "../../components/grid/TempleGrid.astro";
+import TempleGrid from "../../components/Grid/TempleGrid.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all nations from the 'nations' collection
@@ -41,10 +41,10 @@ const nextNationIndex = (currentNationIndex + 1) % nations.length;
 const nextNation = nations[nextNationIndex];
 
 // Fetch all temples that belong to the current nation
-const temples = await getCollection(
+/*const temples = await getCollection(
     "temples",
     ({ data }) => data.nation === nation_id,
-);
+);*/
 
 // Render the content of the current nation (e.g., markdown or MDX)
 const { Content } = await render(nation);
