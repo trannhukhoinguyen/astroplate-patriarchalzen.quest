@@ -39,8 +39,8 @@ const records = defineCollection({
   }),
 });
 
-const temples = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/data/temples" }),
+const nations = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/data/nations" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -48,9 +48,9 @@ const temples = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
-    nation: z.string(),
-    area: z.string(),
-    address: z.string(),
+    areas: z.array(z.string()),
+    capital: z.string(),
+    continent: z.string(),
   }),
 });
 
@@ -64,12 +64,12 @@ const areas = defineCollection({
     }),
     temples: z.array(z.string()),
     publishDate: z.date(), // e.g. 2024-09-17
-    nation: z.string(),
+    nation: reference('nations'),
   }),
 });
 
-const nations = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/data/nations" }),
+const temples = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/data/temples" }),
   schema: z.object({
     name: z.string(),
     image: z.object({
@@ -77,9 +77,9 @@ const nations = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.date(), // e.g. 2024-09-17
-    areas: z.array(z.string()),
-    capital: z.string(),
-    continent: z.string(),
+    nation: reference('nations'),
+    area: reference('areas'),
+    address: z.string(),
   }),
 });
 

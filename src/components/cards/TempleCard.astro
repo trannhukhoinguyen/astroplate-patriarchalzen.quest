@@ -1,0 +1,51 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  temple: CollectionEntry<"temples">;
+};
+
+const { temple } = Astro.props;
+---
+
+<a
+  class='temple-card'
+  href={`/nations/${temple?.data?.nation?.id}/${temple?.id}`}
+>
+  <div>
+    <img
+      class="fade-in"
+      loading="lazy"
+      src={temple?.data?.image.src}
+      alt={temple?.data?.image.alt}
+    />
+  </div>
+  <h3>{temple?.data?.name}</h3>
+  <p>{new Date(temple?.data?.publishDate).getFullYear()}</p>
+</a>
+
+<style>
+  .temple-card {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-content: start;
+    max-width: 300px;
+  }
+  div {
+    aspect-ratio: 1;
+    grid-area: img;
+    background: var(--color-placeholder);
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+  h3 {
+    grid-area: title;
+  }
+  p {
+    justify-self: end;
+    grid-area: meta;
+  }
+</style>

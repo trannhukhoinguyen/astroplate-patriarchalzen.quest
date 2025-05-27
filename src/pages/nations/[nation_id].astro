@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Separator from "../../components/Separator.astro";
-import AreaGrid from "../../components/Grid/AreaGrid.astro";
+import TempleGrid from "../../components/Grid/TempleGrid.astro";
 
 export const getStaticPaths = async () => {
   // Fetch all nations from the 'nations' collection
@@ -40,11 +40,11 @@ const nextNationIndex = (currentNationIndex + 1) % nations.length;
 // Get the "next" nation based on the calculated index
 const nextNation = nations[nextNationIndex];
 
-// Fetch all areas that belong to the current nation
-const areas = await getCollection(
-    "areas",
+// Fetch all temples that belong to the current nation
+/*const temples = await getCollection(
+    "temples",
     ({ data }) => data.nation === nation_id,
-);
+);*/
 
 // Render the content of the current nation (e.g., markdown or MDX)
 const { Content } = await render(nation);
@@ -72,32 +72,24 @@ const { Content } = await render(nation);
       <div class="content">
         <Content />
       </div>
-      {
-          areas.length > 0 && (
-              <div class="areas">
-                <h3>Areas</h3>
-                <AreaGrid areas={areas} />
-              </div>
-          )
-      }
     </div>
   </section>
 </BaseLayout>
 <style>
   .content-wrap {
-    grid-template-areas: "img" "content" "areas";
+    grid-template-areas: "img" "content" "temples";
     grid-template-columns: 100%;
     @media screen and (min-width: 44em) {
       grid-template-columns: 1fr auto;
-      grid-template-areas: "img img" "content areas";
+      grid-template-areas: "img img" "content temples";
     }
     @media screen and (min-width: 50em) {
       grid-template-columns: 30vw 1fr 170px;
-      grid-template-areas: "img content areas";
+      grid-template-areas: "img content temples";
     }
   }
-  .areas {
-    grid-area: areas;
+  .temples {
+    grid-area: temples;
   }
   .content p:last-child {
     margin-top: 2.5rem;
