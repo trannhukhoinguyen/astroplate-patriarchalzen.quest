@@ -11,7 +11,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "1",
     title: "ba-truong-ngu-luc",
-    color: colors.teal,
     cover: "/event1.jpg",
     lecturers: ["BÁ TRƯỢNG HOÀI HẢI"],
     description: "https://tangthuphathoc.net/ba-truong-ngu-luc/",
@@ -20,7 +19,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "2",
     title: "duong-ky-phuong-hoi-hoa-thuong-ngu-luc",
-    color: colors.green,
     cover: "/event2.jpg",
     lecturers: ["DƯƠNG KỲ PHƯƠNG HỘI"],
     description: "https://tangthuphathoc.net/duong-ky-phuong-hoi-hoa-thuong-ngu-luc-hau-luc/",
@@ -29,7 +27,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "3",
     title: "dai-tue-pho-giac-thien-su-ngu-luc",
-    color: colors.rose,
     cover: "/event4.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/dai-tue-pho-giac-thien-su-ngu-luc/",
@@ -38,7 +35,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "4",
     title: "vinh-minh-tri-giac-thien-su-duy-tam-quan-ngu-luc",
-    color: colors.pink,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/vinh-minh-tri-giac-thien-su-duy-tam-quan/",
@@ -47,7 +43,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "5",
     title: "dam-chau-quy-son-linh-huu-thien-su-ngu-luc",
-    color: colors.pink,
     cover: "/event5.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/dam-chau-quy-son-linh-huu-thien-su-ngu-luc/",
@@ -56,7 +51,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "6",
     title: "hoang-long-hue-nam-thien-su-ngu-luc",
-    color: colors.indigo,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/hoang-long-hue-nam-thien-su-ngu-luc/",
@@ -65,7 +59,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "7",
     title: "hu-duong-hoa-thuong-ngu-luc",
-    color: colors.orange,
     cover: "/event1.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/hu-duong-hoa-thuong-ngu-luc/",
@@ -74,7 +67,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "8",
     title: "kim-lang-thanh-luong-vien-van-ich-thien-su-ngu-luc",
-    color: colors.blue,
     cover: "/event2.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/kim-lang-thanh-luong-vien-van-ich-thien-su-ngu-luc/",
@@ -83,7 +75,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "9",
     title: "mat-am-hoa-thuong-ngu-luc",
-    color: colors.purple,
     cover: "/event4.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/mat-am-hoa-thuong-ngu-luc/",
@@ -92,7 +83,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "10",
     title: "minh-giac-thien-su-ngu-luc",
-    color: colors.emerald,
     cover: "/event3.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/minh-giac-thien-su-ngu-luc/",
@@ -101,7 +91,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "11",
     title: "hoa-thuong-nhu-tinh-ngu-luc",
-    color: colors.gray,
     cover: "/event5.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/ngu-luc-cua-hoa-thuong-nhu-tinh/",
@@ -110,7 +99,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "12",
     title: "thien-su-nhu-tinh-chua-canh-duc-ngu-luc",
-    color: colors.yellow,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/ngu-luc-thien-su-nhu-tinh-chua-canh-duc/",
@@ -119,7 +107,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "13",
     title: "phan-duong-vo-duc-thien-su-ngu-luc",
-    color: colors.teal,
     cover: "/event1.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/phan-duong-vo-duc-thien-su-ngu-luc/",
@@ -128,7 +115,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "14",
     title: "phap-dien-thien-su-ngu-luc",
-    color: colors.green,
     cover: "/event2.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/phap-dien-thien-su-ngu-luc/",
@@ -137,7 +123,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "15",
     title: "thien-su-hu-van-ngu-luc",
-    color: colors.rose,
     cover: "/event4.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/phap-ngu-cua-thien-su-hu-van/",
@@ -146,7 +131,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "16",
     title: "phu-chau-tao-son-bon-tich-thien-su-ngu-luc",
-    color: colors.red,
     cover: "/event3.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/phu-chau-tao-son-bon-tich-thien-su-ngu-luc/",
@@ -155,7 +139,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "17",
     title: "phu-chau-tao-son-nguyen-chung-thien-su-ngu-luc",
-    color: colors.pink,
     cover: "/event5.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/phu-chau-tao-son-nguyen-chung-thien-su-ngu-luc/",
@@ -164,7 +147,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "18",
     title: "quan-chau-dong-son-ngo-bon-thien-su-ngu-luc",
-    color: colors.indigo,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/quan-chau-dong-son-ngo-bon-thien-su-ngu-luc/",
@@ -173,7 +155,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "19",
     title: "thien-su-hoang-tri-quang-luc",
-    color: colors.teal,
     cover: "/event1.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/quang-luc-cua-thien-su-hoang-tri/",
@@ -182,7 +163,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "20",
     title: "than-hoi-ngu-luc",
-    color: colors.green,
     cover: "/event2.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/than-hoi-phap-ngu/",
@@ -191,7 +171,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "21",
     title: "thien-ngu-luc-phap-hai-hoi-dao-luc-to-ngu-luc",
-    color: colors.rose,
     cover: "/event4.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/thien-ngu-luc-phap-hai-hoi-dao-luc-to/",
@@ -200,7 +179,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "22",
     title: "thien-su-linh-huu-ngu-luc",
-    color: colors.red,
     cover: "/event3.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/thien-su-linh-huu/",
@@ -209,7 +187,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "23",
     title: "thien-su-nguong-son-hue-tich-ngu-luc",
-    color: colors.pink,
     cover: "/event5.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/thien-su-nguong-son-hue-tich/",
@@ -218,7 +195,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "24",
     title: "thuy-chau-dong-son-luong-gioi-thien-su-ngu-luc",
-    color: colors.pink,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/thuy-chau-dong-son-luong-gioi-thien-su-ngu-luc/",
@@ -227,7 +203,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "25",
     title: "tran-chau-lam-te-tue-chieu-thien-su-ngu-luc",
-    color: colors.teal,
     cover: "/event1.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/tran-chau-lam-te-tue-chieu-thien-su-ngu-luc/",
@@ -236,7 +211,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "26",
     title: "hoang-ba-son-doan-te-thien-su-ngu-luc",
-    color: colors.green,
     cover: "/event2.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/hoang-ba-son-doan-te-thien-su/",
@@ -245,7 +219,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "27",
     title: "van-mon-khuong-chan-thien-su-ngu-luc",
-    color: colors.rose,
     cover: "/event4.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/van-mon-khuong-chan-thien-su-ngu-luc/",
@@ -254,7 +227,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "28",
     title: "van-tung-lao-nhan-binh-xuong-thien-dong-giac-hoa-thuong-ngu-luc",
-    color: colors.red,
     cover: "/event3.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/van-tung-lao-nhan-binh-xuong-thien-dong-giac-hoa-thuong-ngu-luc/",
@@ -263,7 +235,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "29",
     title: "vien-chau-nguong-son-tue-tich-thien-su-ngu-luc",
-    color: colors.pink,
     cover: "/event5.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/vien-chau-nguong-son-tue-tich-thien-su-ngu-luc/",
@@ -272,7 +243,6 @@ export const ttphSpeechs: Speech[] = [
   {
     id: "30",
     title: "vien-qua-vien-ngo-thien-su-ngu-luc",
-    color: colors.pink,
     cover: "/event6.jpg",
     lecturers: [""],
     description: "https://tangthuphathoc.net/vien-qua-vien-ngo-thien-su-bich-nham-luc/",
