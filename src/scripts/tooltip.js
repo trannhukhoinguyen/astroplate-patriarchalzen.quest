@@ -12,12 +12,12 @@ class Tooltip {
     this.animationConfig = {
       // Configuration for the text animations (e.g., rows sliding in/out)
       texts: {
-        duration: 0.7, 
-        ease: 'expo', 
+        duration: 0.7,
+        ease: 'expo',
       },
       // Configuration for the tooltip's scaling animations
       tooltip: {
-        duration: 0.6, 
+        duration: 0.6,
         ease: 'power4.inOut',
       },
       // Delay before starting text animations when showing the tooltip
@@ -195,7 +195,7 @@ class Tooltip {
     // Determine animation direction
     const rowField = rowSelector.replace('[data-field="', '').replace('"]', '');
     const animationDirection = this.rowAnimationDirections[rowField] || this.rowAnimationDirections['name'];
-    
+
     // Clone animation directions to prevent GSAP mutation
     const clonedOutDirection = { ...animationDirection.out };
     const clonedInDirection = { ...animationDirection.in };
@@ -226,13 +226,13 @@ class Tooltip {
           nextSlider.textContent = newValue; // Update content
         },
       }, this.animationConfig.textsDelay); // Start after delay
-    } 
+    }
     else if (direction === 'none') {
       // Transition between images
-      const transitionOutDirection = {
-        stagename: { yPercent: 100 }, // Slide down for stagename
-        name: { yPercent: -100 },    // Slide up for name
-        sect: { yPercent: -100 },   // Slide up for sect
+      const transitionOutDirection = {// Slide down
+        stagename: { yPercent: 100 },
+        name: { yPercent: -100 },
+        sect: { yPercent: -100 },
       }[rowField] || { yPercent: 0 };
 
       this.rowTimelines[rowSelector].to(currentSlider, {
@@ -249,7 +249,7 @@ class Tooltip {
           nextSlider.textContent = newValue; // Update content
         },
       }, 0); // Start simultaneously
-    } 
+    }
     else if (direction === 'out') {
       // Tooltip disappearing
       this.rowTimelines[rowSelector].to(currentSlider, {
